@@ -1,0 +1,16 @@
+<configs>
+	<append xpath="/item_modifiers" >
+		<item_modifier name="modMotorcycleFlametrail" installable_tags="wrenchmod" modifier_tags="trail" type="attachment">
+			<property name="CustomIcon" value="vehicleMotorcyclePlaceable"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		</item_modifier>
+		<item_modifier name="modMotorcycleWheelsparks" installable_tags="wrenchmod"  modifier_tags="wheel" type="attachment">
+			<property name="CustomIcon" value="vehicleMotorcyclePlaceable"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		</item_modifier>
+		<item_modifier name="mod4x4TruckEngine" installable_tags="wrenchmod"  modifier_tags="wheel" type="attachment">
+			<property name="CustomIcon" value="vehicle4x4TruckPlaceable"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		</item_modifier>
+	</append>
+</configs>

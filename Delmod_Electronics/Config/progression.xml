@@ -1,0 +1,8 @@
+<delmod>
+	<append xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="2,5" tags="Ceiling Light, Ceiling Light 2,Ceiling Light 2 Brass,Ceiling Light 4,Ceiling Light 5,Ceiling Light 5 Brass,Ceiling Light 7,Wall Light,Sconce Light,Porch Light,Porch Light 4,Porch Light 4 Brass,Desk Lamp,Table Lamp,End Table w/ Lamp,Industrial Light"/>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="3,5" tags="Ceiling Fan Light,Street Light,Street Light Classic,Industrial Light 2,Industrial Light 2 Red,Open Sign,Exit Sign,Work Light"/>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="4,5" tags="Wireless Relay Block,Wireless Relay Electrical Box,Wireless Relay Base 3,Wireless Relay Base 5,Wireless Relay Panel 2,Wireless Relay Panel 3,Wireless Relay Panel 6,Wireless Switch Fusebox,Wireless Switch Electrical Box,Wireless Switch Base 1,Wireless Switch Base 2,Wireless Switch Base 4,Wireless Switch Panel 1,Wireless Switch Panel 4,Wireless Switch Panel 5,Electrical Pole Top Relay, Dels Cube Generator, Fusion Generator"/>
+	</append>
+</delmod>
+

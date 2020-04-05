@@ -1,0 +1,23 @@
+<opengl2>
+
+	<insertAfter xpath="/spawning/biome[@name='pine_forest']/spawn[@entitygroup='ZombiesAll']">
+		<spawn maxcount="5" respawndelay="10" time="Any" entitygroup="Killer Rabbit" spawnDeadChance="0.10" />
+	</insertAfter>
+
+	<insertAfter xpath="/spawning/biome[@name='desert']/spawn[@entitygroup='ZombiesAll']">
+		<spawn maxcount="5" respawndelay="10" time="Any" entitygroup="Killer Rabbit" spawnDeadChance="0.05" />
+	</insertAfter>
+
+	<insertAfter xpath="/spawning/biome[@name='burnt_forest']/spawn[@entitygroup='ZombiesBurntForest']">
+		<spawn maxcount="5" respawndelay="10" time="Any" entitygroup="Killer Rabbit" spawnDeadChance="0.10" />
+	</insertAfter>
+
+	<insertAfter xpath="/spawning/biome[@name='wasteland']/spawn[@entitygroup='ZombiesWastelandNight']">
+		<spawn maxcount="5" respawndelay="10" time="Any" entitygroup="Killer Rabbit" spawnDeadChance="0.10" />
+	</insertAfter>
+
+	<insertAfter xpath="/spawning/biome[@name='snow']/spawn[@entitygroup='SnowZombies']">
+		<spawn maxcount="5" respawndelay="10" time="Any" entitygroup="Killer Rabbit" spawnDeadChance="0.10" />
+	</insertAfter>
+
+</opengl2>

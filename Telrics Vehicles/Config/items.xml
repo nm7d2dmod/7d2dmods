@@ -1,0 +1,209 @@
+<configs>
+<append xpath="/items">
+<item name="Rescue_Chopper[T]">
+	<property name="Tags" value="vehicle"/>
+	<property name="CustomIcon" value="RescueChopperIcon" />
+	<property name="HoldType" value="7"/>
+	<property name="HoldingItemHidden" value="true"/>
+	<property name="Meshfile" value="#@modfolder:Resources/RescueChopper.unity3d?RescueChopperPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="EconomicValue" value="600"/>
+	<property class="Action1">
+		<property name="Class" value="SpawnVehicle"/>
+		<property name="Vehicle" value="RescueChopper"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="DegradationMax" operation="base_set" value="1500,3000" tier="1,6"/>
+	</effect_group>
+</item>
+<item name="Black_Chopper[T]">
+	<property name="Tags" value="vehicle"/>
+	<property name="CustomIcon" value="PoliceChopperIcon" />
+	<property name="HoldType" value="7"/>
+	<property name="HoldingItemHidden" value="true"/>
+	<property name="Meshfile" value="#@modfolder:Resources/BlackChopper.unity3d?BlackChopperPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="EconomicValue" value="600"/>
+	<property class="Action1">
+		<property name="Class" value="SpawnVehicle"/>
+		<property name="Vehicle" value="BlackChopper"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="DegradationMax" operation="base_set" value="1500,3000" tier="1,6"/>
+	</effect_group>
+</item>
+<item name="Biplane[T]">
+	<property name="Tags" value="vehicle"/>
+	<property name="CustomIcon" value="BiplaneRedIcon" />
+	<property name="HoldType" value="7"/>
+	<property name="HoldingItemHidden" value="true"/>
+	<property name="Meshfile" value="#@modfolder:Resources/Biplane2.unity3d?BiplanePrefab2"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="EconomicValue" value="600"/>
+	<property class="Action1">
+		<property name="Class" value="SpawnVehicle"/>
+		<property name="Vehicle" value="Biplane"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="DegradationMax" operation="base_set" value="1500,3000" tier="1,6"/>
+	</effect_group>
+</item>
+<item name="Biplane_Blue[T]">
+	<property name="Tags" value="vehicle"/>
+	<property name="CustomIcon" value="BiplaneBlueIcon" />
+	<property name="HoldType" value="7"/>
+	<property name="HoldingItemHidden" value="true"/>
+	<property name="Meshfile" value="#@modfolder:Resources/BiplaneBlue.unity3d?BiplaneBluePrefab2"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="EconomicValue" value="600"/>
+	<property class="Action1">
+		<property name="Class" value="SpawnVehicle"/>
+		<property name="Vehicle" value="BiplaneBlue"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="DegradationMax" operation="base_set" value="1500,3000" tier="1,6"/>
+	</effect_group>
+</item>
+<item name="Biplane_Black[T]">
+	<property name="Tags" value="vehicle"/>
+	<property name="CustomIcon" value="BiplaneBlackIcon" />
+	<property name="HoldType" value="7"/>
+	<property name="HoldingItemHidden" value="true"/>
+	<property name="Meshfile" value="#@modfolder:Resources/BiplaneBlack.unity3d?BiplaneBlackPrefab2"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="EconomicValue" value="600"/>
+	<property class="Action1">
+		<property name="Class" value="SpawnVehicle"/>
+		<property name="Vehicle" value="BiplaneBlack"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="DegradationMax" operation="base_set" value="1500,3000" tier="1,6"/>
+	</effect_group>
+</item>
+<item name="Biplane_Purple[T]">
+	<property name="Tags" value="vehicle"/>
+	<property name="CustomIcon" value="BiplanePurpleIcon" />
+	<property name="HoldType" value="7"/>
+	<property name="HoldingItemHidden" value="true"/>
+	<property name="Meshfile" value="#@modfolder:Resources/BiplanePurple.unity3d?BiplanePurplePrefab2"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="EconomicValue" value="600"/>
+	<property class="Action1">
+		<property name="Class" value="SpawnVehicle"/>
+		<property name="Vehicle" value="BiplanePurple"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="DegradationMax" operation="base_set" value="1500,3000" tier="1,6"/>
+	</effect_group>
+</item>
+<item name="Biplane_Green[T]">
+	<property name="Tags" value="vehicle"/>
+	<property name="CustomIcon" value="BiplaneGreenIcon" />
+	<property name="HoldType" value="7"/>
+	<property name="HoldingItemHidden" value="true"/>
+	<property name="Meshfile" value="#@modfolder:Resources/BiplaneGreen.unity3d?BiplaneGreenPrefab2"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="EconomicValue" value="600"/>
+	<property class="Action1">
+		<property name="Class" value="SpawnVehicle"/>
+		<property name="Vehicle" value="BiplaneGreen"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="DegradationMax" operation="base_set" value="1500,3000" tier="1,6"/>
+	</effect_group>
+</item>
+
+<item name="Green_Car[T]">
+	<property name="Tags" value="vehicle"/>
+	<property name="CustomIcon" value="CarGreenIcon" />
+	<property name="HoldType" value="7"/>
+	<property name="HoldingItemHidden" value="true"/>
+	<property name="Meshfile" value="#@modfolder:Resources/GreenCar.unity3d?GreenCarPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="EconomicValue" value="600"/>
+	<property class="Action1">
+		<property name="Class" value="SpawnVehicle"/>
+		<property name="Vehicle" value="GreenCar"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="DegradationMax" operation="base_set" value="1500,3000" tier="1,6"/>
+	</effect_group>
+</item>
+<item name="Blue_Car[T]">
+	<property name="Tags" value="vehicle"/>
+	<property name="CustomIcon" value="CarBlueIcon" />
+	<property name="HoldType" value="7"/>
+	<property name="HoldingItemHidden" value="true"/>
+	<property name="Meshfile" value="#@modfolder:Resources/BlueCar.unity3d?BlueCarPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="EconomicValue" value="600"/>
+	<property class="Action1">
+		<property name="Class" value="SpawnVehicle"/>
+		<property name="Vehicle" value="BlueCar"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="DegradationMax" operation="base_set" value="1500,3000" tier="1,6"/>
+	</effect_group>
+</item>
+<item name="Orange_Car[T]">
+	<property name="Tags" value="vehicle"/>
+	<property name="CustomIcon" value="CarOrangeIcon" />
+	<property name="HoldType" value="7"/>
+	<property name="HoldingItemHidden" value="true"/>
+	<property name="Meshfile" value="#@modfolder:Resources/OrangeCar.unity3d?OrangeCarPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="EconomicValue" value="600"/>
+	<property class="Action1">
+		<property name="Class" value="SpawnVehicle"/>
+		<property name="Vehicle" value="OrangeCar"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="DegradationMax" operation="base_set" value="1500,3000" tier="1,6"/>
+	</effect_group>
+</item>
+<item name="Red_Car[T]">
+	<property name="Tags" value="vehicle"/>
+	<property name="CustomIcon" value="CarRedIcon" />
+	<property name="HoldType" value="7"/>
+	<property name="HoldingItemHidden" value="true"/>
+	<property name="Meshfile" value="#@modfolder:Resources/RedCar.unity3d?RedCarPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="EconomicValue" value="600"/>
+	<property class="Action1">
+		<property name="Class" value="SpawnVehicle"/>
+		<property name="Vehicle" value="RedCar"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="DegradationMax" operation="base_set" value="1500,3000" tier="1,6"/>
+	</effect_group>
+</item>
+<item name="Black_Car[T]">
+	<property name="Tags" value="vehicle"/>
+	<property name="CustomIcon" value="CarBlackIcon" />
+	<property name="HoldType" value="7"/>
+	<property name="HoldingItemHidden" value="true"/>
+	<property name="Meshfile" value="#@modfolder:Resources/BlackCar.unity3d?BlackCarPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="EconomicValue" value="600"/>
+	<property class="Action1">
+		<property name="Class" value="SpawnVehicle"/>
+		<property name="Vehicle" value="BlackCar"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="DegradationMax" operation="base_set" value="1500,3000" tier="1,6"/>
+	</effect_group>
+</item>
+</append>
+</configs>

@@ -1,0 +1,9 @@
+<Ragsy_Brighter_Headlights_V2>
+
+	<!-- This version allows brighter headlights on custom vehicles by Manux and Guppycur as well as vanilla -->
+	
+
+	<set xpath="/vehicles/vehicle[contains(@name, 'vehicle') and not(contains(@name, 'Bicycle')) and not(contains(@name, 'ocopter'))]/property[@class='headlight']/property[@name='bright']/@value">7</set>
+
+
+</Ragsy_Brighter_Headlights_V2>

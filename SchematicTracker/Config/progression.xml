@@ -1,0 +1,2302 @@
+<configs> 
+<!--    
+		progression                  
+			attributes     
+				attribute    
+			skills     
+				skill              
+			perks 
+				perk    
+-->                  
+<!-- =========================================================== -->     
+	<insertAfter xpath="/progression/attributes/attribute[@name='attBooks']" >    
+     
+	<attribute name="attSchematics" name_key="attSchematicsName" desc_key="attSchematicsDesc" icon="ui_game_symbol_book" min_level="0" max_level="0" base_skill_point_cost="0">              
+		<effect_group/> 
+	</attribute>    
+                  
+	</insertAfter>     
+    
+<!-- =========================================================== -->     
+	<insertAfter xpath="/progression/skills/skill[@name='skillUrbanCombat']" >              
+ 
+	<skill name="skillTools" parent="attSchematics" name_key="Tools" desc_key="skillToolsDesc" long_desc_key="skillBookGroupLongDesc" icon="ui_game_symbol_tool_smithing"><effect_group/></skill>    
+                  
+	<skill name="skillCooking" parent="attSchematics" name_key="Cooking" desc_key="skillCookingDesc" long_desc_key="skillBookGroupLongDesc" icon="ui_game_symbol_cookware"><effect_group/></skill>     
+    
+	<skill name="skillAmmo" parent="attSchematics" name_key="Ammo" desc_key="skillAmmoDesc" icon="ui_game_symbol_bullet_point"><effect_group/></skill>     
+              
+	<skill name="skillClubs" parent="attSchematics" name_key="Clubs" desc_key="skillClubsDesc" icon="ui_game_symbol_club"><effect_group/></skill> 
+    
+	<skill name="skillWorkStations" parent="attSchematics" name_key="WorkStations" desc_key="skillWorkStationsDesc" icon="ui_game_symbol_workbench"><effect_group/></skill>                  
+     
+	<skill name="skillMedical" parent="attSchematics" name_key="Medical" desc_key="skillMedicalDesc" icon="ui_game_symbol_medical"><effect_group/></skill>    
+     
+	<skill name="skillAgriculture" parent="attSchematics" name_key="Agriculture" desc_key="skillAgricultureDesc" icon="ui_game_symbol_tree"><effect_group/></skill>              
+ 
+	<skill name="skillGunSmithing" parent="attSchematics" name_key="Gun Smithing" desc_key="skillMedicineDesc" icon="ui_game_symbol_gunsmithing"><effect_group/></skill>    
+                  
+	<skill name="skillBlades" parent="attSchematics" name_key="Blade Craft" desc_key="skillMedicineDesc" icon="ui_game_symbol_knife"><effect_group/></skill>     
+    
+	<skill name="skillElectrcity" parent="attSchematics" name_key="Electricity" desc_key="skillElectrcityDesc" icon="ui_game_symbol_lightbulb"><effect_group/></skill>     
+              
+	<skill name="skillVehicles" parent="attSchematics" name_key="Vehicles" desc_key="skillVehiclesDesc" icon="ui_game_symbol_minibike"><effect_group/></skill> 
+    
+	<skill name="skillDrinks" parent="attSchematics" name_key="Drinks" desc_key="skillDrinksDesc" icon="ui_game_symbol_tea"><effect_group/></skill>                  
+     
+	<skill name="skillBows" parent="attSchematics" name_key="Bows" desc_key="skillBowsDesc" icon="ui_game_symbol_archery"><effect_group/></skill>    
+     
+	<skill name="skillMods" parent="attSchematics" name_key="Mods" desc_key="skillModsDesc" icon="ui_game_symbol_misc_crafting"><effect_group/></skill>              
+ 
+	<skill name="skillExplosives" parent="attSchematics" name_key="Explosives" desc_key="skillExplosivesDesc" icon="ui_game_symbol_explosion"><effect_group/></skill>    
+                  
+	<skill name="skillSpears" parent="attSchematics" name_key="Spears" desc_key="skillSpearsDesc" icon="ui_game_symbol_spear"><effect_group/></skill>     
+    
+	<skill name="skillKnuckles" parent="attSchematics" name_key="Knuckles" desc_key="skillKnucklesDesc" icon="ui_game_symbol_boxer"><effect_group/></skill>     
+              
+	<skill name="skillTurret" parent="attSchematics" name_key="Turret" desc_key="skillKnucklesDesc" icon="ui_game_symbol_electric_turret"><effect_group/></skill> 
+    
+	<skill name="skillArmor" parent="attSchematics" name_key="Armour" desc_key="skillKnucklesDesc" icon="ui_game_symbol_armor_iron"><effect_group/></skill>                  
+     
+	<skill name="skillVehiclesMisc" parent="attSchematics" name_key="VehiclesMisc" desc_key="skillKnucklesDesc" icon="ui_game_symbol_service"><effect_group/></skill>    
+     
+              
+	</insertAfter> 
+    
+<!-- =========================================================== -->                  
+	<insertAfter xpath="/progression/perks/perk[@name='perkUrbanCombatComplete']" >     
+    
+		<perk name="perkmeleeClubIronSchematic" parent="skillClubs" max_level="1" base_skill_point_cost="0" name_key="meleeClubIron" desc_key="perkmeleeClubIronDesc" icon="ui_game_symbol_club">     
+			<effect_group>              
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="meleeClubIron"/> 
+			</effect_group>    
+		</perk>                  
+     
+		<perk name="perkmeleeClubBaseballBatSchematic" parent="skillClubs" max_level="1" base_skill_point_cost="0" name_key="meleeClubBaseballBat" desc_key="perkmeleeClubBaseballBatDesc" icon="ui_game_symbol_club">    
+			<effect_group>     
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="meleeClubBaseballBat"/>              
+			</effect_group> 
+		</perk>    
+                  
+		<perk name="perkmeleeToolSledgehammerIronSchematic" parent="skillTools" max_level="1" base_skill_point_cost="0" name_key="meleeToolSledgehammerIron" desc_key="perkmeleeToolSledgehammerIronDesc" icon="ui_game_symbol_tool_smithing">     
+			<effect_group>    
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="meleeToolSledgehammerIron"/>     
+			</effect_group>              
+		</perk> 
+    
+		<perk name="perkmeleeToolSledgehammerSteelSchematic" parent="skillTools" max_level="1" base_skill_point_cost="0" name_key="meleeToolSledgehammerSteel" desc_key="perkmeleeToolSledgehammerSteelDesc" icon="ui_game_symbol_tool_smithing">                  
+			<effect_group>     
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="meleeToolSledgehammerSteel"/>    
+			</effect_group>     
+		</perk>              
+ 
+		<perk name="perkmeleeToolKnifeIronSchematic" parent="skillBlades" max_level="1" base_skill_point_cost="0" name_key="meleeToolKnifeIron" desc_key="perkmeleeToolKnifeIronDesc" icon="ui_game_symbol_knife">    
+			<effect_group>                  
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="meleeToolKnifeIron"/>     
+			</effect_group>    
+		</perk>     
+              
+		<perk name="perkmeleeToolKnifeMacheteSchematic" parent="skillBlades" max_level="1" base_skill_point_cost="0" name_key="meleeToolKnifeMachete" desc_key="perkmeleeToolKnifeMacheteDesc" icon="ui_game_symbol_knife"> 
+			<effect_group>    
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="meleeToolKnifeMachete"/>                  
+			</effect_group>     
+		</perk>    
+     
+		<perk name="perkmeleeStunBatonSchematic" parent="skillClubs" max_level="1" base_skill_point_cost="0" name_key="meleeStunBaton" desc_key="perkmeleeStunBatonDesc" icon="ui_game_symbol_club">              
+			<effect_group> 
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="meleeStunBaton"/>    
+			</effect_group>                  
+		</perk>     
+    
+		<perk name="perkmeleeToolIronSetSchematic" parent="skillTools" max_level="1" base_skill_point_cost="0" name_key="meleeToolIronSet" desc_key="perkmeleeToolIronSetDesc" icon="ui_game_symbol_tool_smithing">     
+			<effect_group>              
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="meleeToolIronSet"/> 
+			</effect_group>    
+		</perk>                  
+     
+		<perk name="perkmeleeToolSteelSetSchematic" parent="skillTools" max_level="1" base_skill_point_cost="0" name_key="meleeToolSteelSet" desc_key="perkmeleeToolSteelSetDesc" icon="ui_game_symbol_tool_smithing">    
+			<effect_group>     
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="meleeToolSteelSet"/>              
+			</effect_group> 
+		</perk>    
+                  
+		<perk name="perkmeleeToolWrenchSchematic" parent="skillTools" max_level="1" base_skill_point_cost="0" name_key="meleeToolWrench" desc_key="perkmeleeToolWrenchDesc" icon="ui_game_symbol_tool_smithing">     
+			<effect_group>    
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="meleeToolWrench"/>     
+			</effect_group>              
+		</perk> 
+    
+		<perk name="perkmeleeToolHoeIronSchematic" parent="skillTools" max_level="1" base_skill_point_cost="0" name_key="meleeToolHoeIron" desc_key="perkmeleeToolHoeIronDesc" icon="ui_game_symbol_tool_smithing">                  
+			<effect_group>     
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="meleeToolHoeIron"/>    
+			</effect_group>     
+		</perk>              
+ 
+		<perk name="perkmeleeToolAugerSchematic" parent="skillTools" max_level="1" base_skill_point_cost="0" name_key="meleeToolAuger" desc_key="perkmeleeToolAugerDesc" icon="ui_game_symbol_tool_smithing">    
+			<effect_group>                  
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="meleeToolAuger"/>     
+			</effect_group>    
+		</perk>     
+              
+		<perk name="perkmeleeToolChainsawSchematic" parent="skillTools" max_level="1" base_skill_point_cost="0" name_key="meleeToolChainsaw" desc_key="perkmeleeToolChainsawDesc" icon="ui_game_symbol_tool_smithing"> 
+			<effect_group>    
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="meleeToolChainsaw"/>                  
+			</effect_group>     
+		</perk>    
+     
+		<perk name="perkmeleeThrownSpearIronSchematic" parent="skillSpears" max_level="1" base_skill_point_cost="0" name_key="meleeThrownSpearIron" desc_key="perkmeleeThrownSpearIronDesc" icon="ui_game_symbol_spear">              
+			<effect_group> 
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="meleeThrownSpearIron"/>    
+			</effect_group>                  
+		</perk>     
+    
+		<perk name="perkmeleeThrownSpearSteelSchematic" parent="skillSpears" max_level="1" base_skill_point_cost="0" name_key="meleeThrownSpearSteel" desc_key="perkmeleeThrownSpearSteelDesc" icon="ui_game_symbol_spear">     
+			<effect_group>              
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="meleeThrownSpearSteel"/> 
+			</effect_group>    
+		</perk>                  
+     
+		<perk name="perkmeleeKnucklesIronSchematic" parent="skillKnuckles" max_level="1" base_skill_point_cost="0" name_key="meleeKnucklesIron" desc_key="perkmeleeKnucklesIronDesc" icon="ui_game_symbol_boxer">    
+			<effect_group>     
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="meleeKnucklesIron"/>              
+			</effect_group> 
+		</perk>    
+                  
+		<perk name="perkmeleeKnucklesSteelSchematic" parent="skillKnuckles" max_level="1" base_skill_point_cost="0" name_key="meleeKnucklesSteel" desc_key="perkmeleeKnucklesSteelDesc" icon="ui_game_symbol_boxer">     
+			<effect_group>    
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="meleeKnucklesSteel"/>     
+			</effect_group>              
+		</perk> 
+    
+		<perk name="perkgunBowWoodenSchematic" parent="skillBows" max_level="1" base_skill_point_cost="0" name_key="gunBowWooden" desc_key="perkgunBowWoodenDesc" icon="ui_game_symbol_archery">                  
+			<effect_group>     
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="gunBowWooden"/>    
+			</effect_group>     
+		</perk>              
+ 
+		<perk name="perkgunBowCompoundSchematic" parent="skillBows" max_level="1" base_skill_point_cost="0" name_key="gunBowCompound" desc_key="perkgunBowCompoundDesc" icon="ui_game_symbol_archery">    
+			<effect_group>                  
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="gunBowCompound"/>     
+			</effect_group>    
+		</perk>     
+              
+		<perk name="perkgunCrossbowIronSchematic" parent="skillGunSmithing" max_level="1" base_skill_point_cost="0" name_key="gunCrossbowIron" desc_key="perkgunCrossbowIronDesc" icon="ui_game_symbol_gunsmithing"> 
+			<effect_group>    
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="gunCrossbowIron"/>                  
+			</effect_group>     
+		</perk>    
+     
+		<perk name="perkgunCrossbowCompoundSchematic" parent="skillGunSmithing" max_level="1" base_skill_point_cost="0" name_key="gunCrossbowCompound" desc_key="perkgunCrossbowCompoundDesc" icon="ui_game_symbol_gunsmithing">              
+			<effect_group> 
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="gunCrossbowCompound"/>    
+			</effect_group>                  
+		</perk>     
+    
+		<perk name="perkgunPistolSchematic" parent="skillGunSmithing" max_level="1" base_skill_point_cost="0" name_key="gunPistol" desc_key="perkgunPistolDesc" icon="ui_game_symbol_gunsmithing">     
+			<effect_group>              
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="gunPistol"/> 
+			</effect_group>    
+		</perk>                  
+     
+		<perk name="perkgun44MagnumSchematic" parent="skillGunSmithing" max_level="1" base_skill_point_cost="0" name_key="gun44Magnum" desc_key="perkgun44MagnumDesc" icon="ui_game_symbol_gunsmithing">    
+			<effect_group>     
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="gun44Magnum"/>              
+			</effect_group> 
+		</perk>    
+                  
+		<perk name="perkgunDoubleBarrelShotgunSchematic" parent="skillGunSmithing" max_level="1" base_skill_point_cost="0" name_key="gunDoubleBarrelShotgun" desc_key="perkgunDoubleBarrelShotgunDesc" icon="ui_game_symbol_gunsmithing">     
+			<effect_group>    
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="gunDoubleBarrelShotgun"/>     
+			</effect_group>              
+		</perk> 
+    
+		<perk name="perkgunPumpShotgunSchematic" parent="skillGunSmithing" max_level="1" base_skill_point_cost="0" name_key="gunPumpShotgun" desc_key="perkgunPumpShotgunDesc" icon="ui_game_symbol_gunsmithing">                  
+			<effect_group>     
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="gunPumpShotgun"/>    
+			</effect_group>     
+		</perk>              
+ 
+		<perk name="perkgunSMG5Schematic" parent="skillGunSmithing" max_level="1" base_skill_point_cost="0" name_key="gunSMG5" desc_key="perkgunSMG5Desc" icon="ui_game_symbol_gunsmithing">    
+			<effect_group>                  
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="gunSMG5"/>     
+			</effect_group>    
+		</perk>     
+              
+		<perk name="perkgunAK47Schematic" parent="skillGunSmithing" max_level="1" base_skill_point_cost="0" name_key="gunAK47" desc_key="perkgunAK47Desc" icon="ui_game_symbol_gunsmithing"> 
+			<effect_group>    
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="gunAK47"/>                  
+			</effect_group>     
+		</perk>    
+     
+		<perk name="perkgunHuntingRifleSchematic" parent="skillGunSmithing" max_level="1" base_skill_point_cost="0" name_key="gunHuntingRifle" desc_key="perkgunHuntingRifleDesc" icon="ui_game_symbol_gunsmithing">              
+			<effect_group> 
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="gunHuntingRifle"/>    
+			</effect_group>                  
+		</perk>     
+    
+		<perk name="perkgunMR10Schematic" parent="skillGunSmithing" max_level="1" base_skill_point_cost="0" name_key="gunMR10" desc_key="perkgunMR10Desc" icon="ui_game_symbol_gunsmithing">     
+			<effect_group>              
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="gunMR10"/> 
+			</effect_group>    
+		</perk>                  
+     
+		<perk name="perkgunRocketLauncherSchematic" parent="skillGunSmithing" max_level="1" base_skill_point_cost="0" name_key="gunRocketLauncher" desc_key="perkgunRocketLauncherDesc" icon="ui_game_symbol_gunsmithing">    
+			<effect_group>     
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="gunRocketLauncher"/>              
+			</effect_group> 
+		</perk>    
+                  
+		<perk name="perkgunJunkTurretSchematic" parent="skillTurret" max_level="1" base_skill_point_cost="0" name_key="gunJunkTurret" desc_key="perkgunJunkTurretDesc" icon="ui_game_symbol_electric_turret">     
+			<effect_group>    
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="gunJunkTurret"/>     
+			</effect_group>              
+		</perk> 
+    
+		<perk name="perkarmorLeatherSetSchematic" parent="skillArmor" max_level="1" base_skill_point_cost="0" name_key="armorLeatherSet" desc_key="perkarmorLeatherSetDesc" icon="ui_game_symbol_armor_iron">                  
+			<effect_group>     
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="armorLeatherSet"/>    
+			</effect_group>     
+		</perk>              
+ 
+		<perk name="perkarmorMilitarySetSchematic" parent="skillArmor" max_level="1" base_skill_point_cost="0" name_key="armorMilitarySet" desc_key="perkarmorMilitarySetDesc" icon="ui_game_symbol_armor_iron">    
+			<effect_group>                  
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="armorMilitarySet"/>     
+			</effect_group>    
+		</perk>     
+              
+		<perk name="perkresourceMilitaryFiberSchematic" parent="skillArmor" max_level="1" base_skill_point_cost="0" name_key="resourceMilitaryFiber" desc_key="perkresourceMilitaryFiberDesc" icon="ui_game_symbol_armor_iron"> 
+			<effect_group>    
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="resourceMilitaryFiber"/>                  
+			</effect_group>     
+		</perk>    
+     
+		<perk name="perkarmorIronSetSchematic" parent="skillArmor" max_level="1" base_skill_point_cost="0" name_key="armorIronSet" desc_key="perkarmorIronSetDesc" icon="ui_game_symbol_armor_iron">              
+			<effect_group> 
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="armorIronSet"/>    
+			</effect_group>                  
+		</perk>     
+    
+		<perk name="perkarmorSteelSetSchematic" parent="skillArmor" max_level="1" base_skill_point_cost="0" name_key="armorSteelSet" desc_key="perkarmorSteelSetDesc" icon="ui_game_symbol_armor_iron">     
+			<effect_group>              
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="armorSteelSet"/> 
+			</effect_group>    
+		</perk>                  
+     
+		<perk name="perkthrownAmmoPipeBombSchematic" parent="skillExplosives" max_level="1" base_skill_point_cost="0" name_key="thrownAmmoPipeBomb" desc_key="perkthrownAmmoPipeBombDesc" icon="ui_game_symbol_explosion">    
+			<effect_group>     
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="thrownAmmoPipeBomb"/>              
+			</effect_group> 
+		</perk>    
+                  
+		<perk name="perkthrownGrenadeContactSchematic" parent="skillExplosives" max_level="1" base_skill_point_cost="0" name_key="thrownGrenadeContact" desc_key="perkthrownGrenadeContactDesc" icon="ui_game_symbol_explosion">     
+			<effect_group>    
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="thrownGrenadeContact"/>     
+			</effect_group>              
+		</perk> 
+    
+		<perk name="perkthrownGrenadeSchematic" parent="skillExplosives" max_level="1" base_skill_point_cost="0" name_key="thrownGrenade" desc_key="perkthrownGrenadeDesc" icon="ui_game_symbol_explosion">                  
+			<effect_group>     
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="thrownGrenade"/>    
+			</effect_group>     
+		</perk>              
+ 
+		<perk name="perkthrownDynamiteSchematic" parent="skillExplosives" max_level="1" base_skill_point_cost="0" name_key="thrownDynamite" desc_key="perkthrownDynamiteDesc" icon="ui_game_symbol_explosion">    
+			<effect_group>                  
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="thrownDynamite"/>     
+			</effect_group>    
+		</perk>     
+              
+		<perk name="perkthrownTimedChargeSchematic" parent="skillExplosives" max_level="1" base_skill_point_cost="0" name_key="thrownTimedCharge" desc_key="perkthrownTimedChargeDesc" icon="ui_game_symbol_explosion"> 
+			<effect_group>    
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="thrownTimedCharge"/>                  
+			</effect_group>     
+		</perk>    
+     
+		<perk name="perkammoArrowFlamingSchematic" parent="skillAmmo" max_level="1" base_skill_point_cost="0" name_key="ammoArrowFlaming" desc_key="perkammoArrowFlamingDesc" icon="ui_game_symbol_bullet_point">              
+			<effect_group> 
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammoArrowFlaming"/>    
+			</effect_group>                  
+		</perk>     
+    
+		<perk name="perkammoCrossbowBoltExplodingSchematic" parent="skillAmmo" max_level="1" base_skill_point_cost="0" name_key="ammoCrossbowBoltExploding" desc_key="perkammoCrossbowBoltExplodingDesc" icon="ui_game_symbol_bullet_point">     
+			<effect_group>              
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammoCrossbowBoltExploding"/> 
+			</effect_group>    
+		</perk>                  
+     
+		<perk name="perkgunToolNailgunSchematic" parent="skillTools" max_level="1" base_skill_point_cost="0" name_key="gunToolNailgun" desc_key="perkgunToolNailgunDesc" icon="ui_game_symbol_tool_smithing">    
+			<effect_group>     
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="gunToolNailgun"/>              
+			</effect_group> 
+		</perk>    
+                  
+		<perk name="perkmedicalFirstAidBandageSchematic" parent="skillMedical" max_level="1" base_skill_point_cost="0" name_key="medicalFirstAidBandage" desc_key="perkmedicalFirstAidBandageDesc" icon="ui_game_symbol_medical">     
+			<effect_group>    
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="medicalFirstAidBandage"/>     
+			</effect_group>              
+		</perk> 
+    
+		<perk name="perkmedicalFirstAidKitSchematic" parent="skillMedical" max_level="1" base_skill_point_cost="0" name_key="medicalFirstAidKit" desc_key="perkmedicalFirstAidKitDesc" icon="ui_game_symbol_medical">                  
+			<effect_group>     
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="medicalFirstAidKit"/>    
+			</effect_group>     
+		</perk>              
+ 
+		<perk name="perkmedicalPlasterCastSchematic" parent="skillMedical" max_level="1" base_skill_point_cost="0" name_key="medicalPlasterCast" desc_key="perkmedicalPlasterCastDesc" icon="ui_game_symbol_medical">    
+			<effect_group>                  
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="medicalPlasterCast"/>     
+			</effect_group>    
+		</perk>     
+              
+		<perk name="perkmedicalBloodDrawKitSchematic" parent="skillMedical" max_level="1" base_skill_point_cost="0" name_key="medicalBloodDrawKit" desc_key="perkmedicalBloodDrawKitDesc" icon="ui_game_symbol_medical"> 
+			<effect_group>    
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="medicalBloodDrawKit"/>                  
+			</effect_group>     
+		</perk>    
+     
+		<perk name="perktoolBellowsSchematic" parent="skillTools" max_level="1" base_skill_point_cost="0" name_key="toolBellows" desc_key="perktoolBellowsDesc" icon="ui_game_symbol_tool_smithing">              
+			<effect_group> 
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="toolBellows"/>    
+			</effect_group>                  
+		</perk>     
+    
+		<perk name="perktoolForgeCrucibleSchematic" parent="skillTools" max_level="1" base_skill_point_cost="0" name_key="toolForgeCrucible" desc_key="perktoolForgeCrucibleDesc" icon="ui_game_symbol_tool_smithing">     
+			<effect_group>              
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="toolForgeCrucible"/> 
+			</effect_group>    
+		</perk>                  
+     
+		<perk name="perktoolAnvilSchematic" parent="skillTools" max_level="1" base_skill_point_cost="0" name_key="toolAnvil" desc_key="perktoolAnvilDesc" icon="ui_game_symbol_tool_smithing">    
+			<effect_group>     
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="toolAnvil"/>              
+			</effect_group> 
+		</perk>    
+                  
+		<perk name="perkcementMixerSchematic" parent="skillWorkStations" max_level="1" base_skill_point_cost="0" name_key="cementMixer" desc_key="perkcementMixerDesc" icon="ui_game_symbol_workbench">     
+			<effect_group>    
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="cementMixer"/>     
+			</effect_group>              
+		</perk> 
+    
+		<perk name="perkworkbenchSchematic" parent="skillWorkStations" max_level="1" base_skill_point_cost="0" name_key="workbench" desc_key="perkworkbenchDesc" icon="ui_game_symbol_workbench">                  
+			<effect_group>     
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="workbench"/>    
+			</effect_group>     
+		</perk>              
+ 
+		<perk name="perkforgeSchematic" parent="skillWorkStations" max_level="1" base_skill_point_cost="0" name_key="forge" desc_key="perkforgeDesc" icon="ui_game_symbol_workbench">    
+			<effect_group>                  
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="forge"/>     
+			</effect_group>    
+		</perk>     
+              
+		<perk name="perktableSawSchematic" parent="skillWorkStations" max_level="1" base_skill_point_cost="0" name_key="tableSaw" desc_key="perktableSawDesc" icon="ui_game_symbol_workbench"> 
+			<effect_group>    
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="tableSaw"/>                  
+			</effect_group>     
+		</perk>    
+     
+		<perk name="perkchemistryStationSchematic" parent="skillWorkStations" max_level="1" base_skill_point_cost="0" name_key="chemistryStation" desc_key="perkchemistryStationDesc" icon="ui_game_symbol_workbench">              
+			<effect_group> 
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="chemistryStation"/>    
+			</effect_group>                  
+		</perk>     
+    
+		<perk name="perkvehicleAnySchematic" parent="skillVehicles" max_level="1" base_skill_point_cost="0" name_key="vehicleAny" desc_key="perkvehicleAnyDesc" icon="ui_game_symbol_minibike">     
+			<effect_group>              
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="vehicleAny"/> 
+			</effect_group>    
+		</perk>                  
+     
+		<perk name="perkvehicleBicycleChassisSchematic" parent="skillVehicles" max_level="1" base_skill_point_cost="0" name_key="vehicleBicycleChassis" desc_key="perkvehicleBicycleChassisDesc" icon="ui_game_symbol_minibike">    
+			<effect_group>     
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="vehicleBicycleChassis"/>              
+			</effect_group> 
+		</perk>    
+                  
+		<perk name="perkvehicleBicycleHandlebarsSchematic" parent="skillVehicles" max_level="1" base_skill_point_cost="0" name_key="vehicleBicycleHandlebars" desc_key="perkvehicleBicycleHandlebarsDesc" icon="ui_game_symbol_minibike">     
+			<effect_group>    
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="vehicleBicycleHandlebars"/>     
+			</effect_group>              
+		</perk> 
+    
+		<perk name="perkvehicleMinibikeChassisSchematic" parent="skillVehicles" max_level="1" base_skill_point_cost="0" name_key="vehicleMinibikeChassis" desc_key="perkvehicleMinibikeChassisDesc" icon="ui_game_symbol_minibike">                  
+			<effect_group>     
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="vehicleMinibikeChassis"/>    
+			</effect_group>     
+		</perk>              
+ 
+		<perk name="perkvehicleMinibikeHandlebarsSchematic" parent="skillVehicles" max_level="1" base_skill_point_cost="0" name_key="vehicleMinibikeHandlebars" desc_key="perkvehicleMinibikeHandlebarsDesc" icon="ui_game_symbol_minibike">    
+			<effect_group>                  
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="vehicleMinibikeHandlebars"/>     
+			</effect_group>    
+		</perk>     
+              
+		<perk name="perkvehicleMotorcycleChassisSchematic" parent="skillVehicles" max_level="1" base_skill_point_cost="0" name_key="vehicleMotorcycleChassis" desc_key="perkvehicleMotorcycleChassisDesc" icon="ui_game_symbol_minibike"> 
+			<effect_group>    
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="vehicleMotorcycleChassis"/>                  
+			</effect_group>     
+		</perk>    
+     
+		<perk name="perkvehicleMotorcycleHandlebarsSchematic" parent="skillVehicles" max_level="1" base_skill_point_cost="0" name_key="vehicleMotorcycleHandlebars" desc_key="perkvehicleMotorcycleHandlebarsDesc" icon="ui_game_symbol_minibike">              
+			<effect_group> 
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="vehicleMotorcycleHandlebars"/>    
+			</effect_group>                  
+		</perk>     
+    
+		<perk name="perkvehicle4x4TruckChassisSchematic" parent="skillVehicles" max_level="1" base_skill_point_cost="0" name_key="vehicle4x4TruckChassis" desc_key="perkvehicle4x4TruckChassisDesc" icon="ui_game_symbol_minibike">     
+			<effect_group>              
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="vehicle4x4TruckChassis"/> 
+			</effect_group>    
+		</perk>                  
+     
+		<perk name="perkvehicle4x4TruckAccessoriesSchematic" parent="skillVehicles" max_level="1" base_skill_point_cost="0" name_key="vehicle4x4TruckAccessories" desc_key="perkvehicle4x4TruckAccessoriesDesc" icon="ui_game_symbol_minibike">    
+			<effect_group>     
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="vehicle4x4TruckAccessories"/>              
+			</effect_group> 
+		</perk>    
+                  
+		<perk name="perkvehicleGyroCopterChassisSchematic" parent="skillVehicles" max_level="1" base_skill_point_cost="0" name_key="vehicleGyroCopterChassis" desc_key="perkvehicleGyroCopterChassisDesc" icon="ui_game_symbol_minibike">     
+			<effect_group>    
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="vehicleGyroCopterChassis"/>     
+			</effect_group>              
+		</perk> 
+    
+		<perk name="perkvehicleGyroCopterAccessoriesSchematic" parent="skillVehicles" max_level="1" base_skill_point_cost="0" name_key="vehicleGyroCopterAccessories" desc_key="perkvehicleGyroCopterAccessoriesDesc" icon="ui_game_symbol_minibike">                  
+			<effect_group>     
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="vehicleGyroCopterAccessories"/>    
+			</effect_group>     
+		</perk>              
+ 
+		<perk name="perkgeneratorbankSchematic" parent="skillElectrcity" max_level="1" base_skill_point_cost="0" name_key="generatorbank" desc_key="perkgeneratorbankDesc" icon="ui_game_symbol_lightbulb">    
+			<effect_group>                  
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="generatorbank"/>     
+			</effect_group>    
+		</perk>     
+              
+		<perk name="perkpressureplateSchematic" parent="skillElectrcity" max_level="1" base_skill_point_cost="0" name_key="pressureplate" desc_key="perkpressureplateDesc" icon="ui_game_symbol_lightbulb"> 
+			<effect_group>    
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="pressureplate"/>                  
+			</effect_group>     
+		</perk>    
+     
+		<perk name="perkpoweredDoorsSchematic" parent="skillElectrcity" max_level="1" base_skill_point_cost="0" name_key="poweredDoors" desc_key="perkpoweredDoorsDesc" icon="ui_game_symbol_lightbulb">              
+			<effect_group> 
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="poweredDoors"/>    
+			</effect_group>                  
+		</perk>     
+    
+		<perk name="perkbladeTrapSchematic" parent="skillElectrcity" max_level="1" base_skill_point_cost="0" name_key="bladeTrap" desc_key="perkbladeTrapDesc" icon="ui_game_symbol_lightbulb">     
+			<effect_group>              
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="bladeTrap"/> 
+			</effect_group>    
+		</perk>                  
+     
+		<perk name="perkdartTrapSchematic" parent="skillElectrcity" max_level="1" base_skill_point_cost="0" name_key="dartTrap" desc_key="perkdartTrapDesc" icon="ui_game_symbol_lightbulb">    
+			<effect_group>     
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="dartTrap"/>              
+			</effect_group> 
+		</perk>    
+                  
+		<perk name="perkshotgunTurretSchematic" parent="skillTurret" max_level="1" base_skill_point_cost="0" name_key="shotgunTurret" desc_key="perkshotgunTurretDesc" icon="ui_game_symbol_electric_turret">     
+			<effect_group>    
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="shotgunTurret"/>     
+			</effect_group>              
+		</perk> 
+    
+		<perk name="perkautoTurretSchematic" parent="skillTurret" max_level="1" base_skill_point_cost="0" name_key="autoTurret" desc_key="perkautoTurretDesc" icon="ui_game_symbol_electric_turret">                  
+			<effect_group>     
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="autoTurret"/>    
+			</effect_group>     
+		</perk>              
+ 
+		<perk name="perkelectricfencepostSchematic" parent="skillElectrcity" max_level="1" base_skill_point_cost="0" name_key="electricfencepost" desc_key="perkelectricfencepostDesc" icon="ui_game_symbol_lightbulb">    
+			<effect_group>                  
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="electricfencepost"/>     
+			</effect_group>    
+		</perk>     
+              
+		<perk name="perkmotionsensorSchematic" parent="skillElectrcity" max_level="1" base_skill_point_cost="0" name_key="motionsensor" desc_key="perkmotionsensorDesc" icon="ui_game_symbol_lightbulb"> 
+			<effect_group>    
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="motionsensor"/>                  
+			</effect_group>     
+		</perk>    
+     
+		<perk name="perkspeakerSchematic" parent="skillElectrcity" max_level="1" base_skill_point_cost="0" name_key="speaker" desc_key="perkspeakerDesc" icon="ui_game_symbol_lightbulb">              
+			<effect_group> 
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="speaker"/>    
+			</effect_group>                  
+		</perk>     
+    
+		<perk name="perkspotlightPlayerSchematic" parent="skillElectrcity" max_level="1" base_skill_point_cost="0" name_key="spotlightPlayer" desc_key="perkspotlightPlayerDesc" icon="ui_game_symbol_lightbulb">     
+			<effect_group>              
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="spotlightPlayer"/> 
+			</effect_group>    
+		</perk>                  
+     
+		<perk name="perkswitchSchematic" parent="skillElectrcity" max_level="1" base_skill_point_cost="0" name_key="switch" desc_key="perkswitchDesc" icon="ui_game_symbol_lightbulb">    
+			<effect_group>     
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="switch"/>              
+			</effect_group> 
+		</perk>    
+                  
+		<perk name="perkbatterybankSchematic" parent="skillElectrcity" max_level="1" base_skill_point_cost="0" name_key="batterybank" desc_key="perkbatterybankDesc" icon="ui_game_symbol_lightbulb">     
+			<effect_group>    
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="batterybank"/>     
+			</effect_group>              
+		</perk> 
+    
+		<perk name="perkelectrictimerrelaySchematic" parent="skillElectrcity" max_level="1" base_skill_point_cost="0" name_key="electrictimerrelay" desc_key="perkelectrictimerrelayDesc" icon="ui_game_symbol_lightbulb">                  
+			<effect_group>     
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="electrictimerrelay"/>    
+			</effect_group>     
+		</perk>              
+ 
+		<perk name="perkmodGunBarrelExtenderSchematic" parent="skillMods" max_level="1" base_skill_point_cost="0" name_key="modGunBarrelExtender" desc_key="perkmodGunBarrelExtenderDesc" icon="ui_game_symbol_misc_crafting">    
+			<effect_group>                  
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modGunBarrelExtender"/>     
+			</effect_group>    
+		</perk>     
+              
+		<perk name="perkmodGunMuzzleBrakeSchematic" parent="skillMods" max_level="1" base_skill_point_cost="0" name_key="modGunMuzzleBrake" desc_key="perkmodGunMuzzleBrakeDesc" icon="ui_game_symbol_misc_crafting"> 
+			<effect_group>    
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modGunMuzzleBrake"/>                  
+			</effect_group>     
+		</perk>    
+     
+		<perk name="perkmodGunSoundSuppressorSilencerSchematic" parent="skillMods" max_level="1" base_skill_point_cost="0" name_key="modGunSoundSuppressorSilencer" desc_key="perkmodGunSoundSuppressorSilencerDesc" icon="ui_game_symbol_misc_crafting">              
+			<effect_group> 
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modGunSoundSuppressorSilencer"/>    
+			</effect_group>                  
+		</perk>     
+    
+		<perk name="perkmodGunLaserSightSchematic" parent="skillMods" max_level="1" base_skill_point_cost="0" name_key="modGunLaserSight" desc_key="perkmodGunLaserSightDesc" icon="ui_game_symbol_misc_crafting">     
+			<effect_group>              
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modGunLaserSight"/> 
+			</effect_group>    
+		</perk>                  
+     
+		<perk name="perkmodGunFlashlightSchematic" parent="skillMods" max_level="1" base_skill_point_cost="0" name_key="modGunFlashlight" desc_key="perkmodGunFlashlightDesc" icon="ui_game_symbol_misc_crafting">    
+			<effect_group>     
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modGunFlashlight"/>              
+			</effect_group> 
+		</perk>    
+                  
+		<perk name="perkmodGunScopeSmallSchematic" parent="skillMods" max_level="1" base_skill_point_cost="0" name_key="modGunScopeSmall" desc_key="perkmodGunScopeSmallDesc" icon="ui_game_symbol_misc_crafting">     
+			<effect_group>    
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modGunScopeSmall"/>     
+			</effect_group>              
+		</perk> 
+    
+		<perk name="perkmodGunScopeMediumSchematic" parent="skillMods" max_level="1" base_skill_point_cost="0" name_key="modGunScopeMedium" desc_key="perkmodGunScopeMediumDesc" icon="ui_game_symbol_misc_crafting">                  
+			<effect_group>     
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modGunScopeMedium"/>    
+			</effect_group>     
+		</perk>              
+ 
+		<perk name="perkmodGunScopeLargeSchematic" parent="skillMods" max_level="1" base_skill_point_cost="0" name_key="modGunScopeLarge" desc_key="perkmodGunScopeLargeDesc" icon="ui_game_symbol_misc_crafting">    
+			<effect_group>                  
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modGunScopeLarge"/>     
+			</effect_group>    
+		</perk>     
+              
+		<perk name="perkmodGunReflexSightSchematic" parent="skillMods" max_level="1" base_skill_point_cost="0" name_key="modGunReflexSight" desc_key="perkmodGunReflexSightDesc" icon="ui_game_symbol_misc_crafting"> 
+			<effect_group>    
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modGunReflexSight"/>                  
+			</effect_group>     
+		</perk>    
+     
+		<perk name="perkmodGunTriggerGroupSemiSchematic" parent="skillMods" max_level="1" base_skill_point_cost="0" name_key="modGunTriggerGroupSemi" desc_key="perkmodGunTriggerGroupSemiDesc" icon="ui_game_symbol_misc_crafting">              
+			<effect_group> 
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modGunTriggerGroupSemi"/>    
+			</effect_group>                  
+		</perk>     
+    
+		<perk name="perkmodGunTriggerGroupBurst3Schematic" parent="skillMods" max_level="1" base_skill_point_cost="0" name_key="modGunTriggerGroupBurst3" desc_key="perkmodGunTriggerGroupBurst3Desc" icon="ui_game_symbol_misc_crafting">     
+			<effect_group>              
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modGunTriggerGroupBurst3"/> 
+			</effect_group>    
+		</perk>                  
+     
+		<perk name="perkmodGunTriggerGroupAutomaticSchematic" parent="skillMods" max_level="1" base_skill_point_cost="0" name_key="modGunTriggerGroupAutomatic" desc_key="perkmodGunTriggerGroupAutomaticDesc" icon="ui_game_symbol_misc_crafting">    
+			<effect_group>     
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modGunTriggerGroupAutomatic"/>              
+			</effect_group> 
+		</perk>    
+                  
+		<perk name="perkmodGunRodAndSpringSchematic" parent="skillMods" max_level="1" base_skill_point_cost="0" name_key="modGunRodAndSpring" desc_key="perkmodGunRodAndSpringDesc" icon="ui_game_symbol_misc_crafting">     
+			<effect_group>    
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modGunRodAndSpring"/>     
+			</effect_group>              
+		</perk> 
+    
+		<perk name="perkmodGunBipodSchematic" parent="skillMods" max_level="1" base_skill_point_cost="0" name_key="modGunBipod" desc_key="perkmodGunBipodDesc" icon="ui_game_symbol_misc_crafting">                  
+			<effect_group>     
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modGunBipod"/>    
+			</effect_group>     
+		</perk>              
+ 
+		<perk name="perkmodGunForegripSchematic" parent="skillMods" max_level="1" base_skill_point_cost="0" name_key="modGunForegrip" desc_key="perkmodGunForegripDesc" icon="ui_game_symbol_misc_crafting">    
+			<effect_group>                  
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modGunForegrip"/>     
+			</effect_group>    
+		</perk>     
+              
+		<perk name="perkmodGunRetractingStockSchematic" parent="skillMods" max_level="1" base_skill_point_cost="0" name_key="modGunRetractingStock" desc_key="perkmodGunRetractingStockDesc" icon="ui_game_symbol_misc_crafting"> 
+			<effect_group>    
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modGunRetractingStock"/>                  
+			</effect_group>     
+		</perk>    
+     
+		<perk name="perkmodGunDuckbillSchematic" parent="skillMods" max_level="1" base_skill_point_cost="0" name_key="modGunDuckbill" desc_key="perkmodGunDuckbillDesc" icon="ui_game_symbol_misc_crafting">              
+			<effect_group> 
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modGunDuckbill"/>    
+			</effect_group>                  
+		</perk>     
+    
+		<perk name="perkmodGunChokeSchematic" parent="skillMods" max_level="1" base_skill_point_cost="0" name_key="modGunChoke" desc_key="perkmodGunChokeDesc" icon="ui_game_symbol_misc_crafting">     
+			<effect_group>              
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modGunChoke"/> 
+			</effect_group>    
+		</perk>                  
+     
+		<perk name="perkmodGunMagazineExtenderSchematic" parent="skillMods" max_level="1" base_skill_point_cost="0" name_key="modGunMagazineExtender" desc_key="perkmodGunMagazineExtenderDesc" icon="ui_game_symbol_misc_crafting">    
+			<effect_group>     
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modGunMagazineExtender"/>              
+			</effect_group> 
+		</perk>    
+                  
+		<perk name="perkmodShotgunSawedOffBarrelSchematic" parent="skillGunSmithing" max_level="1" base_skill_point_cost="0" name_key="modShotgunSawedOffBarrel" desc_key="perkmodShotgunSawedOffBarrelDesc" icon="ui_game_symbol_gunsmithing">     
+			<effect_group>    
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modShotgunSawedOffBarrel"/>     
+			</effect_group>              
+		</perk> 
+    
+		<perk name="perkmodGunCrippleEmSchematic" parent="skillMods" max_level="1" base_skill_point_cost="0" name_key="modGunCrippleEm" desc_key="perkmodGunCrippleEmDesc" icon="ui_game_symbol_misc_crafting">                  
+			<effect_group>     
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modGunCrippleEm"/>    
+			</effect_group>     
+		</perk>              
+ 
+		<perk name="perkmodGunBowPolymerStringSchematic" parent="skillMods" max_level="1" base_skill_point_cost="0" name_key="modGunBowPolymerString" desc_key="perkmodGunBowPolymerStringDesc" icon="ui_game_symbol_misc_crafting">    
+			<effect_group>                  
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modGunBowPolymerString"/>     
+			</effect_group>    
+		</perk>     
+              
+		<perk name="perkmodGunBowArrowRestSchematic" parent="skillMods" max_level="1" base_skill_point_cost="0" name_key="modGunBowArrowRest" desc_key="perkmodGunBowArrowRestDesc" icon="ui_game_symbol_misc_crafting"> 
+			<effect_group>    
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modGunBowArrowRest"/>                  
+			</effect_group>     
+		</perk>    
+     
+		<perk name="perkmodGunMeleeTheHunterSchematic" parent="skillMods" max_level="1" base_skill_point_cost="0" name_key="modGunMeleeTheHunter" desc_key="perkmodGunMeleeTheHunterDesc" icon="ui_game_symbol_misc_crafting">              
+			<effect_group> 
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modGunMeleeTheHunter"/>    
+			</effect_group>                  
+		</perk>     
+    
+		<perk name="perkmodGunMeleeRadRemoverSchematic" parent="skillMods" max_level="1" base_skill_point_cost="0" name_key="modGunMeleeRadRemover" desc_key="perkmodGunMeleeRadRemoverDesc" icon="ui_game_symbol_misc_crafting">     
+			<effect_group>              
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modGunMeleeRadRemover"/> 
+			</effect_group>    
+		</perk>                  
+     
+		<perk name="perkmodGunMeleeBlessedMetalSchematic" parent="skillMods" max_level="1" base_skill_point_cost="0" name_key="modGunMeleeBlessedMetal" desc_key="perkmodGunMeleeBlessedMetalDesc" icon="ui_game_symbol_misc_crafting">    
+			<effect_group>     
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modGunMeleeBlessedMetal"/>              
+			</effect_group> 
+		</perk>    
+                  
+		<perk name="perkmodMeleeTemperedBladeSchematic" parent="skillMods" max_level="1" base_skill_point_cost="0" name_key="modMeleeTemperedBlade" desc_key="perkmodMeleeTemperedBladeDesc" icon="ui_game_symbol_misc_crafting">     
+			<effect_group>    
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modMeleeTemperedBlade"/>     
+			</effect_group>              
+		</perk> 
+    
+		<perk name="perkmodMeleeSerratedBladeSchematic" parent="skillMods" max_level="1" base_skill_point_cost="0" name_key="modMeleeSerratedBlade" desc_key="perkmodMeleeSerratedBladeDesc" icon="ui_game_symbol_misc_crafting">                  
+			<effect_group>     
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modMeleeSerratedBlade"/>    
+			</effect_group>     
+		</perk>              
+ 
+		<perk name="perkmodMeleeWeightedHeadSchematic" parent="skillMods" max_level="1" base_skill_point_cost="0" name_key="modMeleeWeightedHead" desc_key="perkmodMeleeWeightedHeadDesc" icon="ui_game_symbol_misc_crafting">    
+			<effect_group>                  
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modMeleeWeightedHead"/>     
+			</effect_group>    
+		</perk>     
+              
+		<perk name="perkmodMeleeStructuralBraceSchematic" parent="skillMods" max_level="1" base_skill_point_cost="0" name_key="modMeleeStructuralBrace" desc_key="perkmodMeleeStructuralBraceDesc" icon="ui_game_symbol_misc_crafting"> 
+			<effect_group>    
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modMeleeStructuralBrace"/>                  
+			</effect_group>     
+		</perk>    
+     
+		<perk name="perkmodMeleeErgonomicGripSchematic" parent="skillMods" max_level="1" base_skill_point_cost="0" name_key="modMeleeErgonomicGrip" desc_key="perkmodMeleeErgonomicGripDesc" icon="ui_game_symbol_misc_crafting">              
+			<effect_group> 
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modMeleeErgonomicGrip"/>    
+			</effect_group>                  
+		</perk>     
+    
+		<perk name="perkmodMeleeFortifyingGripSchematic" parent="skillMods" max_level="1" base_skill_point_cost="0" name_key="modMeleeFortifyingGrip" desc_key="perkmodMeleeFortifyingGripDesc" icon="ui_game_symbol_misc_crafting">     
+			<effect_group>              
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modMeleeFortifyingGrip"/> 
+			</effect_group>    
+		</perk>                  
+     
+		<perk name="perkmodMeleeClubBarbedWireSchematic" parent="skillMods" max_level="1" base_skill_point_cost="0" name_key="modMeleeClubBarbedWire" desc_key="perkmodMeleeClubBarbedWireDesc" icon="ui_game_symbol_misc_crafting">    
+			<effect_group>     
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modMeleeClubBarbedWire"/>              
+			</effect_group> 
+		</perk>    
+                  
+		<perk name="perkmodMeleeClubMetalSpikesSchematic" parent="skillMods" max_level="1" base_skill_point_cost="0" name_key="modMeleeClubMetalSpikes" desc_key="perkmodMeleeClubMetalSpikesDesc" icon="ui_game_symbol_misc_crafting">     
+			<effect_group>    
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modMeleeClubMetalSpikes"/>     
+			</effect_group>              
+		</perk> 
+    
+		<perk name="perkmodMeleeClubMetalChainSchematic" parent="skillMods" max_level="1" base_skill_point_cost="0" name_key="modMeleeClubMetalChain" desc_key="perkmodMeleeClubMetalChainDesc" icon="ui_game_symbol_misc_crafting">                  
+			<effect_group>     
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modMeleeClubMetalChain"/>    
+			</effect_group>     
+		</perk>              
+ 
+		<perk name="perkmodMeleeGraveDiggerSchematic" parent="skillMods" max_level="1" base_skill_point_cost="0" name_key="modMeleeGraveDigger" desc_key="perkmodMeleeGraveDiggerDesc" icon="ui_game_symbol_misc_crafting">    
+			<effect_group>                  
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modMeleeGraveDigger"/>     
+			</effect_group>    
+		</perk>     
+              
+		<perk name="perkmodMeleeBunkerBusterSchematic" parent="skillMods" max_level="1" base_skill_point_cost="0" name_key="modMeleeBunkerBuster" desc_key="perkmodMeleeBunkerBusterDesc" icon="ui_game_symbol_misc_crafting"> 
+			<effect_group>    
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modMeleeBunkerBuster"/>                  
+			</effect_group>     
+		</perk>    
+     
+		<perk name="perkmodMeleeIronBreakerSchematic" parent="skillMods" max_level="1" base_skill_point_cost="0" name_key="modMeleeIronBreaker" desc_key="perkmodMeleeIronBreakerDesc" icon="ui_game_symbol_misc_crafting">              
+			<effect_group> 
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modMeleeIronBreaker"/>    
+			</effect_group>                  
+		</perk>     
+    
+		<perk name="perkmodMeleeWoodSplitterSchematic" parent="skillMods" max_level="1" base_skill_point_cost="0" name_key="modMeleeWoodSplitter" desc_key="perkmodMeleeWoodSplitterDesc" icon="ui_game_symbol_misc_crafting">     
+			<effect_group>              
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modMeleeWoodSplitter"/> 
+			</effect_group>    
+		</perk>                  
+     
+		<perk name="perkmodMeleeClubBurningShaftSchematic" parent="skillMods" max_level="1" base_skill_point_cost="0" name_key="modMeleeClubBurningShaft" desc_key="perkmodMeleeClubBurningShaftDesc" icon="ui_game_symbol_misc_crafting">    
+			<effect_group>     
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modMeleeClubBurningShaft"/>              
+			</effect_group> 
+		</perk>    
+                  
+		<perk name="perkmodArmorInsulatedLinerSchematic" parent="skillMods" max_level="1" base_skill_point_cost="0" name_key="modArmorInsulatedLiner" desc_key="perkmodArmorInsulatedLinerDesc" icon="ui_game_symbol_misc_crafting">     
+			<effect_group>    
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modArmorInsulatedLiner"/>     
+			</effect_group>              
+		</perk> 
+    
+		<perk name="perkmodArmorCoolingMeshSchematic" parent="skillMods" max_level="1" base_skill_point_cost="0" name_key="modArmorCoolingMesh" desc_key="perkmodArmorCoolingMeshDesc" icon="ui_game_symbol_misc_crafting">                  
+			<effect_group>     
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modArmorCoolingMesh"/>    
+			</effect_group>     
+		</perk>              
+ 
+		<perk name="perkmodArmorImprovedFittingsSchematic" parent="skillMods" max_level="1" base_skill_point_cost="0" name_key="modArmorImprovedFittings" desc_key="perkmodArmorImprovedFittingsDesc" icon="ui_game_symbol_misc_crafting">    
+			<effect_group>                  
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modArmorImprovedFittings"/>     
+			</effect_group>    
+		</perk>     
+              
+		<perk name="perkmodArmorCustomizedFittingsSchematic" parent="skillMods" max_level="1" base_skill_point_cost="0" name_key="modArmorCustomizedFittings" desc_key="perkmodArmorCustomizedFittingsDesc" icon="ui_game_symbol_misc_crafting"> 
+			<effect_group>    
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modArmorCustomizedFittings"/>                  
+			</effect_group>     
+		</perk>    
+     
+		<perk name="perkmodArmorPlatingBasicSchematic" parent="skillMods" max_level="1" base_skill_point_cost="0" name_key="modArmorPlatingBasic" desc_key="perkmodArmorPlatingBasicDesc" icon="ui_game_symbol_misc_crafting">              
+			<effect_group> 
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modArmorPlatingBasic"/>    
+			</effect_group>                  
+		</perk>     
+    
+		<perk name="perkmodArmorPlatingReinforcedSchematic" parent="skillMods" max_level="1" base_skill_point_cost="0" name_key="modArmorPlatingReinforced" desc_key="perkmodArmorPlatingReinforcedDesc" icon="ui_game_symbol_misc_crafting">     
+			<effect_group>              
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modArmorPlatingReinforced"/> 
+			</effect_group>    
+		</perk>                  
+     
+		<perk name="perkmodArmorStoragePocketSchematic" parent="skillMods" max_level="1" base_skill_point_cost="0" name_key="modArmorStoragePocket" desc_key="perkmodArmorStoragePocketDesc" icon="ui_game_symbol_misc_crafting">    
+			<effect_group>     
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modArmorStoragePocket"/>              
+			</effect_group> 
+		</perk>    
+                  
+		<perk name="perkmodArmorDoubleStoragePocketSchematic" parent="skillMods" max_level="1" base_skill_point_cost="0" name_key="modArmorDoubleStoragePocket" desc_key="perkmodArmorDoubleStoragePocketDesc" icon="ui_game_symbol_misc_crafting">     
+			<effect_group>    
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modArmorDoubleStoragePocket"/>     
+			</effect_group>              
+		</perk> 
+    
+		<perk name="perkmodArmorTripleStoragePocketSchematic" parent="skillMods" max_level="1" base_skill_point_cost="0" name_key="modArmorTripleStoragePocket" desc_key="perkmodArmorTripleStoragePocketDesc" icon="ui_game_symbol_misc_crafting">                  
+			<effect_group>     
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modArmorTripleStoragePocket"/>    
+			</effect_group>     
+		</perk>              
+ 
+		<perk name="perkmodArmorMuffledConnectorsSchematic" parent="skillMods" max_level="1" base_skill_point_cost="0" name_key="modArmorMuffledConnectors" desc_key="perkmodArmorMuffledConnectorsDesc" icon="ui_game_symbol_misc_crafting">    
+			<effect_group>                  
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modArmorMuffledConnectors"/>     
+			</effect_group>    
+		</perk>     
+              
+		<perk name="perkmodArmorAdvancedMuffledConnectorsSchematic" parent="skillMods" max_level="1" base_skill_point_cost="0" name_key="modArmorAdvancedMuffledConnectors" desc_key="perkmodArmorAdvancedMuffledConnectorsDesc" icon="ui_game_symbol_misc_crafting"> 
+			<effect_group>    
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modArmorAdvancedMuffledConnectors"/>                  
+			</effect_group>     
+		</perk>    
+     
+		<perk name="perkmodArmorImpactBracingSchematic" parent="skillMods" max_level="1" base_skill_point_cost="0" name_key="modArmorImpactBracing" desc_key="perkmodArmorImpactBracingDesc" icon="ui_game_symbol_misc_crafting">              
+			<effect_group> 
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modArmorImpactBracing"/>    
+			</effect_group>                  
+		</perk>     
+    
+		<perk name="perkmodArmorBandolierSchematic" parent="skillMods" max_level="1" base_skill_point_cost="0" name_key="modArmorBandolier" desc_key="perkmodArmorBandolierDesc" icon="ui_game_symbol_misc_crafting">     
+			<effect_group>              
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modArmorBandolier"/> 
+			</effect_group>    
+		</perk>                  
+     
+		<perk name="perkmodArmorWaterPurifierSchematic" parent="skillMods" max_level="1" base_skill_point_cost="0" name_key="modArmorWaterPurifier" desc_key="perkmodArmorWaterPurifierDesc" icon="ui_game_symbol_misc_crafting">    
+			<effect_group>     
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modArmorWaterPurifier"/>              
+			</effect_group> 
+		</perk>    
+                  
+		<perk name="perkmodArmorHelmetLightSchematic" parent="skillMods" max_level="1" base_skill_point_cost="0" name_key="modArmorHelmetLight" desc_key="perkmodArmorHelmetLightDesc" icon="ui_game_symbol_misc_crafting">     
+			<effect_group>    
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modArmorHelmetLight"/>     
+			</effect_group>              
+		</perk> 
+    
+		<perk name="perkmodFuelTankSmallSchematic" parent="skillMods" max_level="1" base_skill_point_cost="0" name_key="modFuelTankSmall" desc_key="perkmodFuelTankSmallDesc" icon="ui_game_symbol_misc_crafting">                  
+			<effect_group>     
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modFuelTankSmall"/>    
+			</effect_group>     
+		</perk>              
+ 
+		<perk name="perkmodFuelTankLargeSchematic" parent="skillMods" max_level="1" base_skill_point_cost="0" name_key="modFuelTankLarge" desc_key="perkmodFuelTankLargeDesc" icon="ui_game_symbol_misc_crafting">    
+			<effect_group>                  
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modFuelTankLarge"/>     
+			</effect_group>    
+		</perk>     
+              
+		<perk name="perkmodYoureFiredSchematic" parent="skillMods" max_level="1" base_skill_point_cost="0" name_key="modYoureFired" desc_key="perkmodYoureFiredDesc" icon="ui_game_symbol_misc_crafting"> 
+			<effect_group>    
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modYoureFired"/>                  
+			</effect_group>     
+		</perk>    
+     
+		<perk name="perkammoGasCanSchematic" parent="skillVehiclesMisc" max_level="1" base_skill_point_cost="0" name_key="ammoGasCan" desc_key="perkammoGasCanDesc" icon="ui_game_symbol_service">              
+			<effect_group> 
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammoGasCan"/>    
+			</effect_group>                  
+		</perk>     
+    
+		<perk name="perkresourceOilSchematic" parent="skillVehiclesMisc" max_level="1" base_skill_point_cost="0" name_key="resourceOil" desc_key="perkresourceOilDesc" icon="ui_game_symbol_service">     
+			<effect_group>              
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="resourceOil"/> 
+			</effect_group>    
+		</perk>                  
+     
+		<perk name="perkdrugAntibioticsSchematic" parent="skillMedical" max_level="1" base_skill_point_cost="0" name_key="drugAntibiotics" desc_key="perkdrugAntibioticsDesc" icon="ui_game_symbol_medical">    
+			<effect_group>     
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="drugAntibiotics"/>              
+			</effect_group> 
+		</perk>    
+                  
+		<perk name="perkdrugHerbalAntibioticsSchematic" parent="skillMedical" max_level="1" base_skill_point_cost="0" name_key="drugHerbalAntibiotics" desc_key="perkdrugHerbalAntibioticsDesc" icon="ui_game_symbol_medical">     
+			<effect_group>    
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="drugHerbalAntibiotics"/>     
+			</effect_group>              
+		</perk> 
+    
+		<perk name="perkfoodCanShamSchematic" parent="skillCooking" max_level="1" base_skill_point_cost="0" name_key="foodCanSham" desc_key="perkfoodCanShamDesc" icon="ui_game_symbol_cookware">                  
+			<effect_group>     
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="foodCanSham"/>    
+			</effect_group>     
+		</perk>              
+ 
+		<perk name="perkdrinkJarBeerSchematic" parent="skillDrinks" max_level="1" base_skill_point_cost="0" name_key="drinkJarBeer" desc_key="perkdrinkJarBeerDesc" icon="ui_game_symbol_tea">    
+			<effect_group>                  
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="drinkJarBeer"/>     
+			</effect_group>    
+		</perk>     
+              
+		<perk name="perkdrinkJarCoffeeSchematic" parent="skillDrinks" max_level="1" base_skill_point_cost="0" name_key="drinkJarCoffee" desc_key="perkdrinkJarCoffeeDesc" icon="ui_game_symbol_tea"> 
+			<effect_group>    
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="drinkJarCoffee"/>                  
+			</effect_group>     
+		</perk>    
+     
+		<perk name="perkdrinkJarGoldenRodTeaSchematic" parent="skillDrinks" max_level="1" base_skill_point_cost="0" name_key="drinkJarGoldenRodTea" desc_key="perkdrinkJarGoldenRodTeaDesc" icon="ui_game_symbol_tea">              
+			<effect_group> 
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="drinkJarGoldenRodTea"/>    
+			</effect_group>                  
+		</perk>     
+    
+		<perk name="perkdrinkJarGrandpasAwesomeSauceSchematic" parent="skillDrinks" max_level="1" base_skill_point_cost="0" name_key="drinkJarGrandpasAwesomeSauce" desc_key="perkdrinkJarGrandpasAwesomeSauceDesc" icon="ui_game_symbol_tea">     
+			<effect_group>              
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="drinkJarGrandpasAwesomeSauce"/> 
+			</effect_group>    
+		</perk>                  
+     
+		<perk name="perkdrinkJarGrandpasLearningElixirSchematic" parent="skillDrinks" max_level="1" base_skill_point_cost="0" name_key="drinkJarGrandpasLearningElixir" desc_key="perkdrinkJarGrandpasLearningElixirDesc" icon="ui_game_symbol_tea">    
+			<effect_group>     
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="drinkJarGrandpasLearningElixir"/>              
+			</effect_group> 
+		</perk>    
+                  
+		<perk name="perkdrinkJarGrandpasMoonshineSchematic" parent="skillDrinks" max_level="1" base_skill_point_cost="0" name_key="drinkJarGrandpasMoonshine" desc_key="perkdrinkJarGrandpasMoonshineDesc" icon="ui_game_symbol_tea">     
+			<effect_group>    
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="drinkJarGrandpasMoonshine"/>     
+			</effect_group>              
+		</perk> 
+    
+		<perk name="perkdrinkJarRedTeaSchematic" parent="skillDrinks" max_level="1" base_skill_point_cost="0" name_key="drinkJarRedTea" desc_key="perkdrinkJarRedTeaDesc" icon="ui_game_symbol_tea">                  
+			<effect_group>     
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="drinkJarRedTea"/>    
+			</effect_group>     
+		</perk>              
+ 
+		<perk name="perkdrinkYuccaJuiceSmoothieSchematic" parent="skillDrinks" max_level="1" base_skill_point_cost="0" name_key="drinkYuccaJuiceSmoothie" desc_key="perkdrinkYuccaJuiceSmoothieDesc" icon="ui_game_symbol_tea">    
+			<effect_group>                  
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="drinkYuccaJuiceSmoothie"/>     
+			</effect_group>    
+		</perk>     
+              
+		<perk name="perkfoodBaconAndEggsSchematic" parent="skillCooking" max_level="1" base_skill_point_cost="0" name_key="foodBaconAndEggs" desc_key="perkfoodBaconAndEggsDesc" icon="ui_game_symbol_cookware"> 
+			<effect_group>    
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="foodBaconAndEggs"/>                  
+			</effect_group>     
+		</perk>    
+     
+		<perk name="perkfoodBakedPotatoSchematic" parent="skillCooking" max_level="1" base_skill_point_cost="0" name_key="foodBakedPotato" desc_key="perkfoodBakedPotatoDesc" icon="ui_game_symbol_cookware">              
+			<effect_group> 
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="foodBakedPotato"/>    
+			</effect_group>                  
+		</perk>     
+    
+		<perk name="perkfoodBlueberryPieSchematic" parent="skillCooking" max_level="1" base_skill_point_cost="0" name_key="foodBlueberryPie" desc_key="perkfoodBlueberryPieDesc" icon="ui_game_symbol_cookware">     
+			<effect_group>              
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="foodBlueberryPie"/> 
+			</effect_group>    
+		</perk>                  
+     
+		<perk name="perkfoodPumpkinPieSchematic" parent="skillCooking" max_level="1" base_skill_point_cost="0" name_key="foodPumpkinPie" desc_key="perkfoodPumpkinPieDesc" icon="ui_game_symbol_cookware">    
+			<effect_group>     
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="foodPumpkinPie"/>              
+			</effect_group> 
+		</perk>    
+                  
+		<perk name="perkfoodPumpkinCheesecakeSchematic" parent="skillCooking" max_level="1" base_skill_point_cost="0" name_key="foodPumpkinCheesecake" desc_key="perkfoodPumpkinCheesecakeDesc" icon="ui_game_symbol_cookware">     
+			<effect_group>    
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="foodPumpkinCheesecake"/>     
+			</effect_group>              
+		</perk> 
+    
+		<perk name="perkfoodPumpkinBreadSchematic" parent="skillCooking" max_level="1" base_skill_point_cost="0" name_key="foodPumpkinBread" desc_key="perkfoodPumpkinBreadDesc" icon="ui_game_symbol_cookware">                  
+			<effect_group>     
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="foodPumpkinBread"/>    
+			</effect_group>     
+		</perk>              
+ 
+		<perk name="perkfoodBoiledMeatSchematic" parent="skillCooking" max_level="1" base_skill_point_cost="0" name_key="foodBoiledMeat" desc_key="perkfoodBoiledMeatDesc" icon="ui_game_symbol_cookware">    
+			<effect_group>                  
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="foodBoiledMeat"/>     
+			</effect_group>    
+		</perk>     
+              
+		<perk name="perkfoodChiliDogSchematic" parent="skillCooking" max_level="1" base_skill_point_cost="0" name_key="foodChiliDog" desc_key="perkfoodChiliDogDesc" icon="ui_game_symbol_cookware"> 
+			<effect_group>    
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="foodChiliDog"/>                  
+			</effect_group>     
+		</perk>    
+     
+		<perk name="perkfoodCornBreadSchematic" parent="skillCooking" max_level="1" base_skill_point_cost="0" name_key="foodCornBread" desc_key="perkfoodCornBreadDesc" icon="ui_game_symbol_cookware">              
+			<effect_group> 
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="foodCornBread"/>    
+			</effect_group>                  
+		</perk>     
+    
+		<perk name="perkfoodCornOnTheCobSchematic" parent="skillCooking" max_level="1" base_skill_point_cost="0" name_key="foodCornOnTheCob" desc_key="perkfoodCornOnTheCobDesc" icon="ui_game_symbol_cookware">     
+			<effect_group>              
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="foodCornOnTheCob"/> 
+			</effect_group>    
+		</perk>                  
+     
+		<perk name="perkfoodFishTacosSchematic" parent="skillCooking" max_level="1" base_skill_point_cost="0" name_key="foodFishTacos" desc_key="perkfoodFishTacosDesc" icon="ui_game_symbol_cookware">    
+			<effect_group>     
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="foodFishTacos"/>              
+			</effect_group> 
+		</perk>    
+                  
+		<perk name="perkfoodGrilledMeatSchematic" parent="skillCooking" max_level="1" base_skill_point_cost="0" name_key="foodGrilledMeat" desc_key="perkfoodGrilledMeatDesc" icon="ui_game_symbol_cookware">     
+			<effect_group>    
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="foodGrilledMeat"/>     
+			</effect_group>              
+		</perk> 
+    
+		<perk name="perkfoodHoboStewSchematic" parent="skillCooking" max_level="1" base_skill_point_cost="0" name_key="foodHoboStew" desc_key="perkfoodHoboStewDesc" icon="ui_game_symbol_cookware">                  
+			<effect_group>     
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="foodHoboStew"/>    
+			</effect_group>     
+		</perk>              
+ 
+		<perk name="perkfoodMeatStewSchematic" parent="skillCooking" max_level="1" base_skill_point_cost="0" name_key="foodMeatStew" desc_key="perkfoodMeatStewDesc" icon="ui_game_symbol_cookware">    
+			<effect_group>                  
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="foodMeatStew"/>     
+			</effect_group>    
+		</perk>     
+              
+		<perk name="perkfoodShamChowderSchematic" parent="skillCooking" max_level="1" base_skill_point_cost="0" name_key="foodShamChowder" desc_key="perkfoodShamChowderDesc" icon="ui_game_symbol_cookware"> 
+			<effect_group>    
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="foodShamChowder"/>                  
+			</effect_group>     
+		</perk>    
+     
+		<perk name="perkfoodSteakAndPotatoSchematic" parent="skillCooking" max_level="1" base_skill_point_cost="0" name_key="foodSteakAndPotato" desc_key="perkfoodSteakAndPotatoDesc" icon="ui_game_symbol_cookware">              
+			<effect_group> 
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="foodSteakAndPotato"/>    
+			</effect_group>                  
+		</perk>     
+    
+		<perk name="perkfoodVegetableStewSchematic" parent="skillCooking" max_level="1" base_skill_point_cost="0" name_key="foodVegetableStew" desc_key="perkfoodVegetableStewDesc" icon="ui_game_symbol_cookware">     
+			<effect_group>              
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="foodVegetableStew"/> 
+			</effect_group>    
+		</perk>                  
+     
+		<perk name="perkplantedAloe1Schematic" parent="skillAgriculture" max_level="1" base_skill_point_cost="0" name_key="plantedAloe1" desc_key="perkplantedAloe1Desc" icon="ui_game_symbol_tree">    
+			<effect_group>     
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="plantedAloe1"/>              
+			</effect_group> 
+		</perk>    
+                  
+		<perk name="perkplantedBlueberry1Schematic" parent="skillAgriculture" max_level="1" base_skill_point_cost="0" name_key="plantedBlueberry1" desc_key="perkplantedBlueberry1Desc" icon="ui_game_symbol_tree">     
+			<effect_group>    
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="plantedBlueberry1"/>     
+			</effect_group>              
+		</perk> 
+    
+		<perk name="perkplantedChrysanthemum1Schematic" parent="skillAgriculture" max_level="1" base_skill_point_cost="0" name_key="plantedChrysanthemum1" desc_key="perkplantedChrysanthemum1Desc" icon="ui_game_symbol_tree">                  
+			<effect_group>     
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="plantedChrysanthemum1"/>    
+			</effect_group>     
+		</perk>              
+ 
+		<perk name="perkplantedCoffee1Schematic" parent="skillAgriculture" max_level="1" base_skill_point_cost="0" name_key="plantedCoffee1" desc_key="perkplantedCoffee1Desc" icon="ui_game_symbol_tree">    
+			<effect_group>                  
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="plantedCoffee1"/>     
+			</effect_group>    
+		</perk>     
+              
+		<perk name="perkplantedCorn1Schematic" parent="skillAgriculture" max_level="1" base_skill_point_cost="0" name_key="plantedCorn1" desc_key="perkplantedCorn1Desc" icon="ui_game_symbol_tree"> 
+			<effect_group>    
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="plantedCorn1"/>                  
+			</effect_group>     
+		</perk>    
+     
+		<perk name="perkplantedCotton1Schematic" parent="skillAgriculture" max_level="1" base_skill_point_cost="0" name_key="plantedCotton1" desc_key="perkplantedCotton1Desc" icon="ui_game_symbol_tree">              
+			<effect_group> 
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="plantedCotton1"/>    
+			</effect_group>                  
+		</perk>     
+    
+		<perk name="perkplantedGoldenrod1Schematic" parent="skillAgriculture" max_level="1" base_skill_point_cost="0" name_key="plantedGoldenrod1" desc_key="perkplantedGoldenrod1Desc" icon="ui_game_symbol_tree">     
+			<effect_group>              
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="plantedGoldenrod1"/> 
+			</effect_group>    
+		</perk>                  
+     
+		<perk name="perkplantedGraceCorn1Schematic" parent="skillAgriculture" max_level="1" base_skill_point_cost="0" name_key="plantedGraceCorn1" desc_key="perkplantedGraceCorn1Desc" icon="ui_game_symbol_tree">    
+			<effect_group>     
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="plantedGraceCorn1"/>              
+			</effect_group> 
+		</perk>    
+                  
+		<perk name="perkplantedHop1Schematic" parent="skillAgriculture" max_level="1" base_skill_point_cost="0" name_key="plantedHop1" desc_key="perkplantedHop1Desc" icon="ui_game_symbol_tree">     
+			<effect_group>    
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="plantedHop1"/>     
+			</effect_group>              
+		</perk> 
+    
+		<perk name="perkplantedMushroom1Schematic" parent="skillAgriculture" max_level="1" base_skill_point_cost="0" name_key="plantedMushroom1" desc_key="perkplantedMushroom1Desc" icon="ui_game_symbol_tree">                  
+			<effect_group>     
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="plantedMushroom1"/>    
+			</effect_group>     
+		</perk>              
+ 
+		<perk name="perkplantedPotato1Schematic" parent="skillAgriculture" max_level="1" base_skill_point_cost="0" name_key="plantedPotato1" desc_key="perkplantedPotato1Desc" icon="ui_game_symbol_tree">    
+			<effect_group>                  
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="plantedPotato1"/>     
+			</effect_group>    
+		</perk>     
+              
+		<perk name="perkplantedYucca1Schematic" parent="skillAgriculture" max_level="1" base_skill_point_cost="0" name_key="plantedYucca1" desc_key="perkplantedYucca1Desc" icon="ui_game_symbol_tree"> 
+			<effect_group>    
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="plantedYucca1"/>                  
+			</effect_group>     
+		</perk>    
+     
+		<perk name="perkplantedPumpkin1Schematic" parent="skillAgriculture" max_level="1" base_skill_point_cost="0" name_key="plantedPumpkin1" desc_key="perkplantedPumpkin1Desc" icon="ui_game_symbol_tree">              
+			<effect_group> 
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="plantedPumpkin1"/>    
+			</effect_group>                  
+		</perk>     
+    
+	</insertAfter>     
+              
+	<!-- Vanilla Progression triggers? --> 
+<append xpath="/progression/perks/perk[@name='perkDeadEye']/effect_group">    
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkgunHuntingRifleSchematic" level="-1">                  
+		<requirement name="ProgressionLevel" progression_name="perkgunHuntingRifleSchematic" operation="LT" value="1"/>     
+	</triggered_effect>    
+</append>     
+              
+<append xpath="/progression/perks/perk[@name='perkDemolitionsExpert']/effect_group"> 
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkthrownAmmoPipeBombSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkthrownAmmoPipeBombSchematic" operation="LT" value="1"/>                  
+		<requirement name="ProgressionLevel" progression_name="perkDemolitionsExpert" operation="GTE" value="1"/>     
+	</triggered_effect>    
+	<!-- -->     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkthrownDynamiteSchematic" level="-1">              
+		<requirement name="ProgressionLevel" progression_name="perkthrownDynamiteSchematic" operation="LT" value="1"/> 
+		<requirement name="ProgressionLevel" progression_name="perkDemolitionsExpert" operation="GTE" value="2"/>    
+	</triggered_effect>                  
+	<!-- -->     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkthrownGrenadeSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkthrownGrenadeSchematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkDemolitionsExpert" operation="GTE" value="3"/>              
+	</triggered_effect> 
+	<!-- -->    
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkgunRocketLauncherSchematic" level="-1">                  
+		<requirement name="ProgressionLevel" progression_name="perkgunRocketLauncherSchematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkDemolitionsExpert" operation="GTE" value="4"/>    
+	</triggered_effect>     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkammoRocketHESchematic" level="-1">              
+		<requirement name="ProgressionLevel" progression_name="perkammoRocketHESchematic" operation="LT" value="1"/> 
+		<requirement name="ProgressionLevel" progression_name="perkDemolitionsExpert" operation="GTE" value="4"/>    
+	</triggered_effect>                  
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkammoRocketFragSchematic" level="-1">     
+		<requirement name="ProgressionLevel" progression_name="perkammoRocketFragSchematic" operation="LT" value="1"/>    
+		<requirement name="ProgressionLevel" progression_name="perkDemolitionsExpert" operation="GTE" value="4"/>     
+	</triggered_effect>              
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkresourceRocketTipSchematic" level="-1"> 
+		<requirement name="ProgressionLevel" progression_name="perkresourceRocketTipSchematic" operation="LT" value="1"/>    
+		<requirement name="ProgressionLevel" progression_name="perkDemolitionsExpert" operation="GTE" value="4"/>                  
+	</triggered_effect>     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkresourceRocketCasingSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkresourceRocketCasingSchematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkDemolitionsExpert" operation="GTE" value="4"/>              
+	</triggered_effect> 
+	<!-- -->    
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkthrownGrenadeContactSchematic" level="-1">                  
+		<requirement name="ProgressionLevel" progression_name="perkthrownGrenadeContactSchematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkDemolitionsExpert" operation="GTE" value="5"/>    
+	</triggered_effect>     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkthrownTimedChargeSchematic" level="-1">              
+		<requirement name="ProgressionLevel" progression_name="perkthrownTimedChargeSchematic" operation="LT" value="1"/> 
+		<requirement name="ProgressionLevel" progression_name="perkDemolitionsExpert" operation="GTE" value="5"/>    
+	</triggered_effect>                  
+</append>     
+    
+<append xpath="/progression/perks/perk[@name='perkJavelinMaster']/effect_group">     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkresourceLockPickSchematic" level="-1">              
+		<requirement name="ProgressionLevel" progression_name="perkresourceLockPickSchematic" operation="LT" value="1"/> 
+		<requirement name="ProgressionLevel" progression_name="perkJavelinMaster" operation="GTE" value="1"/>    
+	</triggered_effect>                  
+</append>     
+    
+<append xpath="/progression/perks/perk[@name='perkLockPicking']/effect_group">     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkmeleeThrownSpearIronSchematic" level="-1">              
+		<requirement name="ProgressionLevel" progression_name="perkmeleeThrownSpearIronSchematic" operation="LT" value="1"/> 
+		<requirement name="ProgressionLevel" progression_name="perkLockPicking" operation="GTE" value="1"/>    
+	</triggered_effect>                  
+</append>     
+    
+<append xpath="/progression/perks/perk[@name='perkSalvageOperations']/effect_group">     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkmeleeToolWrenchSchematic" level="-1">              
+		<requirement name="ProgressionLevel" progression_name="perkmeleeToolWrenchSchematic" operation="LT" value="1"/> 
+		<requirement name="ProgressionLevel" progression_name="perkSalvageOperations" operation="GTE" value="1"/>    
+	</triggered_effect>                  
+</append>     
+    
+<append xpath="/progression/perks/perk[@name='perkBoomstick']/effect_group">     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkgunDoubleBarrelShotgunSchematic" level="-1">              
+		<requirement name="ProgressionLevel" progression_name="perkgunDoubleBarrelShotgunSchematic" operation="LT" value="1"/> 
+		<requirement name="ProgressionLevel" progression_name="perkBoomstick" operation="GTE" value="1"/>    
+	</triggered_effect>                  
+</append>     
+    
+<append xpath="/progression/perks/perk[@name='perkPummelPete']/effect_group">     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkmeleeClubIronSchematic" level="-1">              
+		<requirement name="ProgressionLevel" progression_name="perkmeleeClubIronSchematic" operation="LT" value="1"/> 
+		<requirement name="ProgressionLevel" progression_name="perkPummelPete" operation="GTE" value="1"/>    
+	</triggered_effect>                  
+</append>     
+    
+<append xpath="/progression/perks/perk[@name='perkSkullCrusher']/effect_group">     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkmeleeToolSledgehammerIronSchematic" level="-1">              
+		<requirement name="ProgressionLevel" progression_name="perkmeleeToolSledgehammerIronSchematic" operation="LT" value="1"/> 
+		<requirement name="ProgressionLevel" progression_name="perkSkullCrusher" operation="GTE" value="1"/>    
+	</triggered_effect>                  
+</append>     
+    
+     
+<append xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group">              
+	<!-- lvl 1 --> 
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkfoodBaconAndEggsSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkfoodBaconAndEggsSchematic" operation="LT" value="1"/>                  
+		<requirement name="ProgressionLevel" progression_name="perkMasterChef" operation="GTE" value="1"/>     
+	</triggered_effect>    
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkfoodBaconAndEggsSchematic" level="-1">     
+		<requirement name="ProgressionLevel" progression_name="perkfoodBaconAndEggsSchematic" operation="LT" value="1"/>              
+		<requirement name="ProgressionLevel" progression_name="perkMasterChef" operation="GTE" value="1"/> 
+	</triggered_effect>    
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkfoodGrilledMeatSchematic" level="-1">                  
+		<requirement name="ProgressionLevel" progression_name="perkfoodGrilledMeatSchematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkMasterChef" operation="GTE" value="1"/>    
+	</triggered_effect>     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkfoodBakedPotatoSchematic" level="-1">              
+		<requirement name="ProgressionLevel" progression_name="perkfoodBakedPotatoSchematic" operation="LT" value="1"/> 
+		<requirement name="ProgressionLevel" progression_name="perkMasterChef" operation="GTE" value="1"/>    
+	</triggered_effect>                  
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkfoodCornBreadSchematic" level="-1">     
+		<requirement name="ProgressionLevel" progression_name="perkfoodCornBreadSchematic" operation="LT" value="1"/>    
+		<requirement name="ProgressionLevel" progression_name="perkMasterChef" operation="GTE" value="1"/>     
+	</triggered_effect>              
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkfoodCornOnTheCobSchematic" level="-1"> 
+		<requirement name="ProgressionLevel" progression_name="perkfoodCornOnTheCobSchematic" operation="LT" value="1"/>    
+		<requirement name="ProgressionLevel" progression_name="perkMasterChef" operation="GTE" value="1"/>                  
+	</triggered_effect>     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkdrinkJarRedTeaSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkdrinkJarRedTeaSchematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkMasterChef" operation="GTE" value="1"/>              
+	</triggered_effect> 
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkdrinkJarCoffeeSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkdrinkJarCoffeeSchematic" operation="LT" value="1"/>                  
+		<requirement name="ProgressionLevel" progression_name="perkMasterChef" operation="GTE" value="1"/>     
+	</triggered_effect>    
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkdrinkJarGoldenRodTeaSchematic" level="-1">     
+		<requirement name="ProgressionLevel" progression_name="perkdrinkJarGoldenRodTeaSchematic" operation="LT" value="1"/>              
+		<requirement name="ProgressionLevel" progression_name="perkMasterChef" operation="GTE" value="1"/> 
+	</triggered_effect>    
+	<!-- lvl 2 -->                  
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkfoodSteakAndPotatoSchematic" level="-1">     
+		<requirement name="ProgressionLevel" progression_name="perkfoodSteakAndPotatoSchematic" operation="LT" value="1"/>    
+		<requirement name="ProgressionLevel" progression_name="perkMasterChef" operation="GTE" value="2"/>     
+	</triggered_effect>              
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkfoodPumpkinPieSchematic" level="-1"> 
+		<requirement name="ProgressionLevel" progression_name="perkfoodPumpkinPieSchematic" operation="LT" value="1"/>    
+		<requirement name="ProgressionLevel" progression_name="perkMasterChef" operation="GTE" value="2"/>                  
+	</triggered_effect>     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkfoodBlueberryPieSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkfoodBlueberryPieSchematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkMasterChef" operation="GTE" value="2"/>              
+	</triggered_effect> 
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkfoodMeatStewSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkfoodMeatStewSchematic" operation="LT" value="1"/>                  
+		<requirement name="ProgressionLevel" progression_name="perkMasterChef" operation="GTE" value="2"/>     
+	</triggered_effect>    
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkfoodVegetableStewSchematic" level="-1">     
+		<requirement name="ProgressionLevel" progression_name="perkfoodVegetableStewSchematic" operation="LT" value="1"/>              
+		<requirement name="ProgressionLevel" progression_name="perkMasterChef" operation="GTE" value="2"/> 
+	</triggered_effect>    
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkfoodPumpkinCheesecakeSchematic" level="-1">                  
+		<requirement name="ProgressionLevel" progression_name="perkfoodPumpkinCheesecakeSchematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkMasterChef" operation="GTE" value="2"/>    
+	</triggered_effect>     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkfoodPumpkinBreadSchematic" level="-1">              
+		<requirement name="ProgressionLevel" progression_name="perkfoodPumpkinBreadSchematic" operation="LT" value="1"/> 
+		<requirement name="ProgressionLevel" progression_name="perkMasterChef" operation="GTE" value="2"/>    
+	</triggered_effect>                  
+	<!-- lvl 3 -->     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkfoodShamChowderSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkfoodShamChowderSchematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkMasterChef" operation="GTE" value="3"/>              
+	</triggered_effect> 
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkfoodHoboStewSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkfoodHoboStewSchematic" operation="LT" value="1"/>                  
+		<requirement name="ProgressionLevel" progression_name="perkMasterChef" operation="GTE" value="3"/>     
+	</triggered_effect>    
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkfoodFishTacosSchematic" level="-1">     
+		<requirement name="ProgressionLevel" progression_name="perkfoodFishTacosSchematic" operation="LT" value="1"/>              
+		<requirement name="ProgressionLevel" progression_name="perkMasterChef" operation="GTE" value="3"/> 
+	</triggered_effect>    
+	<!-- lvl 4 -->                  
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkdrinkYuccaJuiceSmoothieSchematic" level="-1">     
+		<requirement name="ProgressionLevel" progression_name="perkdrinkYuccaJuiceSmoothieSchematic" operation="LT" value="1"/>    
+		<requirement name="ProgressionLevel" progression_name="perkMasterChef" operation="GTE" value="4"/>     
+	</triggered_effect>              
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkfoodChiliDogSchematic" level="-1"> 
+		<requirement name="ProgressionLevel" progression_name="perkfoodChiliDogSchematic" operation="LT" value="1"/>    
+		<requirement name="ProgressionLevel" progression_name="perkMasterChef" operation="GTE" value="4"/>                  
+	</triggered_effect>     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkdrinkJarBeerSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkdrinkJarBeerSchematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkMasterChef" operation="GTE" value="4"/>              
+	</triggered_effect> 
+	<!-- lvl 5 -->    
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkdrinkJarGrandpasMoonshineSchematic" level="-1">                  
+		<requirement name="ProgressionLevel" progression_name="perkdrinkJarGrandpasMoonshineSchematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkMasterChef" operation="GTE" value="5"/>    
+	</triggered_effect>     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkdrinkJarGrandpasAwesomeSauceSchematic" level="-1">              
+		<requirement name="ProgressionLevel" progression_name="perkdrinkJarGrandpasAwesomeSauceSchematic" operation="LT" value="1"/> 
+		<requirement name="ProgressionLevel" progression_name="perkMasterChef" operation="GTE" value="5"/>    
+	</triggered_effect>                  
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkdrinkJarGrandpasLearningElixirSchematic" level="-1">     
+		<requirement name="ProgressionLevel" progression_name="perkdrinkJarGrandpasLearningElixirSchematic" operation="LT" value="1"/>    
+		<requirement name="ProgressionLevel" progression_name="perkMasterChef" operation="GTE" value="5"/>     
+	</triggered_effect>              
+</append> 
+    
+<append xpath="/progression/perks/perk[@name='perkMiner69r']/effect_group">                  
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkmeleeToolClawHammerSchematic" level="-1">     
+		<requirement name="ProgressionLevel" progression_name="perkmeleeToolClawHammerSchematic" operation="LT" value="1"/>    
+		<requirement name="ProgressionLevel" progression_name="perkMiner69r" operation="GTE" value="1"/>     
+	</triggered_effect>              
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkmeleeToolFireaxeIronSchematic" level="-1"> 
+		<requirement name="ProgressionLevel" progression_name="perkmeleeToolFireaxeIronSchematic" operation="LT" value="1"/>    
+		<requirement name="ProgressionLevel" progression_name="perkMiner69r" operation="GTE" value="1"/>                  
+	</triggered_effect>     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkmeleeToolPickaxeIronSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkmeleeToolPickaxeIronSchematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkMiner69r" operation="GTE" value="1"/>              
+	</triggered_effect> 
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkmeleeToolShovelIronSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkmeleeToolShovelIronSchematic" operation="LT" value="1"/>                  
+		<requirement name="ProgressionLevel" progression_name="perkMiner69r" operation="GTE" value="1"/>     
+	</triggered_effect>    
+</append>     
+              
+<append xpath="/progression/perks/perk[@name='perkBrawler']/effect_group[3]"> 
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkmeleeKnucklesIronSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkmeleeKnucklesIronSchematic" operation="LT" value="1"/>                  
+		<requirement name="ProgressionLevel" progression_name="perkBrawler" operation="GTE" value="1"/>     
+	</triggered_effect>    
+</append>     
+              
+<append xpath="/progression/perks/perk[@name='perkMachineGunner']/effect_group"> 
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkgunAK47Schematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkgunAK47Schematic" operation="LT" value="1"/>                  
+		<requirement name="ProgressionLevel" progression_name="perkMachineGunner" operation="GTE" value="1"/>     
+	</triggered_effect>    
+</append>     
+              
+<append xpath="/progression/perks/perk[@name='perkHeavyArmor']/effect_group"> 
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkarmorIronHelmetSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkarmorIronHelmetSchematic" operation="LT" value="1"/>                  
+		<requirement name="ProgressionLevel" progression_name="perkHeavyArmor" operation="GTE" value="1"/>     
+	</triggered_effect>    
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkarmorIronChestSchematic" level="-1">     
+		<requirement name="ProgressionLevel" progression_name="perkarmorIronChestSchematic" operation="LT" value="1"/>              
+		<requirement name="ProgressionLevel" progression_name="perkHeavyArmor" operation="GTE" value="1"/> 
+	</triggered_effect>    
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkarmorIronGlovesSchematic" level="-1">                  
+		<requirement name="ProgressionLevel" progression_name="perkarmorIronGlovesSchematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkHeavyArmor" operation="GTE" value="1"/>    
+	</triggered_effect>     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkarmorIronLegsSchematic" level="-1">              
+		<requirement name="ProgressionLevel" progression_name="perkarmorIronLegsSchematic" operation="LT" value="1"/> 
+		<requirement name="ProgressionLevel" progression_name="perkHeavyArmor" operation="GTE" value="1"/>    
+	</triggered_effect>                  
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkarmorIronBootsSchematic" level="-1">     
+		<requirement name="ProgressionLevel" progression_name="perkarmorIronBootsSchematic" operation="LT" value="1"/>    
+		<requirement name="ProgressionLevel" progression_name="perkHeavyArmor" operation="GTE" value="1"/>     
+	</triggered_effect>              
+</append> 
+    
+<append xpath="/progression/perks/perk[@name='perkLivingOffTheLand']/effect_group[2]">                  
+	<!-- lvl 2 -->     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkplantedAloe1Schematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkplantedAloe1Schematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkLivingOffTheLand" operation="GTE" value="2"/>              
+	</triggered_effect> 
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkplantedChrysanthemum1Schematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkplantedChrysanthemum1Schematic" operation="LT" value="1"/>                  
+		<requirement name="ProgressionLevel" progression_name="perkLivingOffTheLand" operation="GTE" value="2"/>     
+	</triggered_effect>    
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkplantedGoldenrod1Schematic" level="-1">     
+		<requirement name="ProgressionLevel" progression_name="perkplantedGoldenrod1Schematic" operation="LT" value="1"/>              
+		<requirement name="ProgressionLevel" progression_name="perkLivingOffTheLand" operation="GTE" value="2"/> 
+	</triggered_effect>    
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkplantedYucca1Schematic" level="-1">                  
+		<requirement name="ProgressionLevel" progression_name="perkplantedYucca1Schematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkLivingOffTheLand" operation="GTE" value="2"/>    
+	</triggered_effect>     
+	<!-- lvl 3 -->              
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkplantedBlueberry1Schematic" level="-1"> 
+		<requirement name="ProgressionLevel" progression_name="perkplantedBlueberry1Schematic" operation="LT" value="1"/>    
+		<requirement name="ProgressionLevel" progression_name="perkLivingOffTheLand" operation="GTE" value="3"/>                  
+	</triggered_effect>     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkplantedCoffee1Schematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkplantedCoffee1Schematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkLivingOffTheLand" operation="GTE" value="3"/>              
+	</triggered_effect> 
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkplantedCorn1Schematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkplantedCorn1Schematic" operation="LT" value="1"/>                  
+		<requirement name="ProgressionLevel" progression_name="perkLivingOffTheLand" operation="GTE" value="3"/>     
+	</triggered_effect>    
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkplantedCotton1Schematic" level="-1">     
+		<requirement name="ProgressionLevel" progression_name="perkplantedCotton1Schematic" operation="LT" value="1"/>              
+		<requirement name="ProgressionLevel" progression_name="perkLivingOffTheLand" operation="GTE" value="3"/> 
+	</triggered_effect>    
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkplantedMushroom1Schematic" level="-1">                  
+		<requirement name="ProgressionLevel" progression_name="perkplantedMushroom1Schematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkLivingOffTheLand" operation="GTE" value="3"/>    
+	</triggered_effect>     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkplantedPotato1Schematic" level="-1">              
+		<requirement name="ProgressionLevel" progression_name="perkplantedPotato1Schematic" operation="LT" value="1"/> 
+		<requirement name="ProgressionLevel" progression_name="perkLivingOffTheLand" operation="GTE" value="3"/>    
+	</triggered_effect>                  
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkplantedHop1Schematic" level="-1">     
+		<requirement name="ProgressionLevel" progression_name="perkplantedHop1Schematic" operation="LT" value="1"/>    
+		<requirement name="ProgressionLevel" progression_name="perkLivingOffTheLand" operation="GTE" value="3"/>     
+	</triggered_effect>              
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkplantedPumpkin1Schematic" level="-1"> 
+		<requirement name="ProgressionLevel" progression_name="perkplantedPumpkin1Schematic" operation="LT" value="1"/>    
+		<requirement name="ProgressionLevel" progression_name="perkLivingOffTheLand" operation="GTE" value="3"/>                  
+	</triggered_effect>     
+	<!-- lvl 5 -->    
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkplantedGraceCorn1Schematic" level="-1">     
+		<requirement name="ProgressionLevel" progression_name="perkplantedGraceCorn1Schematic" operation="LT" value="1"/>              
+		<requirement name="ProgressionLevel" progression_name="perkLivingOffTheLand" operation="GTE" value="5"/> 
+	</triggered_effect>    
+</append>                  
+     
+<append xpath="/progression/perks/perk[@name='perkArchery']/effect_group">    
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkgunBowWoodenSchematic" level="-1">     
+		<requirement name="ProgressionLevel" progression_name="perkgunBowWoodenSchematic" operation="LT" value="1"/>              
+		<requirement name="ProgressionLevel" progression_name="perkArchery" operation="GTE" value="1"/> 
+	</triggered_effect>    
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkgunCrossbowIronSchematic" level="-1">                  
+		<requirement name="ProgressionLevel" progression_name="perkgunCrossbowIronSchematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkArchery" operation="GTE" value="1"/>    
+	</triggered_effect>     
+</append>              
+ 
+<append xpath="/progression/perks/perk[@name='perkGunslinger']/effect_group">    
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkgunPistolSchematic" level="-1">                  
+		<requirement name="ProgressionLevel" progression_name="perkgunPistolSchematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkGunslinger" operation="GTE" value="1"/>    
+	</triggered_effect>     
+</append>              
+ 
+<append xpath="/progression/perks/perk[@name='perkDeepCuts']/effect_group">    
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkmeleeToolKnifeIronSchematic" level="-1">                  
+		<requirement name="ProgressionLevel" progression_name="perkmeleeToolKnifeIronSchematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="GTE" value="1"/>    
+	</triggered_effect>     
+</append>              
+ 
+<append xpath="/progression/perks/perk[@name='perkLightArmor']/effect_group">    
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkmeleeToolKnifeIronSchematic" level="-1">                  
+		<requirement name="ProgressionLevel" progression_name="perkmeleeToolKnifeIronSchematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkLightArmor" operation="GTE" value="1"/>    
+	</triggered_effect>     
+</append>              
+ 
+<append xpath="/progression/perks/perk[@name='perkLightArmor']/effect_group">    
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkarmorLeatherHoodSchematic" level="-1">                  
+		<requirement name="ProgressionLevel" progression_name="perkarmorLeatherHoodSchematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkLightArmor" operation="GTE" value="1"/>    
+	</triggered_effect>     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkarmorLeatherChestSchematic" level="-1">              
+		<requirement name="ProgressionLevel" progression_name="perkarmorLeatherChestSchematic" operation="LT" value="1"/> 
+		<requirement name="ProgressionLevel" progression_name="perkLightArmor" operation="GTE" value="1"/>    
+	</triggered_effect>                  
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkarmorLeatherGlovesSchematic" level="-1">     
+		<requirement name="ProgressionLevel" progression_name="perkarmorLeatherGlovesSchematic" operation="LT" value="1"/>    
+		<requirement name="ProgressionLevel" progression_name="perkLightArmor" operation="GTE" value="1"/>     
+	</triggered_effect>              
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkarmorLeatherPantsSchematic" level="-1"> 
+		<requirement name="ProgressionLevel" progression_name="perkarmorLeatherPantsSchematic" operation="LT" value="1"/>    
+		<requirement name="ProgressionLevel" progression_name="perkLightArmor" operation="GTE" value="1"/>                  
+	</triggered_effect>     
+		<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkarmorLeatherBootsSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkarmorLeatherBootsSchematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkLightArmor" operation="GTE" value="1"/>              
+	</triggered_effect> 
+</append>    
+                  
+<append xpath="/progression/perks/perk[@name='perkElectrocutioner']/effect_group">     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkmeleeStunBatonSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkmeleeStunBatonSchematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkElectrocutioner" operation="GTE" value="1"/>              
+	</triggered_effect> 
+</append>    
+                  
+<append xpath="/progression/perks/perk[@name='perkTurrets']/effect_group">     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkgunJunkTurretSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkgunJunkTurretSchematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkTurrets" operation="GTE" value="1"/>              
+	</triggered_effect> 
+</append>    
+                  
+<append xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group">     
+	<!-- lvl 1 -->    
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkforgeSchematic" level="-1">     
+		<requirement name="ProgressionLevel" progression_name="perkforgeSchematic" operation="LT" value="1"/>              
+		<requirement name="ProgressionLevel" progression_name="perkAdvancedEngineering" operation="GTE" value="1"/> 
+	</triggered_effect>    
+	<!-- lvl 2 -->                  
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkworkbenchSchematic" level="-1">     
+		<requirement name="ProgressionLevel" progression_name="perkworkbenchSchematic" operation="LT" value="1"/>    
+		<requirement name="ProgressionLevel" progression_name="perkAdvancedEngineering" operation="GTE" value="2"/>     
+	</triggered_effect>              
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perktableSawSchematic" level="-1"> 
+		<requirement name="ProgressionLevel" progression_name="perktableSawSchematic" operation="LT" value="1"/>    
+		<requirement name="ProgressionLevel" progression_name="perkAdvancedEngineering" operation="GTE" value="2"/>                  
+	</triggered_effect>     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkcementMixerSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkcementMixerSchematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkAdvancedEngineering" operation="GTE" value="2"/>              
+	</triggered_effect> 
+	<!-- lvl 3 -->    
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkgeneratorbankSchematic" level="-1">                  
+		<requirement name="ProgressionLevel" progression_name="perkgeneratorbankSchematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkAdvancedEngineering" operation="GTE" value="3"/>    
+	</triggered_effect>     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkelectricwirerelaySchematic" level="-1">              
+		<requirement name="ProgressionLevel" progression_name="perkelectricwirerelaySchematic" operation="LT" value="1"/> 
+		<requirement name="ProgressionLevel" progression_name="perkAdvancedEngineering" operation="GTE" value="3"/>    
+	</triggered_effect>                  
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkswitchSchematic" level="-1">     
+		<requirement name="ProgressionLevel" progression_name="perkswitchSchematic" operation="LT" value="1"/>    
+		<requirement name="ProgressionLevel" progression_name="perkAdvancedEngineering" operation="GTE" value="3"/>     
+	</triggered_effect>              
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkceilingLight01_playerSchematic" level="-1"> 
+		<requirement name="ProgressionLevel" progression_name="perkceilingLight01_playerSchematic" operation="LT" value="1"/>    
+		<requirement name="ProgressionLevel" progression_name="perkAdvancedEngineering" operation="GTE" value="3"/>                  
+	</triggered_effect>     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkindustrialLight02_playerSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkindustrialLight02_playerSchematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkAdvancedEngineering" operation="GTE" value="3"/>              
+	</triggered_effect> 
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkarmorMiningHelmetSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkarmorMiningHelmetSchematic" operation="LT" value="1"/>                  
+		<requirement name="ProgressionLevel" progression_name="perkAdvancedEngineering" operation="GTE" value="3"/>     
+	</triggered_effect>    
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkspotlightPlayerSchematic" level="-1">     
+		<requirement name="ProgressionLevel" progression_name="perkspotlightPlayerSchematic" operation="LT" value="1"/>              
+		<requirement name="ProgressionLevel" progression_name="perkAdvancedEngineering" operation="GTE" value="3"/> 
+	</triggered_effect>    
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkspeakerSchematic" level="-1">                  
+		<requirement name="ProgressionLevel" progression_name="perkspeakerSchematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkAdvancedEngineering" operation="GTE" value="3"/>    
+	</triggered_effect>     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkpressureplateSchematic" level="-1">              
+		<requirement name="ProgressionLevel" progression_name="perkpressureplateSchematic" operation="LT" value="1"/> 
+		<requirement name="ProgressionLevel" progression_name="perkAdvancedEngineering" operation="GTE" value="3"/>    
+	</triggered_effect>                  
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkpressureplateLongSchematic" level="-1">     
+		<requirement name="ProgressionLevel" progression_name="perkpressureplateLongSchematic" operation="LT" value="1"/>    
+		<requirement name="ProgressionLevel" progression_name="perkAdvancedEngineering" operation="GTE" value="3"/>     
+	</triggered_effect>              
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkdartTrapSchematic" level="-1"> 
+		<requirement name="ProgressionLevel" progression_name="perkdartTrapSchematic" operation="LT" value="1"/>    
+		<requirement name="ProgressionLevel" progression_name="perkAdvancedEngineering" operation="GTE" value="3"/>                  
+	</triggered_effect>     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkelectrictimerrelaySchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkelectrictimerrelaySchematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkAdvancedEngineering" operation="GTE" value="3"/>              
+	</triggered_effect> 
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkmotionsensorSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkmotionsensorSchematic" operation="LT" value="1"/>                  
+		<requirement name="ProgressionLevel" progression_name="perkAdvancedEngineering" operation="GTE" value="3"/>     
+	</triggered_effect>    
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perktripwirepostSchematic" level="-1">     
+		<requirement name="ProgressionLevel" progression_name="perktripwirepostSchematic" operation="LT" value="1"/>              
+		<requirement name="ProgressionLevel" progression_name="perkAdvancedEngineering" operation="GTE" value="3"/> 
+	</triggered_effect>    
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkelectricfencepostSchematic" level="-1">                  
+		<requirement name="ProgressionLevel" progression_name="perkelectricfencepostSchematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkAdvancedEngineering" operation="GTE" value="3"/>    
+	</triggered_effect>     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkbladeTrapSchematic" level="-1">              
+		<requirement name="ProgressionLevel" progression_name="perkbladeTrapSchematic" operation="LT" value="1"/> 
+		<requirement name="ProgressionLevel" progression_name="perkAdvancedEngineering" operation="GTE" value="3"/>    
+	</triggered_effect>                  
+	<!-- lvl 4 -->     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkbatterybankSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkbatterybankSchematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkAdvancedEngineering" operation="GTE" value="4"/>              
+	</triggered_effect> 
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkshotgunTurretSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkshotgunTurretSchematic" operation="LT" value="1"/>                  
+		<requirement name="ProgressionLevel" progression_name="perkAdvancedEngineering" operation="GTE" value="4"/>     
+	</triggered_effect>    
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkgunToolNailgunSchematic" level="-1">     
+		<requirement name="ProgressionLevel" progression_name="perkgunToolNailgunSchematic" operation="LT" value="1"/>              
+		<requirement name="ProgressionLevel" progression_name="perkAdvancedEngineering" operation="GTE" value="4"/> 
+	</triggered_effect>    
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkmeleeToolAugerSchematic" level="-1">                  
+		<requirement name="ProgressionLevel" progression_name="perkmeleeToolAugerSchematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkAdvancedEngineering" operation="GTE" value="4"/>    
+	</triggered_effect>     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkmeleeToolChainsawSchematic" level="-1">              
+		<requirement name="ProgressionLevel" progression_name="perkmeleeToolChainsawSchematic" operation="LT" value="1"/> 
+		<requirement name="ProgressionLevel" progression_name="perkAdvancedEngineering" operation="GTE" value="4"/>    
+	</triggered_effect>                  
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkgarageDoorMetal_v1PoweredSchematic" level="-1">     
+		<requirement name="ProgressionLevel" progression_name="perkgarageDoorMetal_v1PoweredSchematic" operation="LT" value="1"/>    
+		<requirement name="ProgressionLevel" progression_name="perkAdvancedEngineering" operation="GTE" value="4"/>     
+	</triggered_effect>              
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkgarageDoorIndustrial_PoweredSchematic" level="-1"> 
+		<requirement name="ProgressionLevel" progression_name="perkgarageDoorIndustrial_PoweredSchematic" operation="LT" value="1"/>    
+		<requirement name="ProgressionLevel" progression_name="perkAdvancedEngineering" operation="GTE" value="4"/>                  
+	</triggered_effect>     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkmetalReinforcedWoodDrawBridgePoweredSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkmetalReinforcedWoodDrawBridgePoweredSchematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkAdvancedEngineering" operation="GTE" value="4"/>              
+	</triggered_effect> 
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkvaultHatch_v3_PoweredSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkvaultHatch_v3_PoweredSchematic" operation="LT" value="1"/>                  
+		<requirement name="ProgressionLevel" progression_name="perkAdvancedEngineering" operation="GTE" value="4"/>     
+	</triggered_effect>    
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkvaultDoor03_PoweredSchematic" level="-1">     
+		<requirement name="ProgressionLevel" progression_name="perkvaultDoor03_PoweredSchematic" operation="LT" value="1"/>              
+		<requirement name="ProgressionLevel" progression_name="perkAdvancedEngineering" operation="GTE" value="4"/> 
+	</triggered_effect>    
+	<!-- lvl 5 -->                  
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perktoolForgeCrucibleSchematic" level="-1">     
+		<requirement name="ProgressionLevel" progression_name="perktoolForgeCrucibleSchematic" operation="LT" value="1"/>    
+		<requirement name="ProgressionLevel" progression_name="perkAdvancedEngineering" operation="GTE" value="5"/>     
+	</triggered_effect>              
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkautoTurretchematic" level="-1"> 
+		<requirement name="ProgressionLevel" progression_name="perkautoTurretSchematic" operation="LT" value="1"/>    
+		<requirement name="ProgressionLevel" progression_name="perkAdvancedEngineering" operation="GTE" value="5"/>                  
+	</triggered_effect>     
+</append>    
+     
+<append xpath="/progression/perks/perk[@name='perkGreaseMonkey']/effect_group">              
+	<!-- lvl 1 --> 
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkvehicleWheelsSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkvehicleWheelsSchematic" operation="LT" value="1"/>                  
+		<requirement name="ProgressionLevel" progression_name="perkGreaseMonkey" operation="GTE" value="1"/>     
+	</triggered_effect>    
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkvehicleBicycleChassisSchematic" level="-1">     
+		<requirement name="ProgressionLevel" progression_name="perkvehicleBicycleChassisSchematic" operation="LT" value="1"/>              
+		<requirement name="ProgressionLevel" progression_name="perkGreaseMonkey" operation="GTE" value="1"/> 
+	</triggered_effect>    
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkvehicleBicycleHandlebarsSchematic" level="-1">                  
+		<requirement name="ProgressionLevel" progression_name="perkvehicleBicycleHandlebarsSchematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkGreaseMonkey" operation="GTE" value="1"/>    
+	</triggered_effect>     
+	<!-- lvl 2 -->              
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkvehicleMinibikeChassisSchematic" level="-1"> 
+		<requirement name="ProgressionLevel" progression_name="perkvehicleMinibikeChassisSchematic" operation="LT" value="1"/>    
+		<requirement name="ProgressionLevel" progression_name="perkGreaseMonkey" operation="GTE" value="2"/>                  
+	</triggered_effect>     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkvehicleMinibikeHandlebarsSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkvehicleMinibikeHandlebarsSchematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkGreaseMonkey" operation="GTE" value="2"/>              
+	</triggered_effect> 
+	<!-- lvl 3 -->    
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkvehicleMotorcycleChassisSchematic" level="-1">                  
+		<requirement name="ProgressionLevel" progression_name="perkvehicleMotorcycleChassisSchematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkGreaseMonkey" operation="GTE" value="3"/>    
+	</triggered_effect>     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkvehicleMotorcycleHandlebarsSchematic" level="-1">              
+		<requirement name="ProgressionLevel" progression_name="perkvehicleMotorcycleHandlebarsSchematic" operation="LT" value="1"/> 
+		<requirement name="ProgressionLevel" progression_name="perkGreaseMonkey" operation="GTE" value="3"/>    
+	</triggered_effect>                  
+	<!-- lvl 4 -->     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkvehicle4x4TruckChassisSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkvehicle4x4TruckChassisSchematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkGreaseMonkey" operation="GTE" value="4"/>              
+	</triggered_effect> 
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkvehicle4x4TruckAccessoriesSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkvehicle4x4TruckAccessoriesSchematic" operation="LT" value="1"/>                  
+		<requirement name="ProgressionLevel" progression_name="perkGreaseMonkey" operation="GTE" value="4"/>     
+	</triggered_effect>    
+	<!-- lvl 5 -->     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkvehicleGyroCopterChassisSchematic" level="-1">              
+		<requirement name="ProgressionLevel" progression_name="perkvehicleGyroCopterChassisSchematic" operation="LT" value="1"/> 
+		<requirement name="ProgressionLevel" progression_name="perkGreaseMonkey" operation="GTE" value="5"/>    
+	</triggered_effect>                  
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkvehicleGyroCopterAccessoriesSchematic" level="-1">     
+		<requirement name="ProgressionLevel" progression_name="perkvehicleGyroCopterAccessoriesSchematic" operation="LT" value="1"/>    
+		<requirement name="ProgressionLevel" progression_name="perkGreaseMonkey" operation="GTE" value="5"/>     
+	</triggered_effect>              
+</append> 
+    
+<append xpath="/progression/perks/perk[@name='perkYeahScience']/effect_group">                  
+	<!-- lvl 1 -->     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkchemistryStationSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkchemistryStationSchematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkYeahScience" operation="GTE" value="1"/>              
+	</triggered_effect> 
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkresourceGunPowderBundleSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkresourceGunPowderBundleSchematic" operation="LT" value="1"/>                  
+		<requirement name="ProgressionLevel" progression_name="perkYeahScience" operation="GTE" value="1"/>     
+	</triggered_effect>    
+	<!-- lvl 2 -->     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkmedicalFirstAidBandageSchematic" level="-1">              
+		<requirement name="ProgressionLevel" progression_name="perkmedicalFirstAidBandageSchematic" operation="LT" value="1"/> 
+		<requirement name="ProgressionLevel" progression_name="perkYeahScience" operation="GTE" value="2"/>    
+	</triggered_effect>                  
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkmedicalPlasterCastSchematic" level="-1">     
+		<requirement name="ProgressionLevel" progression_name="perkmedicalPlasterCastSchematic" operation="LT" value="1"/>    
+		<requirement name="ProgressionLevel" progression_name="perkYeahScience" operation="GTE" value="2"/>     
+	</triggered_effect>              
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkmineCookingPotSchematic" level="-1"> 
+		<requirement name="ProgressionLevel" progression_name="perkmineCookingPotSchematic" operation="LT" value="1"/>    
+		<requirement name="ProgressionLevel" progression_name="perkYeahScience" operation="GTE" value="2"/>                  
+	</triggered_effect>     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkrScrapIronPlateMineSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkrScrapIronPlateMineSchematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkYeahScience" operation="GTE" value="2"/>              
+	</triggered_effect> 
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkammoGasCanSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkammoGasCanSchematic" operation="LT" value="1"/>                  
+		<requirement name="ProgressionLevel" progression_name="perkYeahScience" operation="GTE" value="2"/>     
+	</triggered_effect>    
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkammoGasCanBundleSchematic" level="-1">     
+		<requirement name="ProgressionLevel" progression_name="perkammoGasCanBundleSchematic" operation="LT" value="1"/>              
+		<requirement name="ProgressionLevel" progression_name="perkYeahScience" operation="GTE" value="2"/> 
+	</triggered_effect>    
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkresourceOilSchematic" level="-1">                  
+		<requirement name="ProgressionLevel" progression_name="perkresourceOilSchematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkYeahScience" operation="GTE" value="2"/>    
+	</triggered_effect>     
+	<!-- Lvl 3 -->              
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkmedicalFirstAidKitSchematic" level="-1"> 
+		<requirement name="ProgressionLevel" progression_name="perkmedicalFirstAidKitSchematic" operation="LT" value="1"/>    
+		<requirement name="ProgressionLevel" progression_name="perkYeahScience" operation="GTE" value="3"/>                  
+	</triggered_effect>     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkdrugSteroidsSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkdrugSteroidsSchematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkYeahScience" operation="GTE" value="3"/>              
+	</triggered_effect> 
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkresourceMilitaryFiberSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkdrugSteroidsSchematic" operation="LT" value="1"/>                  
+		<requirement name="ProgressionLevel" progression_name="perkYeahScience" operation="GTE" value="3"/>     
+	</triggered_effect>    
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkmineHubcapSchematic" level="-1">     
+		<requirement name="ProgressionLevel" progression_name="perkmineHubcapSchematic" operation="LT" value="1"/>              
+		<requirement name="ProgressionLevel" progression_name="perkYeahScience" operation="GTE" value="3"/> 
+	</triggered_effect>    
+	<!-- Lvl 4 -->                  
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkdrugAntibioticsSchematic" level="-1">     
+		<requirement name="ProgressionLevel" progression_name="perkdrugAntibioticsSchematic" operation="LT" value="1"/>    
+		<requirement name="ProgressionLevel" progression_name="perkYeahScience" operation="GTE" value="3"/>     
+	</triggered_effect>              
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkcarBatterySchematic" level="-1"> 
+		<requirement name="ProgressionLevel" progression_name="perkcarBatterySchematic" operation="LT" value="1"/>    
+		<requirement name="ProgressionLevel" progression_name="perkYeahScience" operation="GTE" value="3"/>                  
+	</triggered_effect>     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkmineAirFilterSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkmineAirFilterSchematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkYeahScience" operation="GTE" value="3"/>              
+	</triggered_effect> 
+	<!-- Lvl 5 -->    
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkdrugFortBitesSchematic" level="-1">                  
+		<requirement name="ProgressionLevel" progression_name="perkdrugFortBitesSchematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkYeahScience" operation="GTE" value="3"/>    
+	</triggered_effect>     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkdrugRecogSchematic" level="-1">              
+		<requirement name="ProgressionLevel" progression_name="perkdrugRecogSchematic" operation="LT" value="1"/> 
+		<requirement name="ProgressionLevel" progression_name="perkYeahScience" operation="GTE" value="3"/>    
+	</triggered_effect>                  
+</append>     
+    
+<append xpath="/progression/perks/perk[@name='perkFiremansAlmanacAxes']/effect_group">     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkmodMeleeFiremansAxeModSchematic" level="-1">              
+		<requirement name="ProgressionLevel" progression_name="perkmodMeleeFiremansAxeModSchematic" operation="LT" value="1"/> 
+		<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacAxes" operation="GTE" value="1"/>    
+	</triggered_effect>                  
+</append>     
+    
+<append xpath="/progression/perks/perk[@name='perkFiremansAlmanacEquipment']/effect_group">     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkarmorFirefightersHelmetSchematic" level="-1">              
+		<requirement name="ProgressionLevel" progression_name="perkarmorFirefightersHelmetSchematic" operation="LT" value="1"/> 
+		<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacEquipment" operation="GTE" value="1"/>    
+	</triggered_effect>                  
+</append>     
+    
+<append xpath="/progression/perks/perk[@name='perkNeedleAndThreadWinterWear']/effect_group">     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkapparelFlannelShirtSchematic" level="-1">              
+		<requirement name="ProgressionLevel" progression_name="perkapparelFlannelShirtSchematic" operation="LT" value="1"/> 
+		<requirement name="ProgressionLevel" progression_name="perkNeedleAndThreadWinterWear" operation="GTE" value="1"/>    
+	</triggered_effect>                  
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkapparelSweatshirtSchematic" level="-1">     
+		<requirement name="ProgressionLevel" progression_name="perkapparelSweatshirtSchematic" operation="LT" value="1"/>    
+		<requirement name="ProgressionLevel" progression_name="perkNeedleAndThreadWinterWear" operation="GTE" value="1"/>     
+	</triggered_effect>              
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkapparelSkullCapSchematic" level="-1"> 
+		<requirement name="ProgressionLevel" progression_name="perkapparelSkullCapSchematic" operation="LT" value="1"/>    
+		<requirement name="ProgressionLevel" progression_name="perkNeedleAndThreadWinterWear" operation="GTE" value="1"/>                  
+	</triggered_effect>     
+</append>    
+     
+<append xpath="/progression/perks/perk[@name='perkNeedleAndThreadLegwear']/effect_group">              
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkapparelDenimPantsSchematic" level="-1"> 
+		<requirement name="ProgressionLevel" progression_name="perkapparelDenimPantsSchematic" operation="LT" value="1"/>    
+		<requirement name="ProgressionLevel" progression_name="perkNeedleAndThreadLegwear" operation="GTE" value="1"/>                  
+	</triggered_effect>     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkapparelOverallsSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkapparelOverallsSchematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkNeedlperkNeedleAndThreadLegweareAndThreadWinterWear" operation="GTE" value="1"/>              
+	</triggered_effect> 
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkapparelSkirtSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkapparelSkirtSchematic" operation="LT" value="1"/>                  
+		<requirement name="ProgressionLevel" progression_name="perkNeedleAndThreadLegwear" operation="GTE" value="1"/>     
+	</triggered_effect>    
+</append>     
+              
+<append xpath="/progression/perks/perk[@name='perkNeedleAndThreadFootwear']/effect_group"> 
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkapparelWornBootsSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkapparelWornBootsSchematic" operation="LT" value="1"/>                  
+		<requirement name="ProgressionLevel" progression_name="perkNeedleAndThreadFootwear" operation="GTE" value="1"/>     
+	</triggered_effect>    
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkapparelRunningShoesRegularSchematic" level="-1">     
+		<requirement name="ProgressionLevel" progression_name="perkapparelRunningShoesRegularSchematic" operation="LT" value="1"/>              
+		<requirement name="ProgressionLevel" progression_name="perkNeedleAndThreadFootwear" operation="GTE" value="1"/> 
+	</triggered_effect>    
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkapparelCowboyBootsSchematic" level="-1">                  
+		<requirement name="ProgressionLevel" progression_name="perkapparelCowboyBootsSchematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkNeedleAndThreadFootwear" operation="GTE" value="1"/>    
+	</triggered_effect>     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkapparelSuitDressShoesSchematic" level="-1">              
+		<requirement name="ProgressionLevel" progression_name="perkapparelSuitDressShoesSchematic" operation="LT" value="1"/> 
+		<requirement name="ProgressionLevel" progression_name="perkNeedleAndThreadFootwear" operation="GTE" value="1"/>    
+	</triggered_effect>                  
+</append>     
+    
+<append xpath="/progression/perks/perk[@name='perkNeedleAndThreadDesertWear']/effect_group">     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkapparelTankTopSchematic" level="-1">              
+		<requirement name="ProgressionLevel" progression_name="perkapparelTankTopSchematic" operation="LT" value="1"/> 
+		<requirement name="ProgressionLevel" progression_name="perkNeedleAndThreadDesertWear" operation="GTE" value="1"/>    
+	</triggered_effect>                  
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkapparelTShirtPlainSchematic" level="-1">     
+		<requirement name="ProgressionLevel" progression_name="perkapparelTShirtPlainSchematic" operation="LT" value="1"/>    
+		<requirement name="ProgressionLevel" progression_name="perkNeedleAndThreadDesertWear" operation="GTE" value="1"/>     
+	</triggered_effect>              
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkapparelCowboyHatSchematic" level="-1"> 
+		<requirement name="ProgressionLevel" progression_name="perkapparelCowboyHatSchematic" operation="LT" value="1"/>    
+		<requirement name="ProgressionLevel" progression_name="perkNeedleAndThreadDesertWear" operation="GTE" value="1"/>                  
+	</triggered_effect>     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkapparelDenimShortsPantsSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkapparelDenimShortsPantsSchematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkNeedleAndThreadDesertWear" operation="GTE" value="1"/>              
+	</triggered_effect> 
+</append>    
+                  
+<append xpath="/progression/perks/perk[@name='perkNeedleAndThreadDusters']/effect_group">     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkapparelCoatLeatherDusterSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkapparelCoatLeatherDusterSchematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkNeedleAndThreadDusters" operation="GTE" value="1"/>              
+	</triggered_effect> 
+</append>    
+                  
+<append xpath="/progression/perks/perk[@name='perkNeedleAndThreadPufferCoats']/effect_group">     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkapparelCoatPufferCoatSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkapparelCoatPufferCoatSchematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkNeedleAndThreadPufferCoats" operation="GTE" value="1"/>              
+	</triggered_effect> 
+</append>    
+                  
+<append xpath="/progression/perks/perk[@name='perkNeedleAndThreadPockets']/effect_group">     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkmodClothingCargoStoragePocketSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkmodClothingCargoStoragePocketSchematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkNeedleAndThreadPockets" operation="GTE" value="1"/>              
+	</triggered_effect> 
+</append>    
+                  
+<append xpath="/progression/perks/perk[@name='perkNeedleAndThreadComplete']/effect_group">     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkapparelArmyPantsPocketSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkapparelArmyPantsSchematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkNeedleAndThreadPockets" operation="GTE" value="1"/>              
+	</triggered_effect> 
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkapparelArmyShirtSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkapparelArmyShirtSchematic" operation="LT" value="1"/>                  
+		<requirement name="ProgressionLevel" progression_name="perkNeedleAndThreadComplete" operation="GTE" value="1"/>     
+	</triggered_effect>    
+</append>     
+              
+<append xpath="/progression/perks/perk[@name='perkEnforcerAPAmmo']/effect_group"> 
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkammo44MagnumBulletAPSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkammo44MagnumBulletAPSchematic" operation="LT" value="1"/>                  
+		<requirement name="ProgressionLevel" progression_name="perkEnforcerAPAmmo" operation="GTE" value="1"/>     
+	</triggered_effect>    
+</append>     
+              
+<append xpath="/progression/perks/perk[@name='perkEnforcerHPAmmo']/effect_group"> 
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkammo44MagnumBulletHPSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkammo44MagnumBulletHPSchematic" operation="LT" value="1"/>                  
+		<requirement name="ProgressionLevel" progression_name="perkEnforcerAPAmmo" operation="GTE" value="1"/>     
+	</triggered_effect>    
+</append>     
+              
+<append xpath="/progression/perks/perk[@name='perkEnforcerComplete']/effect_group"> 
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkammoBundle44MagnumBulletAPSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkammoBundle44MagnumBulletAPSchematic" operation="LT" value="1"/>                  
+		<requirement name="ProgressionLevel" progression_name="perkEnforcerComplete" operation="GTE" value="1"/>     
+	</triggered_effect>    
+</append>     
+              
+<append xpath="/progression/perks/perk[@name='perkEnforcerComplete']/effect_group"> 
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkammoBundle44MagnumBulletAPSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkammoBundle44MagnumBulletAPSchematic" operation="LT" value="1"/>                  
+		<requirement name="ProgressionLevel" progression_name="perkEnforcerComplete" operation="GTE" value="1"/>     
+	</triggered_effect>    
+</append>     
+              
+<append xpath="/progression/perks/perk[@name='perkEnforcerComplete']/effect_group"> 
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkammoBundle44MagnumBulletAPSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkammoBundle44MagnumBulletAPSchematic" operation="LT" value="1"/>                  
+		<requirement name="ProgressionLevel" progression_name="perkEnforcerComplete" operation="GTE" value="1"/>     
+	</triggered_effect>    
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkammoBundle44MagnumBulletHPSchematic" level="-1">     
+		<requirement name="ProgressionLevel" progression_name="perkammoBundle44MagnumBulletHPSchematic" operation="LT" value="1"/>              
+		<requirement name="ProgressionLevel" progression_name="perkEnforcerComplete" operation="GTE" value="1"/> 
+	</triggered_effect>    
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkammoBundle44MagnumBulletBallSchematic" level="-1">                  
+		<requirement name="ProgressionLevel" progression_name="perkammoBundle44MagnumBulletBallSchematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkEnforcerComplete" operation="GTE" value="1"/>    
+	</triggered_effect>     
+</append>              
+ 
+<append xpath="/progression/perks/perk[@name='perkBatterUpGear']/effect_group">    
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkapparelBallCapSchematic" level="-1">                  
+		<requirement name="ProgressionLevel" progression_name="perkapparelBallCapSchematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkBatterUpGear" operation="GTE" value="1"/>    
+	</triggered_effect>     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkapparelCoatJacketLetterZUSchematic" level="-1">              
+		<requirement name="ProgressionLevel" progression_name="perkapparelCoatJacketLetterZUSchematic" operation="LT" value="1"/> 
+		<requirement name="ProgressionLevel" progression_name="perkBatterUpGear" operation="GTE" value="1"/>    
+	</triggered_effect>                  
+</append>     
+    
+<append xpath="/progression/perks/perk[@name='perkBatterUpBaseballBats']/effect_group">     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkmeleeClubBaseballBatSchematic" level="-1">              
+		<requirement name="ProgressionLevel" progression_name="perkmeleeClubBaseballBatSchematic" operation="LT" value="1"/> 
+		<requirement name="ProgressionLevel" progression_name="perkBatterUpBaseballBats" operation="GTE" value="1"/>    
+	</triggered_effect>                  
+</append>     
+    
+<append xpath="/progression/perks/perk[@name='perkBatterUpConditioning']/effect_group">     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkmodMeleeClubMetalChainSchematic" level="-1">              
+		<requirement name="ProgressionLevel" progression_name="perkmodMeleeClubMetalChainSchematic" operation="LT" value="1"/> 
+		<requirement name="ProgressionLevel" progression_name="perkBatterUpConditioning" operation="GTE" value="1"/>    
+	</triggered_effect>                  
+</append>     
+    
+<append xpath="/progression/perks/perk[@name='perkGreatHeistTimedCharge']/effect_group">     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkthrownTimedChargeSchematic" level="-1">              
+		<requirement name="ProgressionLevel" progression_name="perkthrownTimedChargeSchematic" operation="LT" value="1"/> 
+		<requirement name="ProgressionLevel" progression_name="perkGreatHeistTimedCharge" operation="GTE" value="1"/>    
+	</triggered_effect>                  
+</append>     
+    
+<append xpath="/progression/perks/perk[@name='perkGreatHeistComplete']/effect_group">     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkresourceLockPickSchematic" level="-1">              
+		<requirement name="ProgressionLevel" progression_name="perkresourceLockPickSchematic" operation="LT" value="1"/> 
+		<requirement name="ProgressionLevel" progression_name="perkGreatHeistComplete" operation="GTE" value="1"/>    
+	</triggered_effect>                  
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkresourceLockPickBundleSchematic" level="-1">     
+		<requirement name="ProgressionLevel" progression_name="perkresourceLockPickBundleSchematic" operation="LT" value="1"/>    
+		<requirement name="ProgressionLevel" progression_name="perkGreatHeistComplete" operation="GTE" value="1"/>     
+	</triggered_effect>              
+</append> 
+    
+<append xpath="/progression/perks/perk[@name='perkWasteTreasuresWater']/effect_group">                  
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkdrinkJarPureMineralWaterSchematic" level="-1">     
+		<requirement name="ProgressionLevel" progression_name="perkdrinkJarPureMineralWaterSchematic" operation="LT" value="1"/>    
+		<requirement name="ProgressionLevel" progression_name="perkWasteTreasuresWater" operation="GTE" value="1"/>     
+	</triggered_effect>              
+</append> 
+    
+<append xpath="/progression/perks/perk[@name='perkWasteTreasuresCloth']/effect_group">                  
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkresourceClothSchematic" level="-1">     
+		<requirement name="ProgressionLevel" progression_name="perkresourceClothSchematic" operation="LT" value="1"/>    
+		<requirement name="ProgressionLevel" progression_name="perkWasteTreasuresCloth" operation="GTE" value="1"/>     
+	</triggered_effect>              
+</append> 
+    
+<append xpath="/progression/perks/perk[@name='perkArtOfMiningDiamondTools']/effect_group">                  
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkmodMeleeDiamondTipSchematic" level="-1">     
+		<requirement name="ProgressionLevel" progression_name="perkmodMeleeDiamondTipToolsSchematic" operation="LT" value="1"/>    
+		<requirement name="ProgressionLevel" progression_name="perkWasteTreasuresCloth" operation="GTE" value="1"/>     
+	</triggered_effect>              
+</append> 
+    
+<append xpath="/progression/perks/perk[@name='perkArtOfMiningBlackStrap']/effect_group">                  
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkdrinkjarBlackStrapCoffeeSchematic" level="-1">     
+		<requirement name="ProgressionLevel" progression_name="perkdrinkjarBlackStrapCoffeeSchematic" operation="LT" value="1"/>    
+		<requirement name="ProgressionLevel" progression_name="perkArtOfMiningBlackStrap" operation="GTE" value="1"/>     
+	</triggered_effect>              
+</append> 
+    
+<append xpath="/progression/perks/perk[@name='perkArtOfMiningPallets']/effect_group">                  
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkresourceRockSmallBundleSchematic" level="-1">     
+		<requirement name="ProgressionLevel" progression_name="perkresourceRockSmallBundleSchematic" operation="LT" value="1"/>    
+		<requirement name="ProgressionLevel" progression_name="perkArtOfMiningPallets" operation="GTE" value="1"/>     
+	</triggered_effect>              
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkresourceWoodBundleSchematic" level="-1"> 
+		<requirement name="ProgressionLevel" progression_name="perkresourceWoodBundleSchematic" operation="LT" value="1"/>    
+		<requirement name="ProgressionLevel" progression_name="perkArtOfMiningPallets" operation="GTE" value="1"/>                  
+	</triggered_effect>     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkresourceScrapIronBundleSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkresourceScrapIronBundleSchematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkArtOfMiningPallets" operation="GTE" value="1"/>              
+	</triggered_effect> 
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkresourceOilShaleBundleSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkresourceOilShaleBundleSchematic" operation="LT" value="1"/>                  
+		<requirement name="ProgressionLevel" progression_name="perkArtOfMiningPallets" operation="GTE" value="1"/>     
+	</triggered_effect>    
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkresourcePotassiumNitratePowderBundleSchematic" level="-1">     
+		<requirement name="ProgressionLevel" progression_name="perkresourcePotassiumNitratePowderBundleSchematic" operation="LT" value="1"/>              
+		<requirement name="ProgressionLevel" progression_name="perkArtOfMiningPallets" operation="GTE" value="1"/> 
+	</triggered_effect>    
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkresourceLeadBundleSchematic" level="-1">                  
+		<requirement name="ProgressionLevel" progression_name="perkresourceLeadBundleSchematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkArtOfMiningPallets" operation="GTE" value="1"/>    
+	</triggered_effect>     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkresourceCoalBundleSchematic" level="-1">              
+		<requirement name="ProgressionLevel" progression_name="perkresourceCoalBundleSchematic" operation="LT" value="1"/> 
+		<requirement name="ProgressionLevel" progression_name="perkArtOfMiningPallets" operation="GTE" value="1"/>    
+	</triggered_effect>                  
+</append>     
+    
+<append xpath="/progression/perks/perk[@name='perkArtOfMiningLantern']/effect_group">     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkarmorMiningHelmetSchematic" level="-1">              
+		<requirement name="ProgressionLevel" progression_name="perkarmorMiningHelmetSchematic" operation="LT" value="1"/> 
+		<requirement name="ProgressionLevel" progression_name="perkArtOfMiningLantern" operation="GTE" value="1"/>    
+	</triggered_effect>                  
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkmodArmorHelmetLightSchematic" level="-1">     
+		<requirement name="ProgressionLevel" progression_name="perkmodArmorHelmetLightSchematic" operation="LT" value="1"/>    
+		<requirement name="ProgressionLevel" progression_name="perkArtOfMiningLantern" operation="GTE" value="1"/>     
+	</triggered_effect>              
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perklanternLight_playerSchematic" level="-1"> 
+		<requirement name="ProgressionLevel" progression_name="perklanternLight_playerSchematic" operation="LT" value="1"/>    
+		<requirement name="ProgressionLevel" progression_name="perkArtOfMiningLantern" operation="GTE" value="1"/>                  
+	</triggered_effect>     
+</append>    
+     
+<append xpath="/progression/perks/perk[@name='perkRangersExplodingBolts']/effect_group">              
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkammoCrossbowBoltExplodingSchematic" level="-1"> 
+		<requirement name="ProgressionLevel" progression_name="perkammoCrossbowBoltExplodingSchematic" operation="LT" value="1"/>    
+		<requirement name="ProgressionLevel" progression_name="perkRangersExplodingBolts" operation="GTE" value="1"/>                  
+	</triggered_effect>     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkammoArrowExplodingSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkammoArrowExplodingSchematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkRangersExplodingBolts" operation="GTE" value="1"/>              
+	</triggered_effect> 
+</append>    
+                  
+<append xpath="/progression/perks/perk[@name='perkRangersAPAmmo']/effect_group">     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkammoArrowSteelAPSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkammoArrowSteelAPSchematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkRangersAPAmmo" operation="GTE" value="1"/>              
+	</triggered_effect> 
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkammoCrossbowBoltSteelAPSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkammoCrossbowBoltSteelAPSchematic" operation="LT" value="1"/>                  
+		<requirement name="ProgressionLevel" progression_name="perkRangersAPAmmo" operation="GTE" value="1"/>     
+	</triggered_effect>    
+</append>     
+              
+<append xpath="/progression/perks/perk[@name='perkRangersFlamingArrows']/effect_group"> 
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkammoArrowFlamingSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkammoArrowFlamingSchematic" operation="LT" value="1"/>                  
+		<requirement name="ProgressionLevel" progression_name="perkRangersFlamingArrows" operation="GTE" value="1"/>     
+	</triggered_effect>    
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkammoCrossbowBoltFlamingSchematic" level="-1">     
+		<requirement name="ProgressionLevel" progression_name="perkammoCrossbowBoltFlamingSchematic" operation="LT" value="1"/>              
+		<requirement name="ProgressionLevel" progression_name="perkRangersFlamingArrows" operation="GTE" value="1"/> 
+	</triggered_effect>    
+</append>                  
+     
+<append xpath="/progression/perks/perk[@name='perkRangersComplete']/effect_group">    
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkammoBundleArrowStoneSchematic" level="-1">     
+		<requirement name="ProgressionLevel" progression_name="perkammoBundleArrowStoneSchematic" operation="LT" value="1"/>              
+		<requirement name="ProgressionLevel" progression_name="perkRangersComplete" operation="GTE" value="1"/> 
+	</triggered_effect>    
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkammoBundleArrowIronSchematic" level="-1">                  
+		<requirement name="ProgressionLevel" progression_name="perkammoBundleArrowIronSchematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkRangersComplete" operation="GTE" value="1"/>    
+	</triggered_effect>     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkammoBundleArrowFlamingSchematic" level="-1">              
+		<requirement name="ProgressionLevel" progression_name="perkammoBundleArrowFlamingSchematic" operation="LT" value="1"/> 
+		<requirement name="ProgressionLevel" progression_name="perkRangersComplete" operation="GTE" value="1"/>    
+	</triggered_effect>                  
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkammoBundleCrossbowBoltFlamingSchematic" level="-1">     
+		<requirement name="ProgressionLevel" progression_name="perkammoBundleCrossbowBoltFlamingSchematic" operation="LT" value="1"/>    
+		<requirement name="ProgressionLevel" progression_name="perkRangersComplete" operation="GTE" value="1"/>     
+	</triggered_effect>              
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkammoBundleArrowSteelAPSchematic" level="-1"> 
+		<requirement name="ProgressionLevel" progression_name="perkammoBundleArrowSteelAPSchematic" operation="LT" value="1"/>    
+		<requirement name="ProgressionLevel" progression_name="perkRangersComplete" operation="GTE" value="1"/>                  
+	</triggered_effect>     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkammoBundleCrossbowBoltExplodingSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkammoBundleCrossbowBoltExplodingSchematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkRangersComplete" operation="GTE" value="1"/>              
+	</triggered_effect> 
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkammoBundleArrowExplodingSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkammoBundleArrowExplodingSchematic" operation="LT" value="1"/>                  
+		<requirement name="ProgressionLevel" progression_name="perkRangersComplete" operation="GTE" value="1"/>     
+	</triggered_effect>    
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkammoBundleCrossbowBoltIronSchematic" level="-1">     
+		<requirement name="ProgressionLevel" progression_name="perkammoBundleCrossbowBoltIronSchematic" operation="LT" value="1"/>              
+		<requirement name="ProgressionLevel" progression_name="perkRangersComplete" operation="GTE" value="1"/> 
+	</triggered_effect>    
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkammoBundleCrossbowBoltSteelAPSchematic" level="-1">                  
+		<requirement name="ProgressionLevel" progression_name="perkammoBundleCrossbowBoltSteelAPSchematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkRangersComplete" operation="GTE" value="1"/>    
+	</triggered_effect>     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkammoBundleCrossbowBoltStoneSchematic" level="-1">              
+		<requirement name="ProgressionLevel" progression_name="perkammoBundleCrossbowBoltStoneSchematic" operation="LT" value="1"/> 
+		<requirement name="ProgressionLevel" progression_name="perkRangersComplete" operation="GTE" value="1"/>    
+	</triggered_effect>                  
+</append>     
+    
+<append xpath="/progression/perks/perk[@name='perkPistolPeteHPAmmo']/effect_group">     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkammo9mmBulletHPSchematic" level="-1">              
+		<requirement name="ProgressionLevel" progression_name="perkammo9mmBulletHPSchematic" operation="LT" value="1"/> 
+		<requirement name="ProgressionLevel" progression_name="perkPistolPeteHPAmmo" operation="GTE" value="1"/>    
+	</triggered_effect>                  
+</append>     
+    
+<append xpath="/progression/perks/perk[@name='perkPistolPeteAPAmmo']/effect_group">     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkammo9mmBulletAPSchematic" level="-1">              
+		<requirement name="ProgressionLevel" progression_name="perkammo9mmBulletAPSchematic" operation="LT" value="1"/> 
+		<requirement name="ProgressionLevel" progression_name="perkPistolPeteAPAmmo" operation="GTE" value="1"/>    
+	</triggered_effect>                  
+</append>     
+    
+<append xpath="/progression/perks/perk[@name='perkPistolPeteComplete']/effect_group">     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkammoBundle9mmBulletBallSchematic" level="-1">              
+		<requirement name="ProgressionLevel" progression_name="perkammoBundle9mmBulletBallSchematic" operation="LT" value="1"/> 
+		<requirement name="ProgressionLevel" progression_name="perkPistolPeteComplete" operation="GTE" value="1"/>    
+	</triggered_effect>                  
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkammoBundle9mmBulletBallHPSchematic" level="-1">     
+		<requirement name="ProgressionLevel" progression_name="perkammoBundle9mmBulletBallHPSchematic" operation="LT" value="1"/>    
+		<requirement name="ProgressionLevel" progression_name="perkPistolPeteComplete" operation="GTE" value="1"/>     
+	</triggered_effect>              
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkammoBundle9mmBulletBallAPSchematic" level="-1"> 
+		<requirement name="ProgressionLevel" progression_name="perkammoBundle9mmBulletBallAPSchematic" operation="LT" value="1"/>    
+		<requirement name="ProgressionLevel" progression_name="perkPistolPeteComplete" operation="GTE" value="1"/>                  
+	</triggered_effect>     
+</append>    
+     
+<append xpath="/progression/perks/perk[@name='perkShotgunMessiahBreachingSlugs']/effect_group">              
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkammoShotgunBreachingSlugSchematic" level="-1"> 
+		<requirement name="ProgressionLevel" progression_name="perkammoShotgunBreachingSlugSchematic" operation="LT" value="1"/>    
+		<requirement name="ProgressionLevel" progression_name="perkShotgunMessiahBreachingSlugs" operation="GTE" value="1"/>                  
+	</triggered_effect>     
+</append>    
+     
+<append xpath="/progression/perks/perk[@name='perkShotgunMessiahSlugs']/effect_group">              
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkammoShotgunSlugSchematic" level="-1"> 
+		<requirement name="ProgressionLevel" progression_name="perkammoShotgunSlugSchematic" operation="LT" value="1"/>    
+		<requirement name="ProgressionLevel" progression_name="perkShotgunMessiahSlugs" operation="GTE" value="1"/>                  
+	</triggered_effect>     
+</append>    
+     
+<append xpath="/progression/perks/perk[@name='perkShotgunMessiahMagazine']/effect_group">              
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkmodGunShotgunTubeExtenderMagazineSchematic" level="-1"> 
+		<requirement name="ProgressionLevel" progression_name="perkmodGunShotgunTubeExtenderMagazineSchematic" operation="LT" value="1"/>    
+		<requirement name="ProgressionLevel" progression_name="perkShotgunMessiahMagazine" operation="GTE" value="1"/>                  
+	</triggered_effect>     
+</append>    
+     
+<append xpath="/progression/perks/perk[@name='perkShotgunMessiahMagazine']/effect_group">              
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkmodGunShotgunTubeExtenderMagazineSchematic" level="-1"> 
+		<requirement name="ProgressionLevel" progression_name="perkmodGunShotgunTubeExtenderMagazineSchematic" operation="LT" value="1"/>    
+		<requirement name="ProgressionLevel" progression_name="perkShotgunMessiahMagazine" operation="GTE" value="1"/>                  
+	</triggered_effect>     
+</append>    
+     
+<append xpath="/progression/perks/perk[@name='perkShotgunMessiahComplete']/effect_group">              
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkammoBundleShotgunShellSchematic" level="-1"> 
+		<requirement name="ProgressionLevel" progression_name="perkammoBundleShotgunShellSchematic" operation="LT" value="1"/>    
+		<requirement name="ProgressionLevel" progression_name="perkShotgunMessiahComplete" operation="GTE" value="1"/>                  
+	</triggered_effect>     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkammoBundleShotgunSlugSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkammoBundleShotgunSlugSchematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkShotgunMessiahComplete" operation="GTE" value="1"/>              
+	</triggered_effect> 
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkammoBundleShotgunBreachingSlugSchematic" level="-1">    
+		<requirement name="ProgressionLevel" progression_name="perkammoBundleShotgunBreachingSlugSchematic" operation="LT" value="1"/>                  
+		<requirement name="ProgressionLevel" progression_name="perkShotgunMessiahComplete" operation="GTE" value="1"/>     
+	</triggered_effect>    
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkammoBundleBlunderbussSchematic" level="-1">     
+		<requirement name="ProgressionLevel" progression_name="perkammoBundleBlunderbussSchematic" operation="LT" value="1"/>              
+		<requirement name="ProgressionLevel" progression_name="perkShotgunMessiahComplete" operation="GTE" value="1"/> 
+	</triggered_effect>    
+</append>                  
+     
+<append xpath="/progression/perks/perk[@name='perkSniperAPAmmo']/effect_group">    
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkammo762mmBulletAPSchematic" level="-1">     
+		<requirement name="ProgressionLevel" progression_name="perkammo762mmBulletAPSchematic" operation="LT" value="1"/>              
+		<requirement name="ProgressionLevel" progression_name="perkSniperAPAmmo" operation="GTE" value="1"/> 
+	</triggered_effect>    
+</append>                  
+     
+<append xpath="/progression/perks/perk[@name='perkSniperHPAmmo']/effect_group">    
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkammo762mmBulletHPSchematic" level="-1">     
+		<requirement name="ProgressionLevel" progression_name="perkammo762mmBulletHPSchematic" operation="LT" value="1"/>              
+		<requirement name="ProgressionLevel" progression_name="perkSniperHPAmmo" operation="GTE" value="1"/> 
+	</triggered_effect>    
+</append>                  
+     
+<append xpath="/progression/perks/perk[@name='perkSniperComplete']/effect_group">    
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkapparelGhillieSuitHoodSchematic" level="-1">     
+		<requirement name="ProgressionLevel" progression_name="perkapparelGhillieSuitHoodSchematic" operation="LT" value="1"/>              
+		<requirement name="ProgressionLevel" progression_name="perkSniperComplete" operation="GTE" value="1"/> 
+	</triggered_effect>    
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkapparelGhillieSuitJacketSchematic" level="-1">                  
+		<requirement name="ProgressionLevel" progression_name="perkapparelGhillieSuitJacketSchematic" operation="LT" value="1"/>     
+		<requirement name="ProgressionLevel" progression_name="perkSniperComplete" operation="GTE" value="1"/>    
+	</triggered_effect>     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkapparelGhillieSuitPantsSchematic" level="-1">              
+		<requirement name="ProgressionLevel" progression_name="perkapparelGhillieSuitPantsSchematic" operation="LT" value="1"/> 
+		<requirement name="ProgressionLevel" progression_name="perkSniperComplete" operation="GTE" value="1"/>    
+	</triggered_effect>                  
+</append>     
+    
+<append xpath="/progression/perks/perk[@name='perkAutoWeaponsDrumMag']/effect_group">     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkmodGunDrumMagazineExtenderSchematic" level="-1">              
+		<requirement name="ProgressionLevel" progression_name="perkmodGunDrumMagazineExtenderSchematic" operation="LT" value="1"/> 
+		<requirement name="ProgressionLevel" progression_name="perkAutoWeaponsDrumMag" operation="GTE" value="1"/>    
+	</triggered_effect>                  
+</append>     
+    
+<append xpath="/progression/perks/perk[@name='perkAutoWeaponsMachineGuns']/effect_group">     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkgunM60Schematic" level="-1">              
+		<requirement name="ProgressionLevel" progression_name="perkgunM60Schematic" operation="LT" value="1"/> 
+		<requirement name="ProgressionLevel" progression_name="perkAutoWeaponsMachineGuns" operation="GTE" value="1"/>    
+	</triggered_effect>                  
+</append>     
+    
+<append xpath="/progression/perks/perk[@name='perkUrbanCombatLanding']/effect_group">     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkarmorMilitaryStealthBootsSchematic" level="-1">              
+		<requirement name="ProgressionLevel" progression_name="perkarmorMilitaryStealthBootsSchematic" operation="LT" value="1"/> 
+		<requirement name="ProgressionLevel" progression_name="perkUrbanCombatLanding" operation="GTE" value="1"/>    
+	</triggered_effect>                  
+</append>     
+    
+<append xpath="/progression/perks/perk[@name='perkUrbanCombatControlledBreathing']/effect_group">     
+	<triggered_effect trigger="onSelfProgressionUpdate" action="SetProgressionLevel" progression_name="perkapparelCigarSchematic" level="-1">              
+		<requirement name="ProgressionLevel" progression_name="perkapparelCigarSchematic" operation="LT" value="1"/> 
+		<requirement name="ProgressionLevel" progression_name="perkUrbanCombatLanding" operation="GTE" value="1"/>    
+	</triggered_effect>                  
+</append>     
+    
+</configs>     

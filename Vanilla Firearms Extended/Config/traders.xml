@@ -1,0 +1,67 @@
+<VFX>
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='schematicsWeaponsCommon']">
+		<item name="gun1911Schematic"/>
+		<item name="gunGlock17Schematic"/>
+		<item name="gunmakarovSchematic"/>
+		<item name="gun45revolverSchematic"/>
+		<item name="gunp250Schematic"/>
+		<item name="gunp99Schematic"/>
+		<item name="gun9mmrevolverSchematic"/>
+		<item name="gundoublebarrelproperSchematic"/>
+		<item name="guntoz34Schematic"/>
+		<item name="gunsinglebarrelshotgunSchematic"/>
+		<item name="gun556rifleSchematic"/>
+		<item name="gun9mmrifleSchematic"/>
+		<item name="gunm1pcarbineSchematic"/>
+		<item name="gunaks74uSchematic"/>
+		<item name="gunak101Schematic"/>
+		<item name="gunskorpionSchematic"/>
+		<item name="gunpp19Schematic"/>
+		<item name="gunump45Schematic"/>
+		<item name="gunsksSchematic"/>
+		<item name="guntec9Schematic"/>
+		<item name="gunmk23Schematic"/>
+	</append>
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='weaponsGunsT2']">
+			<item name="gunGlock17" quality="1,5"/>
+			<item name="gunmakarov" quality="1,5"/>
+			<item name="gun45revolver" quality="1,5"/>
+			<item name="gunp250" quality="1,5"/>
+			<item name="gun9mmrevolver" quality="1,5"/>
+			<item name="gundoublebarrelproper" quality="1,5"/>
+			<item name="guntoz34" quality="1,5"/>
+			<item name="gunsinglebarrelshotgun" quality="1,5"/>
+			<item name="gun556rifle" quality="1,5"/>
+			<item name="gun9mmrifle" quality="1,5"/>
+			<item name="gunm1pcarbine" quality="1,5"/>
+			<item name="gunaks74u" quality="1,5"/>
+			<item name="gunak101" quality="1,5"/>
+			<item name="gunskorpion" quality="1,5"/>
+			<item name="gunpp19" quality="1,5"/>
+			<item name="gunump45" quality="1,5"/>
+			<item name="gunsks" quality="1,5"/>
+			<item name="guntec9" quality="1,5"/>
+			<item name="gunmk23"  quality="1,5"/>
+	</append>
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='weaponsGunsT3']">
+			<item name="gunmac11" prob="0.7" quality="1,4"/>
+			<item name="gunmicrouzi" prob="0.7" quality="1,4"/>
+			<item name="gunrsx1" prob="0.5" quality="1,4"/>
+			<item name="gunscarh"  quality="1,4"/>
+			<item name="gunhk416" prob="0.5" quality="1,4"/>
+			<item name="gunar15" prob="0.5" quality="1,4"/>
+			<item name="gung36c" prob="0.5" quality="1,4"/>
+			<item name="gunscarl" prob="0.5" quality="1,4"/>
+			<item name="gunsg553" prob="0.5" quality="1,4"/>
+			<item name="gunhk416" prob="0.5" quality="1,4"/>
+			<item name="gunusp" prob="0.5" quality="1,4"/>
+			<item name="gundeserteagle" prob="0.5" quality="1,4"/>
+			<item name="gunsvd" prob="0.5" quality="1,4"/>
+	</append>
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='ammo']">
+			<item name="ammo45BulletBall" count="30,110"/>
+			<item name="ammo45BulletAP" count="30,110"/>
+			<item name="ammo556mmBulletBall" count="20,100"/>
+			<item name="ammo556mmBulletAP" count="20,100"/>
+	</append>
+</VFX>

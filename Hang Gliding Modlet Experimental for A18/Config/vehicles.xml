@@ -1,0 +1,146 @@
+<configs>
+
+<append xpath="/vehicles">
+
+<vehicle name="guppyVehicleHangGlider"> <!-- No powered flights - no velocityMax version -->
+
+		<property name="cameraDistance" value="6.6, 6.6"/> 
+		<property name="cameraTurnRate" value=".23, .23"/>
+		<property name="motorTorqueMinQ" value="1000"/>
+		<property name="motorTorqueMaxQ" value="1000"/>
+		<property name="brakeTorque" value="4000"/>
+		<property name="steerRate" value="160"/>
+		<property name="steerCenteringRate" value="110"/>
+		<property name="upAngleMax" value="20"/>
+		<property name="upAngleThreshold" value="0.01"/>
+		<property name="upAngleDampening" value=".99"/>
+		<property name="upAngleDampenThreshold" value="15"/>
+		<property name="upForce" value=".7"/>
+		<property name="tiltAngleMax" value="50"/>
+		<property name="tiltThreshold" value="0.01"/>
+		<property name="tiltDampening" value=".99"/>
+		<property name="tiltDampenThreshold" value="40"/>
+		<property name="tiltUpForce" value="1"/>
+		
+		<property name="hopForce" value="2, 0.1"/>
+		<property name="unstickForce" value="3"/>
+				
+		<property name="waterDrag_y_velScale_velMaxScale" value="1.7, .9, .1"/>
+		<property name="airDrag_velScale_angVelScale" value=".927, .67"/> 
+		 		
+		<property class="chassis">
+			<property name="class" value="Chassis"/>
+			<property name="display_name" value="chassis"/>
+			<property name="slot_type" value="chassis"/>
+			<property name="mesh" value="chassis"/>
+			<property name="transform" value="Origin"/>
+			<property name="part_damage_reduction" value="0.05"/>
+		</property>
+		
+		<property class="motor0">
+			<property name="engine" value="engine"/>
+			<property name="engineOffPer" value=".02"/>
+			<property name="transform" value=""/>
+			<property name="axis" value="1"/>
+		</property>
+
+		<property class="motor1">
+			<property name="engine" value="engine"/>
+			<property name="transform" value=""/>
+			<property name="axis" value="2"/>
+		</property>
+
+		<property class="force0">
+			<property name="trigger" value="motor0"/>
+			<property name="type" value="relative"/>
+			<property name="force" value="0, .0185, 0"/>
+			<property name="ceiling" value="260,280"/>
+		</property>
+
+		<property class="force1">
+			<property name="trigger" value="motor1"/>
+			<property name="type" value="relative"/>
+			<property name="force" value="0, 0, 2"/>
+		</property>
+
+		<property class="force2">
+			<property name="trigger" value="inputForward"/>
+			<property name="type" value="relative"/>
+			<property name="force" value="0, 0, 0"/>
+		</property>
+
+		<property class="force3">
+			<property name="trigger" value="inputStrafe"/>
+			<property name="type" value="relativeTorque"/>
+			<property name="force" value="0, .12, 0"/>
+		</property>
+
+		<property class="force4">
+			<property name="trigger" value="inputUp"/>
+			<property name="type" value="relativeTorque"/>
+			<property name="force" value="-.03, 0, 0"/>
+		</property>
+
+		<property class="force5">
+			<property name="trigger" value="inputDown"/>
+			<property name="type" value="relativeTorque"/>
+			<property name="force" value=".03, 0, 0"/>
+		</property>
+		
+		<property class="handlebars">
+			<property name="class" value="Steering"/>
+			<property name="slot_type" value="handlebars"/>
+			<property name="mesh" value="handlebar"/>
+			<property name="steerMaxAngle" value="25"/>
+			<property name="transform" value="Origin/handlebar_joint"/>
+			<property name="IKHandLPosition" value="-.33, 0.11, .52"/>
+			<property name="IKHandRPosition" value=".33, 0.11, .52"/>
+			<property name="IKHandRRotation" value="27.305, 15.59375, -8.861643"/>
+			<property name="IKHandLRotation" value="27.305, -15.59375, 8.861643"/>
+			<property name="parent_part" value="chassis"/>
+		</property>
+		
+		<property class="seat0">
+			<property name="position" value="-.0, -.025, -1.29"/>
+			<property name="rotation" value="58, 0, 0"/>
+			<property name="exit" value="0,3,0 ~ 0,3,0 ~ -.4,0,-2.8 ~ -.4,0,2.6 ~ -.4,2.1,0"/>
+		</property>
+		
+		<property class="wheel0">
+			<property name="steerTransform" value="Origin/handlebar_joint"/>
+			<property name="tireTransform" value="Origin/handlebar_joint/frontWheel_joint"/>
+			<property name="tireSuspensionPercent" value="1"/>
+			<property name="torqueScale_motor_brake" value="1, 1"/>
+		</property>
+
+		<property class="wheel1">
+			<property name="steerTransform" value="Origin/handlebar_joint"/>    
+			<property name="tireTransform" value="Origin/handlebar_joint/frontWheel_joint"/>
+			<property name="tireSuspensionPercent" value="1"/>
+			<property name="torqueScale_motor_brake" value="1, 1"/>
+		</property>
+    
+		<property class="wheel2">
+			<property name="parent_part" value="chassis"/>
+			<property name="tireTransform" value="Origin/backLeftWheelJoint"/>
+			<property name="tireSuspensionPercent" value="1"/>
+			<property name="torqueScale_motor_brake" value="1, 1"/>
+		</property>
+
+		<property class="wheel3">
+			<property name="parent_part" value="chassis"/>
+			<property name="tireTransform" value="Origin/backRightWheelJoint"/>
+			<property name="tireSuspensionPercent" value="1"/>
+			<property name="torqueScale_motor_brake" value="1, 1"/>
+		</property>  
+		    
+		<property class="headlight">
+			<property name="class" value="Headlight"/>
+			<property name="parent_part" value="handlebars"/>
+			<property name="transform" value="Origin/handlebar_joint/headlight"/>
+			<property name="bright" value="1"/>
+		</property>
+	</vehicle>
+	</append>
+</configs>  
+	

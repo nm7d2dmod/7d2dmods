@@ -1,0 +1,881 @@
+<VFX>
+	<append xpath="/item_modifiers/item_modifier[@name='modGunFlashlight']">
+		<item_property_overrides name="gun1911">
+			<property name="SideOffset" value="0,0.005,-0.015"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="SideScale" value="0.65,0.63,0.64"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunmk23">
+			<property name="SideOffset" value="-0.0003,0.005,-0.011"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="SideScale" value="0.65,0.63,0.64"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunGlock17">
+			<property name="SideOffset" value="0,0,0"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunmakarov">
+			<property name="SideOffset" value="0,0,-0.05"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="SideScale" value="0.65,0.63,0.64"/>
+		</item_property_overrides>
+		<item_property_overrides name="gun45revolver">
+			<property name="SideOffset" value="0,0.04,0.008"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="SideScale" value="0.65,0.63,0.64"/>
+		</item_property_overrides>
+		<item_property_overrides name="gun9mmrevolver">
+			<property name="SideOffset" value="0,0.04,0"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="SideScale" value="0.65,0.63,0.64"/>
+		</item_property_overrides>
+		<item_property_overrides name="gundeserteagle">
+			<property name="SideOffset" value="0,0.01,-0.015"/>
+			<property name="SideScale" value="0.65,0.63,0.64"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunp250">
+			<property name="SideOffset" value="0,0,0"/>
+			<property name="SideScale" value="0.65,0.63,0.64"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunp99">
+			<property name="SideOffset" value="0,0.022,0"/>
+			<property name="SideScale" value="0.65,0.63,0.64"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunusp">
+			<property name="SideOffset" value="0,0.022,-0.017"/>
+			<property name="SideScale" value="0.65,0.63,0.64"/>
+		</item_property_overrides>
+		<item_property_overrides name="guntec9">
+			<property name="SideOffset" value="0,0,0.022"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="SideScale" value="0.65,0.63,0.64"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunskorpion">
+			<property name="SideOffset" value="0,0.027,0.031"/>
+			<property name="SideScale" value="0.65,0.63,0.64"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunsks">
+			<property name="SideOffset" value="0,-0.01,0.3"/>
+			<property name="SideScale" value="0.65,0.63,0.64"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunsvd">
+			<property name="SideOffset" value="0,0,0.34"/>
+			<property name="SideScale" value="0.65,0.63,0.64"/>
+		</item_property_overrides>
+		<item_property_overrides name="gun9mmrifle">
+			<property name="SideOffset" value="0,0.02,0.25"/>
+			<property name="SideScale" value="0.65,0.63,0.64"/>
+		</item_property_overrides>
+		<item_property_overrides name="gun556rifle">
+			<property name="SideOffset" value="0,0.01,0.2"/>
+			<property name="SideScale" value="0.65,0.63,0.64"/>
+		</item_property_overrides>
+		<item_property_overrides name="guntoz34">
+			<property name="SideOffset" value="0,-0.02,0.07"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="SideScale" value="0.65,0.63,0.64"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunm1pcarbine">
+			<property name="SideOffset" value="0,-0.015,0.15"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="SideScale" value="0.65,0.63,0.64"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunrsx1">
+			<property name="SideOffset" value="0,-0.02,0.21"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="SideScale" value="0.65,0.63,0.64"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunmicrouzi">
+			<property name="SideOffset" value="0,0.008,-0.03"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="SideScale" value="0.65,0.63,0.64"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunaks74u">
+			<property name="SideOffset" value="0,-0.02,0.08"/>
+			<property name="SideScale" value="0.65,0.63,0.64"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunpp19">
+			<property name="SideOffset" value="0.001,0,0.07"/>
+			<property name="SideScale" value="0.65,0.63,0.64"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunak101">
+			<property name="SideOffset" value="0,0.015,0.1"/>
+			<property name="SideScale" value="0.65,0.63,0.64"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunar15">
+			<property name="SideOffset" value="0,0,0.1"/>
+			<property name="SideScale" value="0.65,0.63,0.64"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunhk416">
+			<property name="SideOffset" value="0,0,0.1"/>
+			<property name="SideScale" value="0.65,0.63,0.64"/>
+		</item_property_overrides>
+		<item_property_overrides name="gung36c">
+			<property name="SideOffset" value="0,-0.03,0.08"/>
+			<property name="SideScale" value="0.65,0.63,0.64"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunscarl">
+			<property name="SideOffset" value="0,-0.02,0"/>
+			<property name="SideScale" value="0.65,0.63,0.64"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunsg553">
+			<property name="SideOffset" value="0,-0.02,0.05"/>
+			<property name="SideScale" value="0.65,0.63,0.64"/>
+		</item_property_overrides>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modGunLaserSight']">
+		<item_property_overrides name="gun1911">
+			<property name="SideOffset" value="0,0.005,0.02"/>
+			<property name="SideScale" value="0.4,1,0.4"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunmk23">
+			<property name="SideOffset" value="0,0.013,0.032"/>
+			<property name="SideScale" value="0.4,1,0.4"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunGlock17">
+			<property name="SideOffset" value="0,0,-0.04"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunmakarov">
+			<property name="SideOffset" value="0,0.02,0"/>
+			<property name="SideScale" value="0.16,0.12,0.15"/>
+		</item_property_overrides>
+		<item_property_overrides name="gun45revolver">
+			<property name="SideOffset" value="0,0.045,0.06"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="SideScale" value="0.65,0.63,0.64"/>
+		</item_property_overrides>
+		<item_property_overrides name="gun9mmrevolver">
+			<property name="SideOffset" value="0,0.051,0.05"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="SideScale" value="0.65,0.63,0.64"/>
+		</item_property_overrides>
+		<item_property_overrides name="gundeserteagle">
+			<property name="SideOffset" value="0,0.02,0.03"/>
+			<property name="SideScale" value="0.65,0.63,0.64"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunp250">
+			<property name="SideOffset" value="0,0.005,0.05"/>
+			<property name="SideScale" value="0.65,0.63,0.64"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunp99">
+			<property name="SideOffset" value="0,0.022,0.04"/>
+			<property name="SideScale" value="0.65,0.63,0.64"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunusp">
+			<property name="SideOffset" value="0,0.026,0.03"/>
+			<property name="SideScale" value="0.65,0.63,0.64"/>
+		</item_property_overrides>
+		<item_property_overrides name="guntec9">
+			<property name="SideOffset" value="0,0.022,0.1"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="SideScale" value="0.65,0.63,0.64"/>
+		</item_property_overrides>
+		<item_property_overrides name="guntoz34">
+			<property name="SideOffset" value="0,-0.02,0.07"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="SideScale" value="0.65,0.63,0.64"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunm1pcarbine">
+			<property name="SideOffset" value="0,-0.015,0.15"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="SideScale" value="0.65,0.63,0.64"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunsks">
+			<property name="SideOffset" value="0,-0.01,0.3"/>
+			<property name="SideScale" value="0.65,0.63,0.64"/>
+		</item_property_overrides>
+		<item_property_overrides name="gun9mmrifle">
+			<property name="SideOffset" value="0,0.02,0.25"/>
+			<property name="SideScale" value="0.65,0.63,0.64"/>
+		</item_property_overrides>
+		<item_property_overrides name="gun556rifle">
+			<property name="SideOffset" value="0,0.01,0.2"/>
+			<property name="SideScale" value="0.65,0.63,0.64"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunmicrouzi">
+			<property name="SideOffset" value="0,0.008,-0.03"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="SideScale" value="0.65,0.63,0.64"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunskorpion">
+			<property name="SideOffset" value="0,0.027,0.08"/>
+			<property name="SideScale" value="0.65,0.63,0.64"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunpp19">
+			<property name="SideOffset" value="0.003,0,0.08"/>
+			<property name="SideScale" value="0.65,0.63,0.64"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunaks74u">
+			<property name="SideOffset" value="0,-0.025,0.08"/>
+			<property name="SideScale" value="0.65,0.63,0.64"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunak101">
+			<property name="SideOffset" value="0,0.015,0.1"/>
+			<property name="SideScale" value="0.65,0.63,0.64"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunar15">
+			<property name="SideOffset" value="0,0,0.15"/>
+			<property name="SideScale" value="0.65,0.63,0.64"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunhk416">
+			<property name="SideOffset" value="0,0,0.15"/>
+			<property name="SideScale" value="0.65,0.63,0.64"/>
+		</item_property_overrides>
+		<item_property_overrides name="gung36c">
+			<property name="SideOffset" value="0,-0.03,0.08"/>
+			<property name="SideScale" value="0.65,0.63,0.64"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunscarl">
+			<property name="SideOffset" value="0,-0.02,0"/>
+			<property name="SideScale" value="0.65,0.63,0.64"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunsg553">
+			<property name="SideOffset" value="0,-0.02,0.05"/>
+			<property name="SideScale" value="0.65,0.63,0.64"/>
+		</item_property_overrides>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modGunSoundSuppressorSilencer']">
+		
+		<item_property_overrides name="gun1911">
+			<property name="Sound_start" value="45_sil_1"/>
+			<property name="BarrelOffset" value="0,0.0013,-0.014"/>
+			<property name="BarrelScale" value="1,1,1"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunmk23">
+			<property name="Sound_start" value="45_sil_2"/>
+			<property name="BarrelOffset" value="-0.002,0.01,-0.008"/>
+			<property name="BarrelScale" value="1,1,1"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunGlock17">
+			<property name="Sound_start" value="9mm_sil_2"/>
+			<property name="BarrelOffset" value="0,0,-1"/>
+			<property name="BarrelScale" value="1,1,1"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunmakarov">
+			<property name="Sound_start" value="9mm_sil_1"/>
+			<property name="BarrelOffset" value="0,0,-0.1"/>
+			<property name="BarrelScale" value="1,1,1"/>
+		</item_property_overrides>
+		<item_property_overrides name="gundeserteagle">
+			<property name="Sound_start" value="deserteagle_fire_sil_1"/>
+			<property name="BarrelOffset" value="0,0.02,0.0305"/>
+			<property name="BarrelScale" value="1,1,1"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunp250">
+			<property name="Sound_start" value="9mm_sil_1"/>
+			<property name="BarrelOffset" value="0,0.003,-0.04"/>
+			<property name="BarrelScale" value="1,1,1"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunp99">
+			<property name="Sound_start" value="9mm_sil_1"/>
+			<property name="BarrelOffset" value="-0.0005,0.026,-0.04"/>
+			<property name="BarrelScale" value="1,1,1"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunusp">
+			<property name="Sound_start" value="45_sil_2"/>
+			<property name="BarrelOffset" value="-0.0005,0.0225,-0.05"/>
+			<property name="BarrelScale" value="1,1,1"/>
+		</item_property_overrides>
+		<item_property_overrides name="gun9mmrevolver">
+			<property name="Sound_start" value="9mm_sil_2"/>
+			<property name="BarrelOffset" value="0.0005,0.021,-0.033"/>
+			<property name="BarrelScale" value="1,1,1"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunrsx1">
+			<property name="Sound_start" value="pump_shotgun_s_fire"/>
+			<property name="BarrelOffset" value="0,-0.0225,0"/>
+			<property name="BarrelScale" value=".16,.16,.2"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunsks">
+			<property name="Sound_start" value="762_sil_1"/>
+			<property name="BarrelOffset" value="0,-0.0435,0.497"/>
+			<property name="BarrelScale" value="1,1,1"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunsvd">
+			<property name="Sound_start" value="svd_fire_sil_1"/>
+			<property name="BarrelOffset" value="0,-0.0305,0.66"/>
+			<property name="BarrelScale" value="1,1,1"/>
+		</item_property_overrides>
+		<item_property_overrides name="gun9mmrifle">
+			<property name="Sound_start" value="9mmrifle_sil_1"/>
+			<property name="BarrelOffset" value="0,0,0.46"/>
+			<property name="BarrelScale" value="1,1,1"/>
+		</item_property_overrides>
+		<item_property_overrides name="gun556rifle">
+			<property name="Sound_start" value="556rifle_sil_1"/>
+			<property name="BarrelOffset" value="0,0,0.467"/>
+			<property name="BarrelScale" value="1,1,1"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunscarh">
+			<property name="Sound_start" value="762_sil_1"/>
+			<property name="Sound_loop" value="762_sil_1"/>
+			<property name="BarrelOffset" value="0,-0.009,0.09"/>
+			<property name="BarrelScale" value="1,1,1"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunmac11">
+			<property name="Sound_start" value="9mm_sil_1"/>
+			<property name="Sound_loop" value="9mm_sil_1"/>
+			<property name="BarrelOffset" value="0,-0.003,-0.1109"/>
+			<property name="BarrelScale" value=".16,.16,.2"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunmicrouzi">
+			<property name="Sound_start" value="45_sil_1"/>
+			<property name="Sound_loop" value="45_sil_1"/>
+			<property name="BarrelOffset" value="0,-0.0048,-0.15"/>
+			<property name="BarrelScale" value=".16,.16,.2"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunskorpion">
+			<property name="Sound_start" value="9mm_sil_2"/>
+			<property name="Sound_loop" value="9mm_sil_2"/>
+			<property name="BarrelOffset" value="0,-0.003,-0.1109"/>
+			<property name="BarrelScale" value=".16,.16,.2"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunm1pcarbine">
+			<property name="Sound_start" value="9mmrifle_sil_1"/>
+			<property name="BarrelOffset" value="-0.0044,-0.037,0.23"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="BarrelScale" value=".16,.16,.2"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunpp19">
+			<property name="Sound_start" value="9mm_sil_2"/>
+			<property name="Sound_loop" value="9mm_sil_2"/>
+			<property name="BarrelOffset" value="0.004,-0.029,0.013"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="BarrelScale" value=".16,.16,.2"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunaks74u">
+			<property name="Sound_start" value="556_sil_1"/>
+			<property name="Sound_loop" value="556_sil_1"/>
+			<property name="BarrelOffset" value="0,-0.040,0.02"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="BarrelScale" value="1,1,1"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunak101">
+			<property name="Sound_start" value="556_sil_1"/>
+			<property name="Sound_loop" value="556_sil_1"/>
+			<property name="BarrelOffset" value="0,-0.005,0.222"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="BarrelScale" value=".16,.16,.2"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunar15">
+			<property name="Sound_start" value="556_sil_1"/>
+			<property name="Sound_loop" value="556_sil_1"/>
+			<property name="BarrelOffset" value="0,-0.02,0.10"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="BarrelScale" value=".16,.16,.2"/>
+		</item_property_overrides>
+		<item_property_overrides name="gung36c">
+			<property name="Sound_start" value="556_sil_1"/>
+			<property name="Sound_loop" value="556_sil_1"/>
+			<property name="BarrelOffset" value="0,-0.042,-0.03"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="BarrelScale" value=".16,.16,.2"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunump45">
+			<property name="Sound_start" value="45_sil_2"/>
+			<property name="Sound_loop" value="45_sil_2"/>
+			<property name="BarrelOffset" value="0.006,-0.02,-0.0406"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="BarrelScale" value=".16,.16,.2"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunhk416">
+			<property name="Sound_start" value="556_sil_1"/>
+			<property name="Sound_loop" value="556_sil_1"/>
+			<property name="BarrelOffset" value="0,-0.035,0.10"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="BarrelScale" value=".16,.16,.2"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunscarl">
+			<property name="Sound_start" value="556_sil_1"/>
+			<property name="Sound_loop" value="556_sil_1"/>
+			<property name="BarrelOffset" value="0,-0.046,-0.03"/>
+			<property name="BarrelScale" value="1,1,1"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunsg553">
+			<property name="Sound_start" value="556_sil_1"/>
+			<property name="Sound_loop" value="556_sil_1"/>
+			<property name="BarrelOffset" value="0,-0.042,0.02"/>
+			<property name="BarrelScale" value="1,1,1"/>
+		</item_property_overrides>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modGunReflexSight']">
+		<item_property_overrides name="gun1911">
+			<property name="ScopeCameraOffset" value="0,-0.0393,0"/> <!-- -left/+right, +down/-up, -backwards/+forwards -->
+			<property name="ScopeOffset" value="0,0.074,-0.01"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunmk23">
+			<property name="ScopeCameraOffset" value="0.003,-0.0455,0.03"/> <!-- -left/+right, +down/-up, -backwards/+forwards -->
+			<property name="ScopeOffset" value="-0.0018,0.056,-0.02"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunGlock17">
+			<property name="ScopeCameraOffset" value="0.0001,-0.0256,0.08"/>
+			<property name="ScopeOffset" value="0,0.098,-0.082"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunmakarov">
+			<property name="ScopeCameraOffset" value="0,-0.0279,0"/>
+			<property name="ScopeOffset" value="0,0.073,-0.03"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gun45revolver">
+			<property name="ScopeCameraOffset" value="0.00131,-0.02198,0.08"/>
+			<property name="ScopeOffset" value="0,0.094,0.048"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gun9mmrevolver">
+			<property name="ScopeCameraOffset" value="0,-0.0235,0.08"/> <!-- -dot left/+right, -dot down/+up, -cam backwards/+forwards -->
+			<property name="ScopeOffset" value="0,0.094,0.048"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gundeserteagle">
+			<property name="ScopeCameraOffset" value="0,-0.0453,0.03"/> <!-- -dot left/+right, -dot down/+up, -cam backwards/+forwards -->
+			<property name="ScopeOffset" value="0,0.09,-0.03"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunp250">
+			<property name="ScopeCameraOffset" value="0,-0.0383,0.08"/> <!-- -dot left/+right, -dot down/+up, -cam backwards/+forwards -->
+			<property name="ScopeOffset" value="0,0.083,-0.052"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunp99">
+			<property name="ScopeCameraOffset" value="0.0002,-0.046,0.08"/> <!-- -dot left/+right, -dot down/+up, -cam backwards/+forwards -->
+			<property name="ScopeOffset" value="0,0.095,-0.087"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunusp">
+			<property name="ScopeCameraOffset" value="0,-0.0492,0.03"/> <!-- -dot left/+right, -dot down/+up, -cam backwards/+forwards -->
+			<property name="ScopeOffset" value="0,0.095,-0.071"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="guntec9">
+			<property name="ScopeCameraOffset" value="0,-0.0502,0.08"/> <!-- -dot left/+right, -dot down/+up, -cam backwards/+forwards -->
+			<property name="ScopeOffset" value="0,0.095,-0.071"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunsks">
+			<property name="ScopeCameraOffset" value="0.00455,0.0152,0.33"/> <!-- -dot left/+right, -dot down/+up, -cam backwards/+forwards -->
+			<property name="ScopeOffset" value="0,0.05,0"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunsvd">
+			<property name="Meshfile" value="#@modfolder:Resources/svdrifle.unity3d?svdriflepicatanny"/>
+			<property name="ScopeCameraOffset" value="0,-0.031,0.33"/> <!-- -dot left/+right, -dot down/+up, -cam backwards/+forwards -->
+			<property name="ScopeOffset" value="0,0.1,-0.12"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gun556rifle">
+			<property name="Meshfile" value="#@modfolder:Resources/556rifle.unity3d?556riflepicatanny"/>
+			<property name="ScopeCameraOffset" value="0,-0.0386,0.04"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="ScopeOffset" value="0,0.079,-0.1"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gun9mmrifle">
+			<property name="Meshfile" value="#@modfolder:Resources/9mmrifle.unity3d?9mmriflepicatanny"/>
+			<property name="ScopeCameraOffset" value="0,-0.0215,0.04"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="ScopeOffset" value="-0.0001,0.081,0.05"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunscarh">
+			<property name="Meshfile" value="#@modfolder:Resources/scarh.unity3d?scarhnosight"/>
+		<property name="ScopeCameraOffset" value="0.01,-0.018,0.03"/> <!-- -dot left/+right, -dot down/+up, -cam backwards/+forwards -->
+			<property name="ScopeOffset" value="0,0.08,-0.12"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunm1pcarbine">
+			<property name="ScopeCameraOffset" value="0.00555,0.0256,0.19"/> <!-- -dot left/+right, -dot down/+up, -cam backwards/+forwards -->
+			<property name="ScopeOffset" value="-0.0055,0.04,0.02"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunrsx1">
+			<property name="ScopeCameraOffset" value="-0.00412,0.0057,0.2"/>
+			<property name="ScopeOffset" value="0,0,0"/>
+			<property name="ScopeScale" value=".27,.27,.35"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunmac11">
+			<property name="ScopeCameraOffset" value="0.0001,-0.048,0.08"/>
+			<property name="ScopeOffset" value="0,0.12,-0.12"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunmicrouzi">
+			<property name="ScopeCameraOffset" value="0.0001,-0.0544,0.08"/>
+			<property name="ScopeOffset" value="0,0.13,-0.13"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunskorpion">
+			<property name="ScopeCameraOffset" value="0,-0.0503,0"/> <!-- -dot left/+right, -dot down/+up, -cam backwards/+forwards -->
+			<property name="ScopeOffset" value="0,0.095,-0.024"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunpp19">
+			<property name="ScopeCameraOffset" value="0.0091,0.0059,0.37"/> <!-- -dot left/+right, -dot down/+up, -cam backwards/+forwards -->
+			<property name="ScopeOffset" value="0.003,0.075,-0.15"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunaks74u">
+			<property name="ScopeCameraOffset" value="0.0001,-0.0005,0.24"/>
+			<property name="ScopeOffset" value="0,0.06,-0.038"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunak101">
+			<property name="ScopeCameraOffset" value="0.0001,-0.0022,0.38"/>
+			<property name="ScopeOffset" value="0,0.1,-0.138"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunar15">
+			<property name="Meshfile" value="#@modfolder:Resources/ar15.unity3d?ar15nosight"/>
+			<property name="ScopeCameraOffset" value="0,-0.019,0.08"/><!-- - dot left/+ dot right, - dot down/+ dot up, -backwards/+forwards -->
+			<property name="ScopeOffset" value="0,0.077,-0.15"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunump45">
+			<property name="ScopeCameraOffset" value="-0.0035,-0.0268,0.16"/>
+			<property name="ScopeOffset" value="0.0034,0.105,-0.15"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunhk416">
+			<property name="Meshfile" value="#@modfolder:Resources/hk416.unity3d?hk416nosight"/>
+			<property name="ScopeCameraOffset" value="0,-0.0225,0.02"/><!-- - dot left/+ dot right, - dot down/+ dot up, -backwards/+forwards -->
+			<property name="ScopeOffset" value="0,0.07,-0.15"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gung36c">
+			<property name="Meshfile" value="#@modfolder:Resources/g36c.unity3d?g36cnosight"/>
+			<property name="ScopeCameraOffset" value="0.0001,-0.034,0.41"/><!-- - dot left/+ dot right, - dot down/+ dot up, -backwards/+forwards -->
+			<property name="ScopeOffset" value="0,0.105,-0.2"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunscarl">
+			<property name="Meshfile" value="#@modfolder:Resources/scarl.unity3d?scarlnosight"/>
+			<property name="ScopeCameraOffset" value="0,-0.0322,0"/><!-- - dot left/+ dot right, - dot down/+ dot up, -backwards/+forwards -->
+			<property name="ScopeOffset" value="0,0.068,-0.2"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunsg553">
+			<property name="Meshfile" value="#@modfolder:Resources/sg553.unity3d?sg553nosight"/>
+			<property name="ScopeCameraOffset" value="0,0.008,0.35"/><!-- - dot left/+ dot right, - dot down/+ dot up, -backwards/+forwards -->
+			<property name="ScopeOffset" value="0,0.062,-0.16"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+	</append>
+
+	<append xpath="/item_modifiers/item_modifier[@name='modGunScopeSmall']">
+		<item_property_overrides name="gun1911">
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="ScopeCameraOffset" value="-0.0068,-0.0209,0"/>
+			<property name="ScopeOffset" value="0,.0805,-0.079"/>
+			<property name="ScopeScale" value="0.24,0.28,0.26"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunmk23">
+			<property name="ScopeCameraOffset" value="0.003,-0.0455,0"/> <!-- -left/+right, +down/-up, -backwards/+forwards -->
+			<property name="ScopeOffset" value="-0.0018,0.06,-0.07"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="ScopeScale" value="0.24,0.28,0.26"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunGlock17">
+			<property name="CrosshairOnAim" value="false"/>
+			<property name="ScopeCameraOffset" value="-0.0012,-0.0244,0"/>
+			<property name="ScopeOffset" value="0,0,-0.2"/>
+			<property name="ScopeScale" value="0.24,0.28,0.26"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunmakarov">
+			<property name="ScopeCameraOffset" value="0,-0.0279,0"/>
+			<property name="ScopeOffset" value="0,0.075,-0.095"/>
+			<property name="ScopeScale" value="0.24,0.28,0.26"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gun45revolver">
+			<property name="ScopeCameraOffset" value="0.00131,-0.02198,0"/>
+			<property name="ScopeOffset" value="0,0.1,0"/>
+			<property name="ScopeScale" value="0.24,0.28,0.26"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gun9mmrevolver">
+			<property name="ScopeCameraOffset" value="0.00131,-0.02198,0"/>
+			<property name="ScopeOffset" value="0,0.1,0"/>
+			<property name="ScopeScale" value="0.24,0.28,0.26"/>
+			<property name="CrosshairOnAim" value="true"/>
+		</item_property_overrides>
+		<item_property_overrides name="gundeserteagle">
+			<property name="ScopeCameraOffset" value="0,-0.0453,0"/> <!-- -dot left/+right, -dot down/+up, -cam backwards/+forwards -->
+			<property name="ScopeOffset" value="0,0.099,-0.085"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="ScopeScale" value="0.24,0.28,0.26"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunp250">
+			<property name="ScopeCameraOffset" value="0,-0.0383,0"/> <!-- -dot left/+right, -dot down/+up, -cam backwards/+forwards -->
+			<property name="ScopeOffset" value="0,0.083,-0.052"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="ScopeScale" value="0.24,0.28,0.26"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunp99">
+			<property name="ScopeCameraOffset" value="0,-0.0346,0"/> <!-- -dot left/+right, -dot down/+up, -cam backwards/+forwards -->
+			<property name="ScopeOffset" value="0,0.095,-0.087"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="ScopeScale" value="0.24,0.28,0.26"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunusp">
+			<property name="ScopeCameraOffset" value="0,-0.0346,0"/> <!-- -dot left/+right, -dot down/+up, -cam backwards/+forwards -->
+			<property name="ScopeOffset" value="0,0.095,-0.101"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="ScopeScale" value="0.24,0.28,0.26"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="guntec9">
+			<property name="ScopeCameraOffset" value="0,-0.0281,0.02"/> <!-- -dot left/+right, -dot down/+up, -cam backwards/+forwards -->
+			<property name="ScopeOffset" value="0,0.091,-0.1"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunruger109">
+			<property name="ScopeCameraOffset" value="0.0001,0.01,0.2"/>
+			<property name="ScopeOffset" value="0,0.1,0"/>
+			<property name="ScopeScale" value="0.24,0.28,0.26"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunmac11">
+			<property name="ScopeCameraOffset" value="0.0001,-0.048,0"/>
+			<property name="ScopeOffset" value="0,0.12,-0.18"/>
+			<property name="ScopeScale" value="0.24,0.28,0.26"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunmicrouzi">
+			<property name="ScopeCameraOffset" value="0.0001,-0.0544,0"/>
+			<property name="ScopeOffset" value="0,0.136,-0.18"/>
+			<property name="ScopeScale" value="0.24,0.28,0.26"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunskorpion">
+			<property name="ScopeCameraOffset" value="0,-0.0503,0"/> <!-- -dot left/+right, -dot down/+up, -cam backwards/+forwards -->
+			<property name="ScopeOffset" value="0,0.095,-0.024"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="ScopeScale" value="0.24,0.28,0.26"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunsks">
+			<property name="ScopeCameraOffset" value="0.00455,0.0152,0.25"/> <!-- -dot left/+right, -dot down/+up, -cam backwards/+forwards -->
+			<property name="ScopeOffset" value="0,0.068,-0.04"/>
+			<property name="ScopeScale" value="0.24,0.28,0.26"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunsvd">
+			<property name="Meshfile" value="#@modfolder:Resources/svdrifle.unity3d?svdriflepicatanny"/>
+			<property name="ScopeCameraOffset" value="0,-0.001,0.25"/> <!-- -dot left/+right, -dot down/+up, -cam backwards/+forwards -->
+			<property name="ScopeOffset" value="0,0.08,-0.15"/>
+			<property name="ScopeScale" value="0.24,0.28,0.26"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gun9mmrifle">
+			<property name="Meshfile" value="#@modfolder:Resources/9mmrifle.unity3d?9mmriflepicatanny"/>
+			<property name="ScopeCameraOffset" value="0,-0.0215,0"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="ScopeOffset" value="-0.0001,0.086,0.01"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="ScopeScale" value="0.24,0.28,0.26"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gun556rifle">
+			<property name="Meshfile" value="#@modfolder:Resources/556rifle.unity3d?556riflepicatanny"/>
+			<property name="ScopeCameraOffset" value="0,-0.0386,0"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="ScopeOffset" value="0,0.084,-0.1"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="ScopeScale" value="0.24,0.28,0.26"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunaks74u">
+			<property name="ScopeCameraOffset" value="0.0002,0.0071,0.2"/>
+			<property name="ScopeOffset" value="0,0.08,-0.078"/>
+			<property name="ScopeScale" value="0.24,0.28,0.26"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunak101">
+			<property name="ScopeCameraOffset" value="0.0002,0.0024,0.2"/>
+			<property name="ScopeOffset" value="0,0.1,-0.138"/>
+			<property name="ScopeScale" value="0.24,0.28,0.26"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunar15">
+			<property name="Meshfile" value="#@modfolder:Resources/ar15.unity3d?ar15nosight"/>
+			<property name="ScopeCameraOffset" value="0,-0.019,0"/><!-- - dot left/+ dot right, - dot down/+ dot up, -backwards/+forwards -->
+			<property name="ScopeOffset" value="0,0.077,-0.15"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="ScopeScale" value="0.15,0.15,0.15"/> 
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunpp19">
+			<property name="ScopeCameraOffset" value="0.0091,0.0059,0.35"/> <!-- -dot left/+right, -dot down/+up, -cam backwards/+forwards -->
+			<property name="ScopeOffset" value="0.003,0.079,-0.15"/>
+			<property name="ScopeScale" value=".27,.27,.35"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunump45">
+			<property name="ScopeCameraOffset" value="-0.0035,-0.0263,0.25"/>
+			<property name="ScopeOffset" value="0.0034,0.105,-0.15"/>
+			<property name="ScopeScale" value="0.24,0.28,0.26"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunhk416">
+			<property name="Meshfile" value="#@modfolder:Resources/hk416.unity3d?hk416nosight"/>
+			<property name="ScopeCameraOffset" value="0,-0.019,0"/><!-- - dot left/+ dot right, - dot down/+ dot up, -backwards/+forwards -->
+			<property name="ScopeOffset" value="0,0.077,-0.15"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="ScopeScale" value="0.15,0.15,0.15"/> 
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gung36c">
+			<property name="Meshfile" value="#@modfolder:Resources/g36c.unity3d?g36cnosight"/>
+			<property name="ScopeCameraOffset" value="0.0001,-0.034,0.35"/><!-- - dot left/+ dot right, - dot down/+ dot up, -backwards/+forwards -->
+			<property name="ScopeOffset" value="0,0.105,-0.25"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="ScopeScale" value="0.15,0.15,0.15"/> 
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunm1pcarbine">
+			<property name="ScopeCameraOffset" value="0.00555,0.0256,0.16"/> <!-- -dot left/+right, -dot down/+up, -cam backwards/+forwards -->
+			<property name="ScopeOffset" value="-0.0055,0.05,0.012"/>
+			<property name="ScopeScale" value="0.24,0.28,0.26"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunscarh">
+			<property name="Meshfile" value="#@modfolder:Resources/scarh.unity3d?scarhnosight"/>
+			<property name="ScopeCameraOffset" value="0.01,-0.018,0"/> <!-- -dot left/+right, -dot down/+up, -cam backwards/+forwards -->
+			<property name="ScopeOffset" value="0,0.09,-0.15"/>
+			<property name="ScopeScale" value=".27,.27,.35"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunscarl">
+			<property name="Meshfile" value="#@modfolder:Resources/scarl.unity3d?scarlnosight"/>
+			<property name="ScopeCameraOffset" value="-0.002,-0.01398,0.1"/><!-- - dot left/+ dot right, - dot down/+ dot up, -backwards/+forwards -->
+			<property name="ScopeOffset" value="0.002,0.068,-0.26"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunsg553">
+			<property name="Meshfile" value="#@modfolder:Resources/sg553.unity3d?sg553nosight"/>
+			<property name="ScopeCameraOffset" value="0,0.028,0.33"/><!-- - dot left/+ dot right, - dot down/+ dot up, -backwards/+forwards -->
+			<property name="ScopeOffset" value="0,0.062,-0.16"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="ScopeRotation" value="1.6,0,0"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modGunScopeMedium']">
+		<item_property_overrides name="gunaks74u">
+			<property name="ScopeCameraOffset" value="0.0002,0.0071,0.2"/>
+			<property name="ScopeOffset" value="0,0.07,-0.038"/>
+			<property name="ScopeScale" value=".27,.27,.33"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunak101">
+			<property name="ScopeCameraOffset" value="0.0002,0.0024,0.2"/>
+			<property name="ScopeOffset" value="0,0.095,-0.138"/>
+			<property name="ScopeScale" value=".27,.27,.33"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunsks">
+			<property name="ScopeCameraOffset" value="0.00455,0.0152,0.25"/> <!-- -dot left/+right, -dot down/+up, -cam backwards/+forwards -->
+			<property name="ScopeOffset" value="0,0.06,-0.04"/>
+			<property name="ScopeScale" value=".27,.27,.33"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunsvd">
+			<property name="Meshfile" value="#@modfolder:Resources/svdrifle.unity3d?svdriflepicatanny"/>
+			<property name="ScopeCameraOffset" value="0,-0.001,0.25"/> <!-- -dot left/+right, -dot down/+up, -cam backwards/+forwards -->
+			<property name="ScopeOffset" value="0,0.075,-0.15"/>
+			<property name="ScopeScale" value=".27,.27,.33"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gun9mmrifle">
+			<property name="Meshfile" value="#@modfolder:Resources/9mmrifle.unity3d?9mmriflepicatanny"/>
+			<property name="ScopeCameraOffset" value="0,-0.0215,0"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="ScopeOffset" value="-0.0001,0.081,0.01"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="ScopeScale" value=".27,.27,.33"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gun556rifle">
+			<property name="Meshfile" value="#@modfolder:Resources/556rifle.unity3d?556riflepicatanny"/>
+			<property name="ScopeCameraOffset" value="0,-0.0386,0"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="ScopeOffset" value="0,0.082,-0.1"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="ScopeScale" value=".27,.27,.33"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunar15">
+			<property name="Meshfile" value="#@modfolder:Resources/ar15.unity3d?ar15nosight"/>
+			<property name="ScopeCameraOffset" value="0,-0.019,0"/><!-- - dot left/+ dot right, - dot down/+ dot up, -backwards/+forwards -->
+			<property name="ScopeOffset" value="0,0.077,-0.15"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="ScopeScale" value=".27,.27,.33"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunump45">
+			<property name="ScopeCameraOffset" value="-0.0035,-0.0263,0.25"/>
+			<property name="ScopeOffset" value="0.0034,0.105,-0.15"/>
+			<property name="ScopeScale" value=".27,.27,.33"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunhk416">
+			<property name="Meshfile" value="#@modfolder:Resources/hk416.unity3d?hk416nosight"/>
+			<property name="ScopeCameraOffset" value="0,-0.019,0"/><!-- - dot left/+ dot right, - dot down/+ dot up, -backwards/+forwards -->
+			<property name="ScopeOffset" value="0,0.07,-0.15"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="ScopeScale" value=".27,.27,.33"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunscarh">
+			<property name="Meshfile" value="#@modfolder:Resources/scarh.unity3d?scarhnosight"/>
+		<property name="ScopeCameraOffset" value="0.01,-0.018,0"/> <!-- -dot left/+right, -dot down/+up, -cam backwards/+forwards -->
+			<property name="ScopeOffset" value="0,0.082,-0.15"/>
+			<property name="ScopeScale" value=".27,.27,.33"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gung36c">
+			<property name="Meshfile" value="#@modfolder:Resources/g36c.unity3d?g36cnosight"/>
+			<property name="ScopeCameraOffset" value="0.0001,-0.034,0.35"/><!-- - dot left/+ dot right, - dot down/+ dot up, -backwards/+forwards -->
+			<property name="ScopeOffset" value="0,0.105,-0.235"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="ScopeScale" value=".27,.27,.33"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunm1pcarbine">
+			<property name="ScopeCameraOffset" value="0.00555,0.0256,0.16"/> <!-- -dot left/+right, -dot down/+up, -cam backwards/+forwards -->
+			<property name="ScopeOffset" value="-0.0055,0.05,0.012"/>
+			<property name="ScopeScale" value=".27,.27,.33"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunscarl">
+			<property name="Meshfile" value="#@modfolder:Resources/scarl.unity3d?scarlnosight"/>
+			<property name="ScopeCameraOffset" value="-0.001,-0.0212,-0.02"/><!-- - dot left/+ dot right, - dot down/+ dot up, -backwards/+forwards -->
+			<property name="ScopeOffset" value="0.002,0.069,-0.26"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunsg553">
+			<property name="Meshfile" value="#@modfolder:Resources/sg553.unity3d?sg553nosight"/>
+			<property name="ScopeCameraOffset" value="-0.001,0.0218,0.266"/><!-- - dot left/+ dot right, - dot down/+ dot up, -backwards/+forwards -->
+			<property name="ScopeOffset" value="0.002,0.062,-0.19"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="ScopeRotation" value="1.4,0,0"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modGunScopeLarge']">
+		<item_property_overrides name="gunsvd">
+			<property name="Meshfile" value="#@modfolder:Resources/svdrifle.unity3d?svdriflepicatanny"/>
+			<property name="ScopeCameraOffset" value="0,-0.001,0.25"/> <!-- -dot left/+right, -dot down/+up, -cam backwards/+forwards -->
+			<property name="ScopeOffset" value="0,0.005,-0.05"/>
+			<property name="ScopeScale" value=".29,.29,.35"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gun9mmrifle">
+			<property name="Meshfile" value="#@modfolder:Resources/9mmrifle.unity3d?9mmriflepicatanny"/>
+			<property name="ScopeCameraOffset" value="0,-0.0215,0"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="ScopeOffset" value="0,0.01,0.16"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="ScopeScale" value=".29,.29,.35"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+		<item_property_overrides name="gun556rifle">
+			<property name="Meshfile" value="#@modfolder:Resources/556rifle.unity3d?556riflepicatanny"/>
+			<property name="ScopeCameraOffset" value="0,-0.0386,0"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="ScopeOffset" value="0,0.01,-0.025"/> <!-- -left/+right, -down/+up, -backwards/+forwards -->
+			<property name="ScopeScale" value=".29,.29,.35"/>
+			<property name="CrosshairOnAim" value="false"/>
+		</item_property_overrides>
+	</append>
+</VFX>

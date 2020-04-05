@@ -1,0 +1,26 @@
+<opengl2>
+
+<append xpath="/items">
+
+<item name="meleeHandkillerrabbit">
+	<property name="Extends" value="meleeHandMaster"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="HoldType" value="35"/>
+	<property class="Action0">
+		<property name="Delay" value=".55"/>
+		<property name="Range" value="1.2"/>
+		<property name="Sphere" value=".2"/>
+		<property name="DamageEntity" value="15"/>
+		<property name="DamageBlock" value="35"/>
+		<property name="Buff" value=",buffInjuryStunned01,buffLegBroken"/>
+	</property>
+	
+	<effect_group name="meleeHandkillerrabbit" tiered="false">
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value=".25" tags="buffInjuryStunned01"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value=".75" tags="buffLegBroken"/>
+	</effect_group>
+</item>
+
+</append>
+</opengl2>

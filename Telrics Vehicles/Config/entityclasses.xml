@@ -1,0 +1,250 @@
+<configs>
+
+
+<append xpath="/entity_classes">
+<entity_class name="RescueChopper">
+	<property name="Tags" value="vehicle"/>
+	<property name="CanClimbVertical" value="true"/>
+	<property name="Class" value="EntityVGyroCopter"/>
+	<property name="Parent" value="Cars"/>
+	<property name="Prefab" value="#@modfolder:Resources/RescueChopper.unity3d?RescueChopperPrefab"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="SurfaceCategory" value="organic"/>
+	<property name="IgnoreTrigger" value="true"/>
+	<property name="LootListAlive" value="76"/>
+	<property name="IsEnemyEntity" value="false"/>
+	<property name="Explosion.ParticleIndex" value="6"/>
+	<property name="Explosion.RadiusBlocks" value="3"/>
+	<property name="Explosion.RadiusEntities" value="3"/>
+	<property name="Explosion.BlockDamage" value="20"/>
+	<property name="Explosion.EntityDamage" value="20"/>
+	<property name="RotateToGround" value="true"/>
+	<property name="Faction" value="none"/>
+	<property name="MapIcon" value="ui_game_symbol_minibike"/>
+</entity_class>
+<entity_class name="BlackChopper">
+	<property name="Tags" value="vehicle"/>
+	<property name="CanClimbVertical" value="true"/>
+	<property name="Class" value="EntityVGyroCopter"/>
+	<property name="Parent" value="Cars"/>
+	<property name="Prefab" value="#@modfolder:Resources/BlackChopper.unity3d?BlackChopperPrefab"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="SurfaceCategory" value="organic"/>
+	<property name="IgnoreTrigger" value="true"/>
+	<property name="LootListAlive" value="76"/>
+	<property name="IsEnemyEntity" value="false"/>
+	<property name="Explosion.ParticleIndex" value="6"/>
+	<property name="Explosion.RadiusBlocks" value="3"/>
+	<property name="Explosion.RadiusEntities" value="3"/>
+	<property name="Explosion.BlockDamage" value="20"/>
+	<property name="Explosion.EntityDamage" value="20"/>
+	<property name="RotateToGround" value="true"/>
+	<property name="Faction" value="none"/>
+	<property name="MapIcon" value="ui_game_symbol_minibike"/>
+</entity_class>
+<entity_class name="Biplane">
+	<property name="Tags" value="vehicle"/>
+	<property name="CanClimbVertical" value="true"/>
+	<property name="Class" value="EntityVGyroCopter"/>
+	<property name="Parent" value="Cars"/>
+	<property name="Prefab" value="#@modfolder:Resources/Biplane2.unity3d?BiplanePrefab2"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="SurfaceCategory" value="organic"/>
+	<property name="IgnoreTrigger" value="true"/>
+	<property name="LootListAlive" value="76"/>
+	<property name="IsEnemyEntity" value="false"/>
+	<property name="Explosion.ParticleIndex" value="6"/>
+	<property name="Explosion.RadiusBlocks" value="3"/>
+	<property name="Explosion.RadiusEntities" value="3"/>
+	<property name="Explosion.BlockDamage" value="20"/>
+	<property name="Explosion.EntityDamage" value="20"/>
+	<property name="RotateToGround" value="true"/>
+	<property name="Faction" value="none"/>
+	<property name="MapIcon" value="ui_game_symbol_minibike"/>
+</entity_class>
+<entity_class name="BiplaneBlue">
+	<property name="Tags" value="vehicle"/>
+	<property name="CanClimbVertical" value="true"/>
+	<property name="Class" value="EntityVGyroCopter"/>
+	<property name="Parent" value="Cars"/>
+	<property name="Prefab" value="#@modfolder:Resources/BiplaneBlue.unity3d?BiplaneBluePrefab2"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="SurfaceCategory" value="organic"/>
+	<property name="IgnoreTrigger" value="true"/>
+	<property name="LootListAlive" value="76"/>
+	<property name="IsEnemyEntity" value="false"/>
+	<property name="Explosion.ParticleIndex" value="6"/>
+	<property name="Explosion.RadiusBlocks" value="3"/>
+	<property name="Explosion.RadiusEntities" value="3"/>
+	<property name="Explosion.BlockDamage" value="20"/>
+	<property name="Explosion.EntityDamage" value="20"/>
+	<property name="RotateToGround" value="true"/>
+	<property name="Faction" value="none"/>
+	<property name="MapIcon" value="ui_game_symbol_minibike"/>
+</entity_class>
+
+<entity_class name="BiplaneBlack">
+	<property name="Tags" value="vehicle"/>
+	<property name="CanClimbVertical" value="true"/>
+	<property name="Class" value="EntityVGyroCopter"/>
+	<property name="Parent" value="Cars"/>
+	<property name="Prefab" value="#@modfolder:Resources/BiplaneBlack.unity3d?BiplaneBlackPrefab2"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="SurfaceCategory" value="organic"/>
+	<property name="IgnoreTrigger" value="true"/>
+	<property name="LootListAlive" value="76"/>
+	<property name="IsEnemyEntity" value="false"/>
+	<property name="Explosion.ParticleIndex" value="6"/>
+	<property name="Explosion.RadiusBlocks" value="3"/>
+	<property name="Explosion.RadiusEntities" value="3"/>
+	<property name="Explosion.BlockDamage" value="20"/>
+	<property name="Explosion.EntityDamage" value="20"/>
+	<property name="RotateToGround" value="true"/>
+	<property name="Faction" value="none"/>
+	<property name="MapIcon" value="ui_game_symbol_minibike"/>
+</entity_class>
+<entity_class name="BiplanePurple">
+	<property name="Tags" value="vehicle"/>
+	<property name="CanClimbVertical" value="true"/>
+	<property name="Class" value="EntityVGyroCopter"/>
+	<property name="Parent" value="Cars"/>
+	<property name="Prefab" value="#@modfolder:Resources/BiplanePurple.unity3d?BiplanePurplePrefab2"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="SurfaceCategory" value="organic"/>
+	<property name="IgnoreTrigger" value="true"/>
+	<property name="LootListAlive" value="76"/>
+	<property name="IsEnemyEntity" value="false"/>
+	<property name="Explosion.ParticleIndex" value="6"/>
+	<property name="Explosion.RadiusBlocks" value="3"/>
+	<property name="Explosion.RadiusEntities" value="3"/>
+	<property name="Explosion.BlockDamage" value="20"/>
+	<property name="Explosion.EntityDamage" value="20"/>
+	<property name="RotateToGround" value="true"/>
+	<property name="Faction" value="none"/>
+	<property name="MapIcon" value="ui_game_symbol_minibike"/>
+</entity_class>
+
+<entity_class name="BiplaneGreen">
+	<property name="Tags" value="vehicle"/>
+	<property name="CanClimbVertical" value="true"/>
+	<property name="Class" value="EntityVGyroCopter"/>
+	<property name="Parent" value="Cars"/>
+	<property name="Prefab" value="#@modfolder:Resources/BiplaneGreen.unity3d?BiplaneGreenPrefab2"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="SurfaceCategory" value="organic"/>
+	<property name="IgnoreTrigger" value="true"/>
+	<property name="LootListAlive" value="76"/>
+	<property name="IsEnemyEntity" value="false"/>
+	<property name="Explosion.ParticleIndex" value="6"/>
+	<property name="Explosion.RadiusBlocks" value="3"/>
+	<property name="Explosion.RadiusEntities" value="3"/>
+	<property name="Explosion.BlockDamage" value="20"/>
+	<property name="Explosion.EntityDamage" value="20"/>
+	<property name="RotateToGround" value="true"/>
+	<property name="Faction" value="none"/>
+	<property name="MapIcon" value="ui_game_symbol_minibike"/>
+</entity_class>
+
+<entity_class name="GreenCar">
+	<property name="Tags" value="vehicle"/>
+	<property name="Class" value="EntityVJeep"/>
+	<property name="Parent" value="Cars"/>
+	<property name="Prefab" value="#@modfolder:Resources/GreenCar.unity3d?GreenCarPrefab"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="SurfaceCategory" value="metal"/>
+	<property name="IgnoreTrigger" value="true"/>
+	<property name="LootListAlive" value="79"/>
+	<property name="IsEnemyEntity" value="false"/>
+	<property name="Explosion.ParticleIndex" value="6"/>
+	<property name="Explosion.RadiusBlocks" value="5"/>
+	<property name="Explosion.RadiusEntities" value="5"/>
+	<property name="Explosion.BlockDamage" value="100"/>
+	<property name="Explosion.EntityDamage" value="100"/>
+	<property name="RotateToGround" value="true"/>
+	<property name="Faction" value="none"/>
+	<property name="MapIcon" value="ui_game_symbol_4x4"/>
+</entity_class>
+<entity_class name="RedCar">
+	<property name="Tags" value="vehicle"/>
+	<property name="Class" value="EntityVJeep"/>
+	<property name="Parent" value="Cars"/>
+	<property name="Prefab" value="#@modfolder:Resources/RedCar.unity3d?RedCarPrefab"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="SurfaceCategory" value="metal"/>
+	<property name="IgnoreTrigger" value="true"/>
+	<property name="LootListAlive" value="79"/>
+	<property name="IsEnemyEntity" value="false"/>
+	<property name="Explosion.ParticleIndex" value="6"/>
+	<property name="Explosion.RadiusBlocks" value="5"/>
+	<property name="Explosion.RadiusEntities" value="5"/>
+	<property name="Explosion.BlockDamage" value="100"/>
+	<property name="Explosion.EntityDamage" value="100"/>
+	<property name="RotateToGround" value="true"/>
+	<property name="Faction" value="none"/>
+	<property name="MapIcon" value="ui_game_symbol_4x4"/>
+</entity_class>
+<entity_class name="BlueCar">
+	<property name="Tags" value="vehicle"/>
+	<property name="Class" value="EntityVJeep"/>
+	<property name="Parent" value="Cars"/>
+	<property name="Prefab" value="#@modfolder:Resources/BlueCar.unity3d?BlueCarPrefab"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="SurfaceCategory" value="metal"/>
+	<property name="IgnoreTrigger" value="true"/>
+	<property name="LootListAlive" value="79"/>
+	<property name="IsEnemyEntity" value="false"/>
+	<property name="Explosion.ParticleIndex" value="6"/>
+	<property name="Explosion.RadiusBlocks" value="5"/>
+	<property name="Explosion.RadiusEntities" value="5"/>
+	<property name="Explosion.BlockDamage" value="100"/>
+	<property name="Explosion.EntityDamage" value="100"/>
+	<property name="RotateToGround" value="true"/>
+	<property name="Faction" value="none"/>
+	<property name="MapIcon" value="ui_game_symbol_4x4"/>
+</entity_class>
+<entity_class name="OrangeCar">
+	<property name="Tags" value="vehicle"/>
+	<property name="Class" value="EntityVJeep"/>
+	<property name="Parent" value="Cars"/>
+	<property name="Prefab" value="#@modfolder:Resources/OrangeCar.unity3d?OrangeCarPrefab"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="SurfaceCategory" value="metal"/>
+	<property name="IgnoreTrigger" value="true"/>
+	<property name="LootListAlive" value="79"/>
+	<property name="IsEnemyEntity" value="false"/>
+	<property name="Explosion.ParticleIndex" value="6"/>
+	<property name="Explosion.RadiusBlocks" value="5"/>
+	<property name="Explosion.RadiusEntities" value="5"/>
+	<property name="Explosion.BlockDamage" value="100"/>
+	<property name="Explosion.EntityDamage" value="100"/>
+	<property name="RotateToGround" value="true"/>
+	<property name="Faction" value="none"/>
+	<property name="MapIcon" value="ui_game_symbol_4x4"/>
+</entity_class>
+<entity_class name="BlackCar">
+	<property name="Tags" value="vehicle"/>
+	<property name="Class" value="EntityVJeep"/>
+	<property name="Parent" value="Cars"/>
+	<property name="Prefab" value="#@modfolder:Resources/BlackCar.unity3d?BlackCarPrefab"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="SurfaceCategory" value="metal"/>
+	<property name="IgnoreTrigger" value="true"/>
+	<property name="LootListAlive" value="79"/>
+	<property name="IsEnemyEntity" value="false"/>
+	<property name="Explosion.ParticleIndex" value="6"/>
+	<property name="Explosion.RadiusBlocks" value="5"/>
+	<property name="Explosion.RadiusEntities" value="5"/>
+	<property name="Explosion.BlockDamage" value="100"/>
+	<property name="Explosion.EntityDamage" value="100"/>
+	<property name="RotateToGround" value="true"/>
+	<property name="Faction" value="none"/>
+	<property name="MapIcon" value="ui_game_symbol_4x4"/>
+</entity_class>
+</append>
+
+	
+
+</configs>
+
+
+

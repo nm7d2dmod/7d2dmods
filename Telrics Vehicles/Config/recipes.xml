@@ -1,0 +1,92 @@
+<configs>
+	<append xpath="/recipes">
+<recipe name="Rescue_Chopper[T]" count="1" craft_area="workbench" craft_time="300" >
+	<ingredient name="resourceForgedIron" count="100"/>
+	<ingredient name="resourceMechanicalParts" count="10"/>
+	<ingredient name="carBattery" count="1"/>
+	<ingredient name="resourceDuctTape" count="5" />
+	<ingredient name="smallEngine" count="1" />
+</recipe>
+<recipe name="Black_Chopper[T]" count="1" craft_area="workbench" craft_time="300" >
+	<ingredient name="resourceForgedIron" count="100"/>
+	<ingredient name="resourceMechanicalParts" count="10"/>
+	<ingredient name="carBattery" count="1"/>
+	<ingredient name="resourceDuctTape" count="5" />
+	<ingredient name="smallEngine" count="1" />
+</recipe>
+
+<recipe name="Biplane[T]" count="1" craft_area="workbench" craft_time="300" >
+	<ingredient name="resourceForgedIron" count="150"/>
+	<ingredient name="resourceMechanicalParts" count="15"/>
+	<ingredient name="carBattery" count="1"/>
+	<ingredient name="vehicleWheels" count="3" />
+	<ingredient name="smallEngine" count="1" />
+</recipe>
+<recipe name="Biplane_Black[T]" count="1" craft_area="workbench" craft_time="300" >
+	<ingredient name="resourceForgedIron" count="150"/>
+	<ingredient name="resourceMechanicalParts" count="15"/>
+	<ingredient name="carBattery" count="1"/>
+	<ingredient name="vehicleWheels" count="3" />
+	<ingredient name="smallEngine" count="1" />
+</recipe>
+<recipe name="Biplane_Blue[T]" count="1" craft_area="workbench" craft_time="300" >
+	<ingredient name="resourceForgedIron" count="150"/>
+	<ingredient name="resourceMechanicalParts" count="15"/>
+	<ingredient name="carBattery" count="1"/>
+	<ingredient name="vehicleWheels" count="3" />
+	<ingredient name="smallEngine" count="1" />
+</recipe>
+<recipe name="Biplane_Green[T]" count="1" craft_area="workbench" craft_time="300" >
+	<ingredient name="resourceForgedIron" count="150"/>
+	<ingredient name="resourceMechanicalParts" count="15"/>
+	<ingredient name="carBattery" count="1"/>
+	<ingredient name="vehicleWheels" count="3" />
+	<ingredient name="smallEngine" count="1" />
+</recipe>
+<recipe name="Biplane_Purple[T]" count="1" craft_area="workbench" craft_time="300" >
+	<ingredient name="resourceForgedIron" count="150"/>
+	<ingredient name="resourceMechanicalParts" count="15"/>
+	<ingredient name="carBattery" count="1"/>
+	<ingredient name="vehicleWheels" count="3" />
+	<ingredient name="smallEngine" count="1" />
+</recipe>
+
+<recipe name="Green_Car[T]" count="1" craft_area="workbench" craft_time="300" >
+	<ingredient name="resourceForgedIron" count="75"/>
+	<ingredient name="resourceMechanicalParts" count="8"/>
+	<ingredient name="carBattery" count="1"/>
+	<ingredient name="vehicleWheels" count="4" />
+	<ingredient name="smallEngine" count="1" />
+</recipe>
+<recipe name="Blue_Car[T]" count="1" craft_area="workbench" craft_time="300" >
+	<ingredient name="resourceForgedIron" count="75"/>
+	<ingredient name="resourceMechanicalParts" count="15"/>
+	<ingredient name="carBattery" count="1"/>
+	<ingredient name="vehicleWheels" count="4" />
+	<ingredient name="smallEngine" count="1" />
+</recipe>
+<recipe name="Orange_Car[T]" count="1" craft_area="workbench" craft_time="300" >
+	<ingredient name="resourceForgedIron" count="75"/>
+	<ingredient name="resourceMechanicalParts" count="15"/>
+	<ingredient name="carBattery" count="1"/>
+	<ingredient name="vehicleWheels" count="4" />
+	<ingredient name="smallEngine" count="1" />
+</recipe>
+<recipe name="Red_Car[T]" count="1" craft_area="workbench" craft_time="300" >
+	<ingredient name="resourceForgedIron" count="75"/>
+	<ingredient name="resourceMechanicalParts" count="15"/>
+	<ingredient name="carBattery" count="1"/>
+	<ingredient name="vehicleWheels" count="4" />
+	<ingredient name="smallEngine" count="1" />
+</recipe>
+<recipe name="Black_Car[T]" count="1" craft_area="workbench" craft_time="300" >
+	<ingredient name="resourceForgedIron" count="75"/>
+	<ingredient name="resourceMechanicalParts" count="15"/>
+	<ingredient name="carBattery" count="1"/>
+	<ingredient name="vehicleWheels" count="4" />
+	<ingredient name="smallEngine" count="1" />
+</recipe>
+	</append>
+
+		
+</configs>

@@ -1,0 +1,13 @@
+<configs>
+		
+<insertAfter xpath="/lootcontainers/lootgroup[@name='groupBirdNestMain']">
+
+<lootcontainer id="511" count="2,3" size="6,3" destroy_on_close="false" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" open_time="1" loot_quality_template="qualPlus1Template">
+	<item name="foodRawMeat" count="2,4" prob="100"/>
+	<item name="resourceAnimalFat" count="1,3" prob="100"/>
+	<item group="groupQuestAmmo" count="1,2" prob="50"/>
+	<item group="groupQuestRanged" count="1,2" prob="50"/>
+</lootcontainer>
+
+</insertAfter>
+</configs>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Non_Powered_Hang_Glider_Modlet_Experimental" />
+		<Description value="Adds a Hang Glider to the Game " />
+		<Author value="Ragsy2145/Guppycur"/>
+		<Version value="18.0.1.0" compat="A18.2, A18e"/>
+		<Website value="https://7daystodie.com/forums/showthread.php?106453-Ragsy2145-Modlets" />
+	</ModInfo>
+</xml>

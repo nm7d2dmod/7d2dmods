@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Faster Nailgun" />
+		<Description value="Updates Nailgun action 1 delay to .2" />
+		<Author value="R0bb0b" />
+		<Version value="1.0" />
+		<Website value="" />
+	</ModInfo>
+</xml>

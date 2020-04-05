@@ -1,0 +1,13 @@
+<configs>
+<append xpath="/recipes">
+
+	<recipe name="guppyVehicleHangGliderPlaceable" count="1" craft_time="600" craft_area="workbench" >
+		<ingredient name="resourceCloth" count="80"/>
+		<ingredient name="resourceGlue" count="5"/>
+		<ingredient name="resourceMetalPipe" count="9"/>
+		<ingredient name="resourceDuctTape" count="5"/>
+		<ingredient name="resourceForgedIron" count="20"/>
+		<ingredient name="vehicleWheels" count="2"/>
+	</recipe>
+	</append>
+</configs>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<xml>    
+	<ModInfo>                  
+		<Author value="Adreden" />     
+		<Name value="Adreden Schematic Tracker" />    
+		<Description value="This allow you to see what mods you have found.     
+			Likely only works for schematics found after its been installed" />              
+		<Version value="0.1" /> 
+		<Website value="https://adredencom.herokuapp.com" />    
+	</ModInfo>                  
+</xml>     

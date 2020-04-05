@@ -1,0 +1,292 @@
+<delmod>
+	
+	<!--================================  	ADD CRAFTABLE & WORKING LIGHT SOURCES  ================================ -->
+	
+	<remove xpath="/recipes/recipe[@name='endTableLamp']"/>
+	<remove xpath="/recipes/recipe[@name='ceilingLight01_player']"/>
+
+	<append xpath="/recipes" >	
+		<recipe name="Ceiling Light" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceScrapIron" count="5"/>
+			<ingredient name="resourceHeadlight" count="1"/>
+			<ingredient name="resourceElectricParts" count="3"/>
+		</recipe>
+		<recipe name="Ceiling Light 2" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceScrapIron" count="5"/>
+			<ingredient name="resourceHeadlight" count="1"/>
+			<ingredient name="resourceElectricParts" count="3"/>
+		</recipe>
+		<recipe name="Ceiling Light 2 Brass" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceScrapBrass" count="5"/>
+			<ingredient name="resourceHeadlight" count="1"/>
+			<ingredient name="resourceElectricParts" count="3"/>
+		</recipe>
+		<recipe name="Ceiling Light 4" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceScrapIron" count="5"/>
+			<ingredient name="resourceHeadlight" count="1"/>
+			<ingredient name="resourceElectricParts" count="3"/>
+		</recipe>
+		<recipe name="Ceiling Light 5" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceScrapIron" count="5"/>
+			<ingredient name="resourceHeadlight" count="1"/>
+			<ingredient name="resourceElectricParts" count="3"/>
+		</recipe>
+		<recipe name="Ceiling Light 5 Brass" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceScrapBrass" count="5"/>
+			<ingredient name="resourceHeadlight" count="1"/>
+			<ingredient name="resourceElectricParts" count="3"/>
+		</recipe>
+		<recipe name="Ceiling Light 7" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceScrapIron" count="5"/>
+			<ingredient name="resourceHeadlight" count="1"/>
+			<ingredient name="resourceElectricParts" count="3"/>
+		</recipe>
+		<recipe name="Ceiling Fan Light" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceScrapIron" count="5"/>
+			<ingredient name="resourceWood" count="10"/>
+			<ingredient name="resourceHeadlight" count="1"/>
+			<ingredient name="resourceMechanicalParts" count="5"/>
+			<ingredient name="resourceElectricParts" count="3"/>
+		</recipe>
+		<recipe name="Wall Light" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceScrapIron" count="5"/>
+			<ingredient name="resourceHeadlight" count="1"/>
+			<ingredient name="resourceElectricParts" count="3"/>
+		</recipe>
+		<recipe name="Sconce Light" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceScrapIron" count="5"/>
+			<ingredient name="resourceHeadlight" count="1"/>
+			<ingredient name="resourceElectricParts" count="3"/>
+		</recipe>
+		<recipe name="Porch Light" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceScrapIron" count="5"/>
+			<ingredient name="resourceHeadlight" count="1"/>
+			<ingredient name="resourceElectricParts" count="3"/>
+		</recipe>
+		<recipe name="Porch Light 4" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceScrapIron" count="5"/>
+			<ingredient name="resourceHeadlight" count="1"/>
+			<ingredient name="resourceElectricParts" count="3"/>
+		</recipe>
+		<recipe name="Porch Light 4 Brass" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceScrapBrass" count="5"/>
+			<ingredient name="resourceHeadlight" count="1"/>
+			<ingredient name="resourceElectricParts" count="3"/>
+		</recipe>
+		<recipe name="Desk Lamp" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceScrapIron" count="5"/>
+			<ingredient name="resourceHeadlight" count="1"/>
+			<ingredient name="resourceMetalPipe" count="1"/>
+			<ingredient name="resourceElectricParts" count="3"/>
+		</recipe>
+		<recipe name="Table Lamp" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceScrapIron" count="5"/>
+			<ingredient name="resourceHeadlight" count="1"/>
+			<ingredient name="resourceMetalPipe" count="1"/>
+			<ingredient name="resourceElectricParts" count="3"/>
+		</recipe>
+		<recipe name="End Table w/ Lamp" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceScrapIron" count="5"/>
+			<ingredient name="resourceWood" count="10"/>
+			<ingredient name="resourceHeadlight" count="1"/>
+			<ingredient name="resourceMetalPipe" count="1"/>
+			<ingredient name="resourceElectricParts" count="3"/>
+		</recipe>
+		<recipe name="Street Light" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceForgedIron" count="30"/>
+			<ingredient name="resourceHeadlight" count="1"/>
+			<ingredient name="resourceElectricParts" count="3"/>
+		</recipe>
+		<recipe name="Street Light Classic" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceForgedIron" count="30"/>
+			<ingredient name="resourceHeadlight" count="1"/>
+			<ingredient name="resourceElectricParts" count="3"/>
+		</recipe>
+		<recipe name="Industrial Light" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceScrapIron" count="5"/>
+			<ingredient name="resourceHeadlight" count="1"/>
+			<ingredient name="resourceElectricParts" count="3"/>
+		</recipe>
+		<recipe name="Industrial Light 2" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceScrapIron" count="5"/>
+			<ingredient name="resourceHeadlight" count="1"/>
+			<ingredient name="resourceElectricParts" count="3"/>
+		</recipe>
+		<recipe name="Industrial Light 2 Red" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceScrapIron" count="5"/>
+			<ingredient name="resourceHeadlight" count="1"/>
+			<ingredient name="resourceElectricParts" count="3"/>
+		</recipe>
+		<recipe name="Open Sign" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceScrapIron" count="5"/>
+			<ingredient name="resourceHeadlight" count="1"/>
+			<ingredient name="resourceElectricParts" count="3"/>
+		</recipe>
+		<recipe name="Exit Sign" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceScrapIron" count="5"/>
+			<ingredient name="resourceHeadlight" count="1"/>
+			<ingredient name="resourceElectricParts" count="3"/>
+		</recipe>
+		<recipe name="Work Light" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceForgedIron" count="5"/>
+			<ingredient name="resourceHeadlight" count="2"/>
+			<ingredient name="resourceMetalPipe" count="2"/>
+			<ingredient name="resourceElectricParts" count="5"/>
+		</recipe>
+
+	<!--  Add wireless switches and relays  -->
+	
+	<!--  Relays   -->
+		<recipe name="Wireless Relay Block" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceInsulator" count="1"/>
+			<ingredient name="resourceForgedIron" count="5"/>
+			<ingredient name="resourceElectricParts" count="3"/>
+		</recipe>
+
+		<recipe name="Wireless Relay Electrical Box" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceInsulator" count="1"/>
+			<ingredient name="resourceForgedIron" count="3"/>
+			<ingredient name="resourceElectricParts" count="3"/>
+		</recipe>
+		
+		<recipe name="Wireless Relay Base 3" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceInsulator" count="1"/>
+			<ingredient name="resourceForgedIron" count="5"/>
+			<ingredient name="resourceElectricParts" count="3"/>
+		</recipe>
+
+		<recipe name="Wireless Relay Base 5" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceInsulator" count="1"/>
+			<ingredient name="resourceForgedIron" count="5"/>
+			<ingredient name="resourceElectricParts" count="3"/>
+		</recipe>
+		
+		<recipe name="Wireless Relay Panel 2" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceInsulator" count="1"/>
+			<ingredient name="resourceForgedIron" count="5"/>
+			<ingredient name="resourceElectricParts" count="3"/>
+		</recipe>
+
+		<recipe name="Wireless Relay Panel 3" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceInsulator" count="1"/>
+			<ingredient name="resourceForgedIron" count="5"/>
+			<ingredient name="resourceElectricParts" count="3"/>
+		</recipe>
+
+		<recipe name="Wireless Relay Panel 6" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceInsulator" count="1"/>
+			<ingredient name="resourceForgedIron" count="5"/>
+			<ingredient name="resourceElectricParts" count="3"/>
+		</recipe>
+
+	<!--  Wireless fusebox switch recipes  -->
+		<recipe name="Wireless Switch Fusebox" count="1" craft_area="workbench" tags="learnable" >
+			<ingredient name="resourceForgedIron" count="3"/>
+			<ingredient name="resourceMechanicalParts" count="1"/>
+			<ingredient name="resourceElectricParts" count="3"/>
+		</recipe>
+		<recipe name="Wireless Switch Fusebox" count="1" craft_area="workbench" tags="learnable" >
+			<ingredient name="switch" count="1"/>
+			<ingredient name="resourceForgedIron" count="1"/>
+			<ingredient name="resourceElectricParts" count="2"/>
+		</recipe>
+
+	<!--  Wireless electrical box switch recipes  -->
+		<recipe name="Wireless Switch Electrical Box" count="1" craft_area="workbench" tags="learnable" >
+			<ingredient name="resourceForgedIron" count="3"/>
+			<ingredient name="resourceMechanicalParts" count="1"/>
+			<ingredient name="resourceElectricParts" count="3"/>
+		</recipe>
+		<recipe name="Wireless Switch Electrical Box" count="1" craft_area="workbench" tags="learnable" >
+			<ingredient name="switch" count="1"/>
+			<ingredient name="resourceForgedIron" count="1"/>
+			<ingredient name="resourceElectricParts" count="2"/>
+		</recipe>
+		
+		<recipe name="Wireless Switch Base 1" count="1" craft_area="workbench" tags="learnable" >
+			<ingredient name="resourceForgedIron" count="5"/>
+			<ingredient name="resourceMechanicalParts" count="1"/>
+			<ingredient name="resourceElectricParts" count="3"/>
+		</recipe>
+		
+		<recipe name="Wireless Switch Base 2" count="1" craft_area="workbench" tags="learnable" >
+			<ingredient name="resourceForgedIron" count="5"/>
+			<ingredient name="resourceMechanicalParts" count="1"/>
+			<ingredient name="resourceElectricParts" count="3"/>
+		</recipe>
+
+		<recipe name="Wireless Switch Base 4" count="1" craft_area="workbench" tags="learnable" >
+			<ingredient name="resourceForgedIron" count="5"/>
+			<ingredient name="resourceMechanicalParts" count="1"/>
+			<ingredient name="resourceElectricParts" count="3"/>
+		</recipe>
+
+		<recipe name="Wireless Switch Panel 1" count="1" craft_area="workbench" tags="learnable" >
+			<ingredient name="resourceForgedIron" count="5"/>
+			<ingredient name="resourceMechanicalParts" count="1"/>
+			<ingredient name="resourceElectricParts" count="3"/>
+		</recipe>
+		
+		<recipe name="Wireless Switch Panel 4" count="1" craft_area="workbench" tags="learnable" >
+			<ingredient name="resourceForgedIron" count="5"/>
+			<ingredient name="resourceMechanicalParts" count="1"/>
+			<ingredient name="resourceElectricParts" count="3"/>
+		</recipe>
+
+		<recipe name="Wireless Switch Panel 5" count="1" craft_area="workbench" tags="learnable" >
+			<ingredient name="resourceForgedIron" count="5"/>
+			<ingredient name="resourceMechanicalParts" count="1"/>
+			<ingredient name="resourceElectricParts" count="3"/>
+		</recipe>
+
+		
+				
+	<!--  Wireless electrical timer recipes  -->
+	<!--  Wireless fusebox timer relay recipes  -->
+		<!--recipe name="Wireless Timer Fusebox" count="1" craft_area="workbench" tags="learnable" >
+			<ingredient name="resourceForgedIron" count="3"/>
+			<ingredient name="resourceMechanicalParts" count="1"/>
+			<ingredient name="resourceElectricParts" count="7"/>
+		</recipe>
+		<recipe name="Wireless Timer Fusebox" count="1" craft_area="workbench" tags="learnable" >
+			<ingredient name="electrictimerrelay" count="1"/>
+			<ingredient name="resourceForgedIron" count="1"/>
+			<ingredient name="resourceElectricParts" count="2"/>
+		</recipe-->
+		
+	<!--  Wireless electrical box timer relay recipes  -->
+		<!--recipe name="Wireless Timer Electrical Box" count="1" craft_area="workbench" tags="learnable" >
+			<ingredient name="resourceForgedIron" count="3"/>
+			<ingredient name="resourceMechanicalParts" count="1"/>
+			<ingredient name="resourceElectricParts" count="7"/>
+		</recipe>
+		<recipe name="Wireless Timer Electrical Box" count="1" craft_area="workbench" tags="learnable" >
+			<ingredient name="electrictimerrelay" count="1"/>
+			<ingredient name="resourceForgedIron" count="1"/>
+			<ingredient name="resourceElectricParts" count="2"/>
+		</recipe-->
+
+		<recipe name="Electrical Pole Top Relay" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceForgedIron" count="5"/>
+			<ingredient name="resourceElectricParts" count="3"/>
+		</recipe>
+		
+		<recipe name="Fusion Generator" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceForgedSteel" count="20"/>
+			<ingredient name="resourceMechanicalParts" count="20"/>
+			<ingredient name="resourceElectricParts" count="24"/>
+			<ingredient name="resourceGoldNugget" count="4"/>
+			<ingredient name="resourceInsulator" count="1"/>
+		</recipe>		
+
+		<recipe name="Dels Cube Generator" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceForgedSteel" count="20"/>
+			<ingredient name="resourceMechanicalParts" count="20"/>
+			<ingredient name="resourceElectricParts" count="24"/>
+			<ingredient name="resourceGoldNugget" count="4"/>
+			<ingredient name="resourceInsulator" count="1"/>
+		</recipe>		
+		
+	</append>
+
+</delmod>

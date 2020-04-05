@@ -1,0 +1,301 @@
+<VFX>
+
+
+<append xpath="lootcontainers/lootgroup[@name='groupAmmoRegularGunslinger']">
+	<item name="ammo45BulletBall" loot_prob_template="T2" count="8,32"/>	<!-- 32 -->
+	<item name="ammo45BulletBall" loot_prob_template="T3" count="8,32"/>	<!-- 32 -->
+</append>
+
+<append xpath="lootcontainers/lootgroup[@name='groupAmmoRegular']">
+	<item name="ammo556mmBulletBall" count="6,25"/>						<!-- 50 -->
+</append>
+
+<append xpath="lootcontainers/lootgroup[@name='groupAmmoAdvancedGunslinger']">
+	<item name="ammo45BulletAP" loot_prob_template="T2" count="8,32"/>		<!-- 32 -->
+	<item name="ammo45BulletHP" loot_prob_template="T2" count="6,24"/>		<!-- 41.6 -->
+	<item name="ammo45BulletAP" loot_prob_template="T3" count="8,32"/>		<!-- 32 -->
+	<item name="ammo45BulletHP" loot_prob_template="T3" count="6,24"/>		<!-- 41.6 -->
+</append>
+
+<append xpath="lootcontainers/lootgroup[@name='groupAmmoAdvanced']">
+	<item name="ammo556mmBulletAP" count="6,25"/>				<!-- 50 -->
+	<item name="ammo556mmBulletHP" count="4,19"/>				<!-- 65 -->
+</append>
+
+<append xpath="lootcontainers/lootgroup[@name='groupQuestAmmo']">
+	<item name="ammo45BulletBall" count="180" loot_prob_template="GradeALoot"/>
+	<item name="ammo45BulletHP" count="90" loot_prob_template="GradeBLoot"/>
+	<item name="ammo45BulletAP" count="90" loot_prob_template="GradeCLoot"/>
+</append>
+
+<insertBefore xpath="/lootcontainers/lootgroup[@name='groupQuestChallenge']">
+	<lootgroup name="groupWeaponsT1_Gunslinger_makarov" count="all">
+		<item name="gunmakarov"/>
+		<item name="ammo9mmBulletBall" count="15,35"/>
+	</lootgroup>
+	<lootgroup name="groupWeaponsT1_Gunslinger_9mmrevolver" count="all">
+		<item name="gun9mmrevolver"/>
+		<item name="ammo9mmBulletBall" count="15,35"/>
+	</lootgroup>
+	<lootgroup name="groupWeaponsT1_Gunslinger_45revolver" count="all">
+		<item name="gun45revolver"/>
+		<item name="ammo45BulletBall" count="12,28"/>
+	</lootgroup>
+	<lootgroup name="groupWeaponsT2_Gunslinger_tec9" count="all">
+		<item name="guntec9"/>
+		<item name="ammo9mmBulletBall" count="15,35"/>
+	</lootgroup>
+	<lootgroup name="groupWeaponsT2_Gunslinger_1911" count="all">
+		<item name="gun1911"/>
+		<item name="ammo45BulletBall" count="12,28"/>
+	</lootgroup>
+	<lootgroup name="groupWeaponsT2_Gunslinger_glock17" count="all">
+		<item name="gunGlock17"/>
+		<item name="ammo9mmBulletBall" count="15,35"/>
+	</lootgroup>
+	<lootgroup name="groupWeaponsT2_Gunslinger_p250" count="all">
+		<item name="gunp250"/>
+		<item name="ammo9mmBulletBall" count="15,35"/>
+	</lootgroup>
+	<lootgroup name="groupWeaponsT2_Gunslinger_p99" count="all">
+		<item name="gunp99"/>
+		<item name="ammo9mmBulletBall" count="15,35"/>
+	</lootgroup>
+	<lootgroup name="groupWeaponsT2_Gunslinger_skorpion" count="all">
+		<item name="gunskorpion"/>
+		<item name="ammo9mmBulletBall" count="15,35"/>
+	</lootgroup>
+	<lootgroup name="groupWeaponsT3_Gunslinger_mk23" count="all">
+		<item name="gunmk23"/>
+		<item name="ammo45BulletBall" count="15,35"/>
+	</lootgroup>
+	<lootgroup name="groupWeaponsT3_Gunslinger_deserteagle" count="all">
+		<item name="gundeserteagle"/>
+		<item name="ammo44MagnumBulletBall" count="4,19"/>
+	</lootgroup>
+	<lootgroup name="groupWeaponsT3_Gunslinger_usp" count="all">
+		<item name="gunusp"/>
+		<item name="ammo45BulletBall" count="15,35"/>
+	</lootgroup>
+	<lootgroup name="groupWeaponsT3_Gunslinger_mac11" count="all">
+		<item name="gunmac11"/>
+		<item name="ammo9mmBulletBall" count="15,35"/>
+	</lootgroup>
+	<lootgroup name="groupWeaponsT3_Gunslinger_microuzi" count="all">
+		<item name="gunmicrouzi"/>
+		<item name="ammo45BulletBall" count="15,35"/>
+	</lootgroup>
+	<lootgroup name="groupWeaponsT3_Gunslinger_ump45" count="all">
+		<item name="gunump45"/>
+		<item name="ammo45BulletBall" count="15,35"/>
+	</lootgroup>
+	<lootgroup name="groupWeaponsT3_Gunslinger_aks74u" count="all">
+		<item name="gunaks74u"/>
+		<item name="ammo45BulletBall" count="15,35"/>
+	</lootgroup>
+	
+	<lootgroup name="groupWeaponsT1_DeadEye_9mm" count="all">
+		<item name="gun9mmrifle"/>
+		<item name="ammo9mmBulletBall" count="15,35"/>
+	</lootgroup>
+	<lootgroup name="groupWeaponsT1_DeadEye_M1P" count="all">
+		<item name="gunm1pcarbine"/>
+		<item name="ammo9mmBulletBall" count="15,35"/>
+	</lootgroup>
+	<lootgroup name="groupWeaponsT2_DeadEye_556" count="all">
+		<item name="gun556rifle"/>
+		<item name="ammo556mmBulletBall" count="6,25"/>
+	</lootgroup>
+	<lootgroup name="groupWeaponsT2_DeadEye_SKS" count="all">
+		<item name="gunsks"/>
+		<item name="ammo762mmBulletBall" count="6,25"/>
+	</lootgroup>
+	<lootgroup name="groupWeaponsT3_DeadEye_SVD" count="all">
+		<item name="gunsvd"/>
+		<item name="ammo762mmBulletBall" count="6,25"/>
+	</lootgroup>
+	
+	<lootgroup name="groupWeaponsT1_Boomstick_singleshot" count="all">
+		<item name="gunsinglebarrelshotgun"/>
+		<item name="ammoShotgunShell" count="3,9"/>
+	</lootgroup>
+	<lootgroup name="groupWeaponsT2_Boomstick_doublebarrel" count="all">
+		<item name="gundoublebarrelproper"/>
+		<item name="ammoShotgunShell" count="3,9"/>
+	</lootgroup>
+	<lootgroup name="groupWeaponsT2_Boomstick_overunder" count="all">
+		<item name="guntoz34"/>
+		<item name="ammoShotgunShell" count="3,9"/>
+	</lootgroup>
+	<lootgroup name="groupWeaponsT4_Boomstick_rsx1" count="all">
+		<item name="gunrsx1"/>
+		<item name="ammoShotgunShell" count="6,18"/>
+	</lootgroup>
+	
+	<lootgroup name="groupWeaponsT1_Machinegunner_PP19" count="all">
+		<item name="gunpp19"/>
+		<item name="ammo9mmBulletBall" count="6,25"/>
+	</lootgroup>
+	<lootgroup name="groupWeaponsT2_Machinegunner_AK74" count="all">
+		<item name="gunak101"/>
+		<item name="ammo556mmBulletBall" count="6,25"/>
+	</lootgroup>
+	<lootgroup name="groupWeaponsT3_Machinegunner_AR15" count="all">
+		<item name="gunar15"/>
+		<item name="ammo556mmBulletBall" count="6,25"/>
+	</lootgroup>
+	<lootgroup name="groupWeaponsT3_Machinegunner_G36C" count="all">
+		<item name="gung36c"/>
+		<item name="ammo556mmBulletBall" count="6,25"/>
+	</lootgroup>
+	<lootgroup name="groupWeaponsT3_Machinegunner_HK416" count="all">
+		<item name="gunhk416"/>
+		<item name="ammo556mmBulletBall" count="6,25"/>
+	</lootgroup>
+	<lootgroup name="groupWeaponsT3_Machinegunner_SCARH" count="all">
+		<item name="gunscarh"/>
+		<item name="ammo762mmBulletBall" count="6,25"/>
+	</lootgroup>
+	<lootgroup name="groupWeaponsT3_Machinegunner_SG553" count="all">
+		<item name="gunsg553"/>
+		<item name="ammo556mmBulletBall" count="6,25"/>
+	</lootgroup>
+	<lootgroup name="groupWeaponsT3_Machinegunner_SCARL" count="all">
+		<item name="gunscarl"/>
+		<item name="ammo556mmBulletBall" count="6,25"/>
+	</lootgroup>
+</insertBefore>
+
+<append xpath="lootcontainers/lootgroup[@name='groupWeapons_Gunslinger']">
+	<item group="groupWeaponsT1_Gunslinger_makarov" loot_prob_template="T1"/>
+	<item group="groupWeaponsT1_Gunslinger_9mmrevolver" loot_prob_template="T1"/>
+	<item group="groupWeaponsT1_Gunslinger_45revolver" loot_prob_template="T1"/>
+	<item group="groupWeaponsT2_Gunslinger_tec9" loot_prob_template="T2"/>
+	<item group="groupWeaponsT2_Gunslinger_glock17" loot_prob_template="T2"/>
+	<item group="groupWeaponsT2_Gunslinger_1911" loot_prob_template="T2"/>
+	<item group="groupWeaponsT2_Gunslinger_p250" loot_prob_template="T2"/>
+	<item group="groupWeaponsT2_Gunslinger_p99" loot_prob_template="T2"/>
+	<item group="groupWeaponsT2_Gunslinger_skorpion" loot_prob_template="T2"/>
+	<item group="groupWeaponsT3_Gunslinger_mk23" loot_prob_template="T3"/>
+	<item group="groupWeaponsT3_Gunslinger_deserteagle" loot_prob_template="T3"/>
+	<item group="groupWeaponsT3_Gunslinger_usp" loot_prob_template="T3"/>
+	<item group="groupWeaponsT3_Gunslinger_mac11" loot_prob_template="T3"/>
+	<item group="groupWeaponsT3_Gunslinger_microuzi" loot_prob_template="T3"/>
+	<item group="groupWeaponsT3_Gunslinger_ump45" loot_prob_template="T3"/>
+	<item group="groupWeaponsT3_Gunslinger_aks74u" loot_prob_template="T3"/>
+</append>
+<append xpath="lootcontainers/lootgroup[@name='groupWeapons_GunslingerTPlus']">
+	<item group="groupWeaponsT2_Gunslinger_tec9" loot_prob_template="T2"/>
+	<item group="groupWeaponsT2_Gunslinger_glock17" loot_prob_template="T2"/>
+	<item group="groupWeaponsT2_Gunslinger_1911" loot_prob_template="T2"/>
+	<item group="groupWeaponsT2_Gunslinger_p250" loot_prob_template="T2"/>
+	<item group="groupWeaponsT2_Gunslinger_p99" loot_prob_template="T2"/>
+	<item group="groupWeaponsT2_Gunslinger_skorpion" loot_prob_template="T2"/>
+	<item group="groupWeaponsT3_Gunslinger_mk23" loot_prob_template="T3"/>
+	<item group="groupWeaponsT3_Gunslinger_deserteagle" loot_prob_template="T3"/>
+	<item group="groupWeaponsT3_Gunslinger_usp" loot_prob_template="T3"/>
+	<item group="groupWeaponsT3_Gunslinger_mac11" loot_prob_template="T3"/>
+	<item group="groupWeaponsT3_Gunslinger_microuzi" loot_prob_template="T3"/>
+	<item group="groupWeaponsT3_Gunslinger_ump45" loot_prob_template="T3"/>
+	<item group="groupWeaponsT3_Gunslinger_aks74u" loot_prob_template="T3"/>
+	<item group="groupWeaponsT3_Gunslinger_mk23" loot_prob_template="T3"/>
+	<item group="groupWeaponsT3_Gunslinger_deserteagle" loot_prob_template="T3"/>
+	<item group="groupWeaponsT3_Gunslinger_usp" loot_prob_template="T3"/>
+	<item group="groupWeaponsT3_Gunslinger_mac11" loot_prob_template="T3"/>
+	<item group="groupWeaponsT3_Gunslinger_microuzi" loot_prob_template="T3"/>
+	<item group="groupWeaponsT3_Gunslinger_ump45" loot_prob_template="T3"/>
+	<item group="groupWeaponsT3_Gunslinger_aks74u" loot_prob_template="T3"/>
+</append>
+
+<append xpath="lootcontainers/lootgroup[@name='groupWeapons_DeadEye']">
+	<item group="groupWeaponsT1_DeadEye_9mm" loot_prob_template="T1"/>
+	<item group="groupWeaponsT2_DeadEye_556" loot_prob_template="T2"/>
+	<item group="groupWeaponsT2_DeadEye_SKS" loot_prob_template="T2"/>
+	<item group="groupWeaponsT3_DeadEye_SVD" loot_prob_template="T3"/>
+</append>
+
+<append xpath="lootcontainers/lootgroup[@name='groupWeapons_DeadEyeTPlus']">
+	<item group="groupWeaponsT1_DeadEye_M1P" loot_prob_template="T1"/>
+	<item group="groupWeaponsT2_DeadEye_556" loot_prob_template="T2"/>
+	<item group="groupWeaponsT2_DeadEye_SKS" loot_prob_template="T2"/>
+	<item group="groupWeaponsT3_DeadEye_SVD" loot_prob_template="T3"/>
+	<item group="groupWeaponsT3_DeadEye_SVD" loot_prob_template="T3"/>
+</append>
+
+<append xpath="lootcontainers/lootgroup[@name='groupWeapons_Boomstick']">
+	<item group="groupWeaponsT1_Boomstick_singleshot" loot_prob_template="T1"/>
+	<item group="groupWeaponsT2_Boomstick_doublebarrel" loot_prob_template="T2"/>
+	<item group="groupWeaponsT2_Boomstick_overunder" loot_prob_template="T2"/>
+	<item group="groupWeaponsT4_Boomstick_rsx1" loot_prob_template="T4"/>
+</append>
+
+<append xpath="lootcontainers/lootgroup[@name='groupWeapons_BoomstickTPlus']">
+	<item group="groupWeaponsT1_Boomstick_singleshot" loot_prob_template="T1"/>
+	<item group="groupWeaponsT2_Boomstick_doublebarrel" loot_prob_template="T2"/>
+	<item group="groupWeaponsT2_Boomstick_overunder" loot_prob_template="T2"/>
+	<item group="groupWeaponsT4_Boomstick_rsx1" loot_prob_template="T4"/>
+	<item group="groupWeaponsT4_Boomstick_rsx1" loot_prob_template="T4"/>
+</append>
+
+<append xpath="lootcontainers/lootgroup[@name='groupWeapons_Machinegunner']">
+	<item group="groupWeaponsT1_Machinegunner_PP19" loot_prob_template="T1"/>
+	<item group="groupWeaponsT2_Machinegunner_AK74" loot_prob_template="T2"/>
+	<item group="groupWeaponsT3_Machinegunner_AR15" loot_prob_template="T3"/>
+	<item group="groupWeaponsT3_Machinegunner_HK416" loot_prob_template="T3"/>
+	<item group="groupWeaponsT3_Machinegunner_G36C" loot_prob_template="T3"/>
+	<item group="groupWeaponsT3_Machinegunner_SCARH" loot_prob_template="T3"/>
+</append>
+
+<append xpath="lootcontainers/lootgroup[@name='groupWeapons_MachinegunnerTPlus']">
+	<item group="groupWeaponsT2_Machinegunner_AK74" loot_prob_template="T2"/>
+	<item group="groupWeaponsT3_Machinegunner_AR15" loot_prob_template="T3"/>
+	<item group="groupWeaponsT3_Machinegunner_HK416" loot_prob_template="T3"/>
+	<item group="groupWeaponsT3_Machinegunner_G36C" loot_prob_template="T3"/>
+	<item group="groupWeaponsT3_Machinegunner_SCARH" loot_prob_template="T3"/>
+	<item group="groupWeaponsT3_Machinegunner_SG553" loot_prob_template="T3"/>
+	<item group="groupWeaponsT3_Machinegunner_SCARL" loot_prob_template="T3"/>
+	<item group="groupWeaponsT3_Machinegunner_AR15" loot_prob_template="T3"/>
+	<item group="groupWeaponsT3_Machinegunner_HK416" loot_prob_template="T3"/>
+	<item group="groupWeaponsT3_Machinegunner_G36C" loot_prob_template="T3"/>
+	<item group="groupWeaponsT3_Machinegunner_SCARH" loot_prob_template="T3"/>
+</append>
+
+<append xpath="lootcontainers/lootgroup[@name='schematicsWeaponsCommon']">
+	<item name="gun1911Schematic"/>
+	<item name="gunGlock17Schematic"/>
+	<item name="gunmakarovSchematic"/>
+	<item name="gun45revolverSchematic"/>
+	<item name="gunp250Schematic"/>
+	<item name="gunp99Schematic"/>
+	<item name="gun9mmrevolverSchematic"/>
+	<item name="gundoublebarrelproperSchematic"/>
+	<item name="guntoz34Schematic"/>
+	<item name="gunsinglebarrelshotgunSchematic"/>
+	<item name="gun556rifleSchematic"/>
+	<item name="gun9mmrifleSchematic"/>
+	<item name="gunm1pcarbineSchematic"/>
+	<item name="gunak101Schematic"/>
+	<item name="gunskorpionSchematic"/>
+	<item name="gunpp19Schematic"/>
+	<item name="gunump45Schematic"/>
+	<item name="gunsksSchematic"/>
+	<item name="guntec9Schematic"/>
+	<item name="gunmk23Schematic"/>
+</append>
+
+<append xpath="lootcontainers/lootgroup[@name='schematicsWeaponsRare']">
+	<item name="gunmac11Schematic"/>
+	<item name="gunmicrouziSchematic"/>
+	<item name="gunaks74uSchematic"/>
+	<item name="gunscarhSchematic"/>
+	<item name="gunsvdSchematic"/>
+	<item name="gung36cSchematic"/>
+	<item name="gunhk416Schematic"/>
+	<item name="gunar15Schematic"/>
+	<item name="gunsg553Schematic"/>
+	<item name="gunscarlSchematic"/>
+	<item name="gunrsx1Schematic"/>
+	<item name="gunuspSchematic"/>
+	<item name="gundeserteagleSchematic"/>
+</append>
+</VFX>

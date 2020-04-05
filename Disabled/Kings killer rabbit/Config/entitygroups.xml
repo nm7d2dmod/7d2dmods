@@ -1,0 +1,25 @@
+<opengl2>
+
+<append xpath="/entitygroups">
+	  
+    <entitygroup name="Killer Rabbit">
+		<entity name="Killer Rabbit" prob="0.5"/>
+    </entitygroup>
+		
+</append>
+	
+	<append xpath="/entitygroups/entitygroup[@name='AnimalsSmall']"><entity name="Killer Rabbit" prob="0.5"/></append>
+	<append xpath="/entitygroups/entitygroup[@name='AnimalsFarm']"><entity name="Killer Rabbit" prob="0.5"/></append>
+	<append xpath="/entitygroups/entitygroup[@name='AnimalsDesert']"><entity name="Killer Rabbit" prob="0.5"/></append>
+	<append xpath="/entitygroups/entitygroup[@name='FriendlyAnimalsDesert']"><entity name="Killer Rabbit" prob="0.5"/></append>
+	<append xpath="/entitygroups/entitygroup[@name='FriendlyAnimalsSnow']"><entity name="Killer Rabbit" prob="0.4"/></append>
+	<append xpath="/entitygroups/entitygroup[@name='FriendlyAnimalsForest']"><entity name="Killer Rabbit" prob="0.3"/></append>
+	<append xpath="/entitygroups/entitygroup[@name='FriendlyAnimalsBurntForest']"><entity name="Killer Rabbit" prob="0.4"/></append>
+	<append xpath="/entitygroups/entitygroup[@name='FriendlyAnimalsPlains']"><entity name="Killer Rabbit" prob="0.4"/></append>
+	<append xpath="/entitygroups/entitygroup[@name='AnimalsAll']"><entity name="Killer Rabbit" prob="0.5"/></append> 
+	<append xpath="/entitygroups/entitygroup/entity[@name='Killer Rabbit']">prob="0.4"
+
+</append>
+  <!--  Thanks Mean For the moddified Code -->
+  
+</opengl2>

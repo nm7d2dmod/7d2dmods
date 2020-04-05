@@ -1,0 +1,635 @@
+<delmod>
+	<append xpath="/blocks" >	
+	<!-- Industrial Light 01-->
+<!--================================
+	ADD CRAFTABLE & WORKING LIGHT SOURCES
+	================================ -->
+	<!-- The unused 'player_ceilingLight07Prefab' made me think there might be more.
+		So, I Dug These Out Of The Assets File. Unfortunately they are basically the same:
+		player_ceilingLight02Prefab
+		player_wall_light01Prefab
+		player_porchLight01Prefab
+		player_industrialLight01Prefab
+		industrial_light_02_hangPrefab  - This guys is new, but buggy so can't use him yet.
+	-->
+
+		<block name="Ceiling Light">
+			<property name="CustomIcon" value="ceilingLight01"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="Light" value="1"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="Material" value="Mmetal_thin"/>
+			<property name="MaxDamage" value="100"/>
+			<property name="Model" value="Entities/Lighting/player_ceilingLight01Prefab"/> <!-- replaces ceilingLight01Prefab -->
+			<property name="HandleFace" value="Top"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Collide" value="melee,bullet,arrow,rocket"/>
+			<property name="IsDecoration" value="true"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="Group" value="Science"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="1"/>
+				<property name="resourceElectricParts" value="3"/>
+			</property>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="FilterTags" value="fdecor,felectrical"/>
+			<property name="EconomicValue" value="44"/>
+		</block>
+
+		<block name="Ceiling Light 2">
+			<property name="Extends" value="Ceiling Light"/>
+			<property name="CustomIcon" value="ceilingLight02"/>
+			<property name="Model" value="Entities/Lighting/ceilingLight02Prefab"/>
+		</block>
+
+		<block name="Ceiling Light 2 Brass">
+			<property name="Extends" value="Ceiling Light"/>
+			<property name="CustomIcon" value="ceilingLight02Brass"/>
+			<property name="Model" value="Entities/Lighting/ceilingLight02BrassPrefab"/>
+		</block>
+
+		<block name="Ceiling Light 4">
+			<property name="Extends" value="Ceiling Light"/>
+			<property name="CustomIcon" value="ceilingLight04"/>
+			<property name="Model" value="Entities/Lighting/ceilingLight04Prefab"/>
+		</block>
+
+		<block name="Ceiling Light 5">
+			<property name="Extends" value="Ceiling Light"/>
+			<property name="CustomIcon" value="ceilingLight05"/>
+			<property name="Model" value="Entities/Lighting/ceilingLight05Prefab"/>
+		</block>
+
+		<block name="Ceiling Light 5 Brass">
+			<property name="Extends" value="Ceiling Light"/>
+			<property name="CustomIcon" value="ceilingLight05Brass"/>
+			<property name="Model" value="Entities/Lighting/ceilingLight05BrassPrefab"/>
+		</block>
+
+		<block name="Ceiling Light 7">
+			<property name="Extends" value="Ceiling Light"/>
+			<property name="CustomIcon" value="ceilingLight07"/>
+			<property name="Model" value="Entities/Lighting/player_ceilingLight07Prefab"/> <!-- replaces ceilingLight07Prefab much brighter -->
+		</block>
+
+		<block name="Ceiling Fan Light">
+			<property name="Extends" value="Ceiling Light"/>
+			<property name="CustomIcon" value="ceilingFanLight"/>
+			<property name="Path" value="solid"/>
+			<property name="Model" value="Entities/Lighting/ceiling_fanPrefab"/>
+		</block>
+
+		<block name="Wall Light">
+			<property name="Extends" value="Ceiling Light" param1="HandleFace"/>
+			<property name="CustomIcon" value="wallLight01"/>
+			<property name="Model" value="Entities/Lighting/wall_light01Prefab"/>
+			<property name="HandleFace" value="South"/>
+		</block>
+
+		<block name="Sconce Light">
+			<property name="Extends" value="Ceiling Light" param1="HandleFace"/>
+			<property name="CustomIcon" value="sconce1Light"/>
+			<property name="Model" value="Entities/Lighting/sconce_1_Prefab"/>
+			<property name="HandleFace" value="West"/>
+		</block>
+
+		<block name="Porch Light">
+			<property name="Extends" value="Ceiling Light" param1="HandleFace"/>
+			<property name="CustomIcon" value="porchLight01"/>
+			<property name="Model" value="Entities/Lighting/porchLight01Prefab"/>
+			<property name="HandleFace" value="West"/>
+		</block>
+
+		<block name="Porch Light 4">
+			<property name="Extends" value="Ceiling Light" param1="HandleFace"/>
+			<property name="CustomIcon" value="porchLight04"/>
+			<property name="Model" value="Entities/Lighting/porchLight04Prefab"/>
+			<property name="HandleFace" value="West"/>
+		</block>
+
+		<block name="Porch Light 4 Brass">
+			<property name="Extends" value="Ceiling Light" param1="HandleFace"/>
+			<property name="CustomIcon" value="porchLight04Brass"/>
+			<property name="Model" value="Entities/Lighting/porchLight04BrassPrefab"/>
+			<property name="HandleFace" value="West"/>
+		</block>
+
+		<block name="Desk Lamp">
+			<property name="Extends" value="Ceiling Light" param1="HandleFace"/>
+			<property name="CustomIcon" value="deskLampLight"/>
+			<property name="Model" value="Entities/Lighting/desk_lampPrefab"/>
+		</block>
+
+		<block name="Table Lamp">
+			<property name="Extends" value="Ceiling Light" param1="HandleFace"/>
+			<property name="CustomIcon" value="tableLampLight"/>
+			<property name="Model" value="Entities/Lighting/table_lampPrefab"/>
+		</block>
+
+		<block name="End Table w/ Lamp">
+			<property name="Extends" value="Ceiling Light" param1="HandleFace"/>
+			<property name="CustomIcon" value="endTableLamp"/>
+			<property name="Model" value="Entities/Lighting/end_table_lightPrefab"/>
+			<property name="Path" value="solid"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+		</block>
+
+		<block name="Street Light">
+			<property name="Extends" value="Ceiling Light" param1="HandleFace"/>
+			<property name="CustomIcon" value="streetLight01"/>
+			<property name="ImposterExchange" value="streetLightImposter"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="Model" value="Entities/Lighting/street_light01Prefab"/>
+			<property name="RequiredPower" value="8"/>
+			<property name="OnlySimpleRotations" value="true"/>
+		</block>
+
+		<block name="Street Light Classic">
+			<property name="Extends" value="Ceiling Light" param1="HandleFace"/>
+			<property name="CustomIcon" value="streetLightClassic"/>
+			<property name="Model" value="Entities/Lighting/streetLamp_ClassicPrefab"/>
+			<property name="RequiredPower" value="8"/>
+			<property name="DisplayType" value="blockMulti" />
+			<property name="MultiBlockDim" value="1,5,1"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="ImposterExchange" value="imposterDontBlockCTRPole" param1="169"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="IsTerrainDecoration" value="true"/>
+		</block>
+
+		<block name="Industrial Light">
+			<property name="Extends" value="Ceiling Light" param1="HandleFace"/>
+			<property name="CustomIcon" value="industrialLight01"/>
+			<property name="Model" value="Entities/Lighting/industrialLight01Prefab"/>
+			<property name="HandleFace" value="South"/>
+		</block>
+
+		<block name="Industrial Light 2">
+			<property name="Extends" value="Ceiling Light"/>
+			<property name="CustomIcon" value="industrialLight02"/>
+			<property name="Model" value="Entities/Lighting/industrial_light_02Prefab"/>
+		</block>
+
+		<block name="Industrial Light 2 Red">
+			<property name="Extends" value="Ceiling Light"/>
+			<property name="CustomIcon" value="industrialLight02Red"/>
+			<property name="Model" value="Entities/Lighting/industrial_light_02_redPrefab"/>
+		</block>
+
+		<block name="Open Sign">
+			<property name="Extends" value="Ceiling Light" param1="HandleFace"/>
+			<property name="CustomIcon" value="signShopOpenSwitch"/>
+			<property name="Model" value="Entities/Signs/sign_open_Prefab"/>
+			<property name="HandleFace" value="South"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="RequiredPower" value="2"/>
+		</block>
+
+		<block name="Exit Sign">
+			<property name="Extends" value="Ceiling Light"/>
+			<property name="CustomIcon" value="signExitLight"/>
+			<property name="Model" value="Entities/Lighting/exit_signPrefab"/>
+			<property name="RequiredPower" value="2"/>
+		</block>
+
+		<block name="Work Light">
+			<property name="Extends" value="Ceiling Light" param1="HandleFace"/>
+			<property name="CustomIcon" value="workLightPOI"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Model" value="Entities/Lighting/work_lightPrefab"/>
+			<property name="DisplayType" value="blockMulti" />
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="Collide" value="melee,bullet,arrow,rocket,movement"/>
+		</block>
+
+	</append>
+
+<!-- LIGHT SOURCES WE'RE NOT IMPLEMENTING (yet anyway)
+			sconce1LightShadow, lanternDecorLight, flashlightDecor, tableLampTippedOverLight, burningBarrel, xRayDisplayLight1, xRayDisplayLight2, roadBarricadeLight
+			wallTorchLight, wallTorchLightPlayer, candleWallLight, candleTableLight, candleWallLightPlayer, candleTableLightPlayer
+			spotlightNailedDownPOI, spotlightPlayer, emberPileLightPOI1, emberPileLightPOI2
+		-->
+
+<!--================================
+	ADD WIRELESS ELECTRICAL RELAYS
+	TO-DO: Add Wireless Timers as well. (have to figure out the Timer menu for this)
+	TO-DO: Add Wireless Versions of normal Switch and Timer. (figure out how to get the Out-Lines to go invisible)
+	TO-DO: Fix location of visible line-in on Fuseboxes.
+	TO-DO: Make Out-Line on Pole Top Relay Visible.
+	================================ -->
+
+	<!-- Fix Switches & Timers costing less power than Relays. -->
+	<!--set xpath="/blocks/block[@name='switch']/property[@name='RequiredPower']/@value">1</set>
+	<set xpath="/blocks/block[@name='electrictimerrelay']/property[@name='RequiredPower']/@value">1</set>
+	<set xpath="/blocks/block[@name='pressureplate']/property[@name='RequiredPower']/@value">1</set>
+	<set xpath="/blocks/block[@name='pressureplateLong']/property[@name='RequiredPower']/@value">1</set-->
+
+	<append xpath="/blocks">
+
+		<block name="Wireless Relay Block">
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="stainlessSteelBlock"/> 
+			<property name="CustomIconTint" value="#ff2b2b"/>
+			<property name="Class" value="Powered"/>
+			<property name="DisplayType" value="blockHardened" />
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="PassThroughDamage" value="true"/>
+			<property name="Texture" value="267"/>
+			<property name="MaxDamage" value="1000"/>
+			<property class="RepairItems"> <property name="resourceElectricParts" value="2"/> </property>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="RequiredPower" value="1"/>
+			<property name="Group" value="Science"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="EconomicValue" value="44"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="DescriptionKey" value="electricwirerelayDesc"/>
+			<property name="FilterTags" value="fdecor,felectrical"/>
+		</block>
+		
+		<block name="Wireless Relay Electrical Box">
+			<property name="Extends" value="Wireless Relay Block"/>
+			<property name="CustomIcon" value="electricalBox01"/>
+			<property name="Shape" value="Ext3dModel"/> <property name="Texture" value="293"/>
+			<property name="Mesh" value="models"/>
+			<property name="Model" value="Industrial/electrical_box01" param1="main_mesh"/> <property name="HandleFace" value="Bottom"/>
+			<property name="Class" value="Powered"/>
+			<property name="StabilitySupport" value="false"/>
+		</block>
+
+		<block name="Wireless Relay Base 3">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Extends" value="Wireless Relay Block"/>
+			<property name="CustomIcon" value="controlPanelBase03"/> 
+			<property name="Shape" value="Ext3dModel"/>
+			<property name="Mesh" value="models"/>
+			<property name="Model" value="Industrial/control_panel_base_03" param1="main_mesh"/> 
+			<property name="Class" value="Powered"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="MaxDamage" value="1000"/>
+		</block>
+
+		<block name="Wireless Relay Base 5">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Extends" value="Wireless Relay Block"/>
+			<property name="CustomIcon" value="controlPanelBase05"/> 
+			<property name="Shape" value="Ext3dModel"/>
+			<property name="Mesh" value="models"/>
+			<property name="Model" value="Industrial/control_panel_base_05" param1="main_mesh"/> 
+			<property name="Class" value="Powered"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="MaxDamage" value="1000"/>
+		</block>
+
+		<block name="Wireless Relay Panel 2">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Extends" value="Wireless Relay Block"/>
+			<property name="CustomIcon" value="controlPanelTop02"/> 
+			<property name="Shape" value="Ext3dModel"/>
+			<property name="Mesh" value="models"/>
+			<property name="Model" value="Industrial/control_panel_top_02" param1="main_mesh"/> 
+			<property name="Class" value="Powered"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="MaxDamage" value="1000"/>
+		</block>
+
+		<block name="Wireless Relay Panel 3">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Extends" value="Wireless Relay Block"/>
+			<property name="CustomIcon" value="controlPanelTop03"/> 
+			<property name="Shape" value="Ext3dModel"/>
+			<property name="Mesh" value="models"/>
+			<property name="Model" value="Industrial/control_panel_top_03" param1="main_mesh"/> 
+			<property name="Class" value="Powered"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="MaxDamage" value="1000"/>
+		</block>
+
+		<block name="Wireless Relay Panel 6">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Extends" value="Wireless Relay Block"/>
+			<property name="CustomIcon" value="controlPanelTop06"/> 
+			<property name="Shape" value="Ext3dModel"/>
+			<property name="Mesh" value="models"/>
+			<property name="Model" value="Industrial/control_panel_top_06" param1="main_mesh"/> 
+			<property name="Class" value="Powered"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="MaxDamage" value="1000"/>
+		</block>
+
+		<!--block name="Wireless Switch">
+			<property name="Extends" value="Wireless Relay Block"/>
+			<property name="CustomIcon" value="switch"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Mesh" value="models"/>
+			<property name="Model" value="Entities/Electrical/power_switchPrefab"/> <property name="HandleFace" value="South"/>
+			<property name="RequiredPower" value="0"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Class" value="Switch"/>
+			<property name="TriggerType" value="Switch"/>
+			<property name="DescriptionKey" value="switchDesc"/>
+		</block>
+
+		<block name="Wireless Timer">
+			<property name="Extends" value="Wireless Relay Block"/>
+			<property name="CustomIcon" value="electrictimerrelay"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Mesh" value="models"/>
+			<property name="Model" value="Entities/Electrical/relay_timerPrefab"/> <property name="HandleFace" value="Bottom"/>
+			<property name="Class" value="TimerRelay"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+		</block-->
+		
+		<block name="Wireless Switch Fusebox">
+			<property name="Extends" value="Wireless Relay Block"/>
+			<property name="CustomIcon" value="fusebox"/>
+			<property name="Shape" value="Ext3dModel"/> <property name="Texture" value="293"/>
+			<property name="Mesh" value="models"/>
+			<property name="Model" value="Industrial/fusebox" param1="main_mesh"/> <property name="HandleFace" value="South"/>
+			<property name="Class" value="Switch"/>
+			<property name="RequiredPower" value="0"/>
+			<property name="TriggerType" value="Switch"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="DescriptionKey" value="switchDesc"/>
+		</block>
+
+		<block name="Wireless Switch Electrical Box">
+			<property name="Extends" value="Wireless Relay Block"/>
+			<property name="CustomIcon" value="electricalBox01"/>
+			<property name="Shape" value="Ext3dModel"/> <property name="Texture" value="293"/>
+			<property name="Mesh" value="models"/>
+			<property name="Model" value="Industrial/electrical_box01" param1="main_mesh"/> <property name="HandleFace" value="Bottom"/>
+			<property name="Class" value="Switch"/>
+			<property name="RequiredPower" value="0"/>
+			<property name="TriggerType" value="Switch"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="DescriptionKey" value="switchDesc"/>
+		</block>
+
+		<block name="Wireless Switch Base 1">
+			<property name="Extends" value="Wireless Relay Block"/>
+			<property name="CustomIcon" value="controlPanelBase01"/> 
+			<property name="Shape" value="Ext3dModel"/>
+			<property name="Mesh" value="models"/>
+			<property name="Model" value="Industrial/control_panel_base_01" param1="main_mesh"/> 
+			<property name="Class" value="Switch"/>
+			<property name="RequiredPower" value="0"/>
+			<property name="TriggerType" value="Switch"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="MaxDamage" value="1000"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="DescriptionKey" value="switchDesc"/>
+		</block>
+
+		<block name="Wireless Switch Base 2">
+			<property name="Extends" value="Wireless Relay Block"/>
+			<property name="CustomIcon" value="controlPanelBase02"/> 
+			<property name="Shape" value="Ext3dModel"/>
+			<property name="Mesh" value="models"/>
+			<property name="Model" value="Industrial/control_panel_base_02" param1="main_mesh"/> 
+			<property name="Class" value="Switch"/>
+			<property name="RequiredPower" value="0"/>
+			<property name="TriggerType" value="Switch"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="MaxDamage" value="1000"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="DescriptionKey" value="switchDesc"/>
+		</block>
+
+		<block name="Wireless Switch Base 4">
+			<property name="Extends" value="Wireless Relay Block"/>
+			<property name="CustomIcon" value="controlPanelBase04"/> 
+			<property name="Shape" value="Ext3dModel"/>
+			<property name="Mesh" value="models"/>
+			<property name="Model" value="Industrial/control_panel_base_04" param1="main_mesh"/> 
+			<property name="Class" value="Switch"/>
+			<property name="RequiredPower" value="0"/>
+			<property name="TriggerType" value="Switch"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="MaxDamage" value="1000"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="DescriptionKey" value="switchDesc"/>
+		</block>
+
+		<block name="Wireless Switch Panel 1">
+			<property name="Extends" value="Wireless Relay Block"/>
+			<property name="CustomIcon" value="controlPanelTop01"/> 
+			<property name="Shape" value="Ext3dModel"/>
+			<property name="Mesh" value="models"/>
+			<property name="Model" value="Industrial/control_panel_top_01" param1="main_mesh"/> 
+			<property name="Class" value="Switch"/>
+			<property name="RequiredPower" value="0"/>
+			<property name="TriggerType" value="Switch"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="MaxDamage" value="1000"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="DescriptionKey" value="switchDesc"/>
+		</block>
+
+		<block name="Wireless Switch Panel 4">
+			<property name="Extends" value="Wireless Relay Block"/>
+			<property name="CustomIcon" value="controlPanelTop04"/> 
+			<property name="Shape" value="Ext3dModel"/>
+			<property name="Mesh" value="models"/>
+			<property name="Model" value="Industrial/control_panel_top_04" param1="main_mesh"/> 
+			<property name="Class" value="Switch"/>
+			<property name="RequiredPower" value="0"/>
+			<property name="TriggerType" value="Switch"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="MaxDamage" value="1000"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="DescriptionKey" value="switchDesc"/>
+		</block>
+
+		<block name="Wireless Switch Panel 5">
+			<property name="Extends" value="Wireless Relay Block"/>
+			<property name="CustomIcon" value="controlPanelTop05"/> 
+			<property name="Shape" value="Ext3dModel"/>
+			<property name="Mesh" value="models"/>
+			<property name="Model" value="Industrial/control_panel_top_05" param1="main_mesh"/> 
+			<property name="Class" value="Switch"/>
+			<property name="RequiredPower" value="0"/>
+			<property name="TriggerType" value="Switch"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="MaxDamage" value="1000"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="DescriptionKey" value="switchDesc"/>
+		</block>
+
+
+		<!--block name="Wireless Timer Fusebox">
+			<property name="Extends" value="Wireless Relay Block"/>
+			<property name="CustomIcon" value="fusebox"/>
+			<property name="Shape" value="Ext3dModel"/> <property name="Texture" value="293"/>
+			<property name="Mesh" value="models"/>
+			<property name="RequiredPower" value="1"/>
+			<property name="Model" value="Industrial/fusebox" param1="main_mesh"/> <property name="HandleFace" value="South"/>
+			<property name="Class" value="TimerRelay"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+		</block>
+
+		<block name="Wireless Timer Electrical Box">
+			<property name="Extends" value="Wireless Relay Block"/>
+			<property name="CustomIcon" value="electricalBox01"/>
+			<property name="Shape" value="Ext3dModel"/> <property name="Texture" value="293"/>
+			<property name="Mesh" value="models"/>
+			<property name="RequiredPower" value="1"/>
+			<property name="Model" value="Industrial/electrical_box01" param1="main_mesh"/> <property name="HandleFace" value="Bottom"/>
+			<property name="Class" value="TimerRelay"/>
+			<property name="StabilitySupport" value="false"/>
+		</block-->
+		
+		<block name="Electrical Pole Top Relay">
+		<!-- WORKS?, BUT OUTGOING WIRE IS INVISIBLE -->
+			<property name="Extends" value="Wireless Relay Block"/>
+			<property name="CustomIcon" value="poleTop01"/>
+			<property name="Class" value="Powered"/>
+			<property name="Shape" value="Ext3dModel"/> <property name="Texture" value="293"/>
+			<property name="Mesh" value="models"/>
+			<property name="Model" value="Industrial/pole_top01" param1="main_mesh"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="StabilitySupport" value="false"/>
+		</block>
+
+		
+		<!-- Dels first new block  -->
+		
+		
+		
+		<block name="Wireless Special Electrical Block">
+			<property name="Extends" value="Wireless Relay Block"/>
+			<property name="Class" value="Powered"/>
+			<property name="CustomIcon" value="stainlessSteelBlock"/> 
+			<property name="CustomIconTint" value="#ff2b2b"/>
+			<property name="Shape" value="ModelEntity"/>	
+			<property name="Mesh" value="models"/>
+			<property name="Model" value="#@modfolder:Resources/DelsCubes.unity3d?DelsCube14Prefab.prefab"  param1="main_mesh"/>
+			<property name="CustomIcon" value="DelsCube" />
+			<property name="StabilitySupport" value="false"/>
+		</block>
+
+		
+		<block name="Magic Relay Block">
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="stainlessSteelBlock"/> 
+			<property name="CustomIconTint" value="#ff2b2b"/>
+			<property name="Shape" value="ModelEntity"/>	
+			<property name="Model" value="#@modfolder:Resources/DelsCubes.unity3d?DelsCube2Prefab.prefab"/>
+			<property name="CustomIcon" value="DelsCube" />
+			<property name="Class" value="Powered"/>
+			<property name="DisplayType" value="blockHardened" />
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="PassThroughDamage" value="true"/>
+			<property name="Texture" value="267"/>
+			<property name="MaxDamage" value="1000"/>
+			<property class="RepairItems"> <property name="resourceElectricParts" value="2"/> </property>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="RequiredPower" value="1"/>
+			<property name="Group" value="Science"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="EconomicValue" value="44"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="DescriptionKey" value="electricwirerelayDesc"/>
+			<property name="FilterTags" value="fdecor,felectrical"/>
+		</block>
+
+		
+		<block name="Dels Cube Generator">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="Generator"/>
+			<property name="DisplayType" value="blockHardened" />
+			<property name="Material" value="Mmetal_medium"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Path" value="solid"/>
+					<property name="Shape" value="ModelEntity"/>	
+					<property name="Model" value="#@modfolder:Resources/DelsCubes.unity3d?DelsCube3Prefab.prefab"/>
+					<property name="CustomIcon" value="DelsCube" /><property name="HandleFace" value="Bottom"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="DescriptionKey" value="powerSourceDesc"/>
+			<property name="MaxFuel" value="5000"/>
+			<property name="OutputPerFuel" value="24500"/>
+			<property name="MaxPower" value="24500"/>
+			<property name="OutputPerStack" value="200"/>
+			<property name="SlotItem" value="smallEngine"/>
+			<property name="DisplayType" value="blockElectrical" />
+			<property name="Group" value="Science"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="8"/>
+				<property name="resourceMechanicalParts" value="8"/>
+				<property name="resourceElectricParts" value="8"/>
+				<property name="resourceElectricParts" value="3"/>
+			</property>
+			<drop event="Harvest" name="resourceScrapIron" count="192" tag="allHarvest"/>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceForgedIron" count="3" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceMechanicalParts" count="3" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceElectricParts" count="3" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceElectricParts" count="1,2" prob="0.6" tag="salvageHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="TakeDelay" value="15"/>
+			<property name="EconomicValue" value="500"/>
+			<property name="FilterTags" value="fdecor,felectrical"/>
+			<property name="SortOrder1" value="70a0"/>
+		</block>
+
+    <block name="Fusion Generator">
+      <property name="CreativeMode" value="Player"/>
+      <property name="Class" value="Generator"/>
+      <property name="DisplayType" value="blockHardened" />
+      <property name="Material" value="Mmetal_medium"/>
+      <property name="Stabilitysupport" value="true"/>
+      <property name="Shape" value="ModelEntity"/>
+      <property name="Mesh" value="models"/>
+      <property name="Path" value="solid"/>
+      <property name="Model" value="#@modfolder:Resources/Gen.unity3d?Generator.prefab"/>    
+      <property name="ImposterDontBlock" value="true"/>
+      <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+      <property name="DescriptionKey" value="powerSourceDesc"/>
+      <property name="MaxFuel" value="5000"/>
+      <property name="OutputPerFuel" value="24500"/>
+      <property name="MaxPower" value="24500"/>
+      <property name="OutputPerStack" value="200"/>
+      <property name="SlotItem" value="smallEngine"/>
+      <property name="DisplayType" value="blockElectrical" />
+			<property name="CustomIcon" value="guppyBigGenerator" />      
+      <property name="Group" value="Science"/>
+      <property class="RepairItems">
+        <property name="resourceForgedIron" value="8"/>
+        <property name="resourceMechanicalParts" value="8"/>
+        <property name="resourceElectricParts" value="8"/>
+        <property name="resourceElectricParts" value="3"/>
+      </property>
+      <drop event="Harvest" name="resourceScrapIron" count="192" tag="allHarvest"/>
+      <drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+      <drop event="Harvest" name="resourceForgedIron" count="3" tag="salvageHarvest"/>
+      <drop event="Harvest" name="resourceMechanicalParts" count="3" tag="salvageHarvest"/>
+      <drop event="Harvest" name="resourceElectricParts" count="3" tag="salvageHarvest"/>
+      <drop event="Harvest" name="resourceElectricParts" count="1,2" prob="0.6" tag="salvageHarvest"/>
+      <drop event="Destroy" count="0"/>
+      <drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+      <property name="Stacknumber" value="1"/>
+      <property name="TakeDelay" value="15"/>
+      <property name="EconomicValue" value="500"/>
+      <property name="FilterTags" value="fdecor,felectrical"/>
+      <property name="SortOrder1" value="70a0"/>
+      <property name="MultiBlockDim" value="1,1,2"/> 
+    </block>    
+
+
+	</append>
+
+
+</delmod>

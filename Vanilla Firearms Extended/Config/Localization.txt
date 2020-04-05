@@ -1,0 +1,113 @@
+Key,Source,Context,Changes,English
+gun1911,items,Gun,New,1911
+gunmk23,items,Gun,New,MK23
+gunGlock17,items,Gun,New,Glock 17
+gun9mmrevolver,items,Gun,New,9mm Revolver
+gun45revolver,items,Gun,New,.45 Revolver
+gunmakarov,items,Gun,New,Makarov
+gunm1pcarbine,items,Gun,New,M1-9 Carbine
+gunsks,items,Gun,New,SKS
+guntoz34,items,Gun,New,Over-Under
+gundoublebarrelproper,items,Gun,New,Side-by-Side
+gundoublebarrelshotgun,items,Gun,New,Boomstick
+gunsinglebarrelshotgun,items,Gun,New,Single Barrel
+gunrsx1,items,Gun,New,Auto Shotgun
+gunaks74u,items,Gun,New,AKS-74u
+gunak101,items,Gun,New,AK-101
+gunmac11,items,Gun,New,Mac-11
+gunmicrouzi,items,Gun,New,Micro Uzi
+gunar15,items,Gun,New,AR15
+gunump45,items,Gun,New,UMP-45
+gunhk416,items,Gun,New,HK416
+gundeserteagle,items,Gun,New,Desert Eagle
+gunp250,items,Gun,New,P250
+gunp99,items,Gun,New,P99
+gunusp,items,Gun,New,USP
+gunskorpion,items,Gun,New,Skorpion
+gunpp19,items,Gun,New,PP-19
+gung36c,items,Gun,New,G36C
+gun556rifle,items,Gun,New,Sporting Rifle
+gun9mmrifle,items,Gun,New,Varmint Rifle
+gunsvd,items,Gun,New,SVD
+gunscarh,items,Gun,New,SCAR-H
+guntec9,items,Gun,New,TEC-9
+gunscarl,items,Gun,New,SCAR-L
+gunsg553,items,Gun,New,SG-553
+gun1911Schematic,items,Book,New,1911 Schematic
+gun1911SchematicDesc,items,Book,New,Reading this will teach you how to craft a 1911. 
+gunmk23Schematic,items,Book,New,Mk 23 Schematic
+gunmk23SchematicDesc,items,Book,New,Reading this will teach you how to craft a Mk 23. 
+gunGlock17Schematic,items,Book,New,Glock 17 Schematic
+gunGlock17SchematicDesc,items,Book,New,Reading this will teach you how to craft a Glock 17. 
+gunmakarovSchematic,items,Book,New,Makarov Schematic
+gunmakarovSchematicDesc,items,Book,New,Reading this will teach you how to craft a Makarov.
+gun45revolverSchematic,items,Book,New,.45 Revolver Schematic
+gun45revolverSchematicDesc,items,Book,New,Reading this will teach you how to craft a .45 Revolver.
+gundeserteagleSchematic,items,Book,New,Desert Eagle Schematic
+gundeserteagleSchematicDesc,items,Book,New,Reading this will teach you how to craft a Desert Eagle.
+gunp250Schematic,items,Book,New,P250 Schematic
+gunp250SchematicDesc,items,Book,New,Reading this will teach you how to craft a P9.
+gunp99Schematic,items,Book,New,P99 Schematic
+gunp99SchematicDesc,items,Book,New,Reading this will teach you how to craft a P99.
+gunuspSchematic,items,Book,New,USP Schematic
+gunuspSchematicDesc,items,Book,New,Reading this will teach you how to craft a USP.
+gun9mmrevolverSchematic,items,Book,New,9mm Revolver Schematic
+gun9mmrevolverSchematicDesc,items,Book,New,Reading this will teach you how to craft a 9mm Revolver.
+guntec9Schematic,items,Book,New,TEC-9 Schematic
+guntec9SchematicDesc,items,Book,New,Reading this will teach you how to craft a TEC-9.
+gundoublebarrelproperSchematic,items,Book,New,Side-by-Side Schematic
+gundoublebarrelproperSchematicDesc,items,Book,New,Reading this will teach you how to craft a side-by-side shotgun.
+guntoz34Schematic,items,Book,New,Over/Under Schematic
+guntoz34SchematicDesc,items,Book,New,Reading this will teach you how to craft an over-under shotgun.
+gunsinglebarrelshotgunSchematic,items,Book,New,Single Barrel Shotgun Schematic
+gunsinglebarrelshotgunSchematicDesc,items,Book,New,Reading this will teach you how to craft a single barrel shotgun.
+gunrsx1Schematic,items,Book,New,RSX-1 Schematic
+gunrsx1SchematicDesc,items,Book,New,Reading this will teach you how to craft an RSX-1.
+gunm1pcarbineSchematic,items,Book,New,M1-P Carbine Schematic
+gunm1pcarbineSchematicDesc,items,Book,New,Reading this will teach you how to craft an M1-P Carbine.
+gunsksSchematic,items,Book,New,SKS Schematic
+gunsksSchematicDesc,items,Book,New,Reading this will teach you how to craft an SKS.
+gunak101Schematic,items,Book,New,AK-101 Schematic
+gunak101SchematicDesc,items,Book,New,Reading this will teach you how to craft an AK-101.
+gunar15Schematic,items,Book,New,AR-15 Schematic
+gunar15SchematicDesc,items,Book,New,Reading this will teach you how to craft an AR-15.
+gunhk416Schematic,items,Book,New,HK416 Schematic
+gunhk416SchematicDesc,items,Book,New,Reading this will teach you how to craft an HK416.
+gung36cSchematic,items,Book,New,G36C Schematic
+gung36cSchematicDesc,items,Book,New,Reading this will teach you how to craft an G36C.
+gun556rifleSchematic,items,Book,New,Sporting Rifle Schematic
+gun556rifleSchematicDesc,items,Book,New,Reading this will teach you how to craft a Sporting Rifle.
+gun9mmrifleSchematic,items,Book,New,Varmint Rifle Schematic
+gun9mmrifleSchematicDesc,items,Book,New,Reading this will teach you how to craft a Varmint Rifle.
+gunsvdSchematic,items,Book,New,SVD Schematic
+gunsvdSchematicDesc,items,Book,New,Reading this will teach you how to craft an SVD.
+gunscarhSchematic,items,Book,New,SCAR-H Schematic
+gunscarhSchematicDesc,items,Book,New,Reading this will teach you how to craft a SCAR-H.
+gunaks74uSchematic,items,Book,New,AKS-74u Schematic
+gunaks74uSchematicDesc,items,Book,New,Reading this will teach you how to craft an AKS-74u.
+gunskorpionSchematic,items,Book,New,Skorpion Schematic
+gunskorpionSchematicDesc,items,Book,New,Reading this will teach you how to craft a Skorpion.
+gunmicrouziSchematic,items,Book,New,Micro Uzi Schematic
+gunmicrouziSchematicDesc,items,Book,New,Reading this will teach you how to craft a Micro Uzi.
+gunmac11Schematic,items,Book,New,Mac-11 Schematic
+gunmac11SchematicDesc,items,Book,New,Reading this will teach you how to craft a Mac-11.
+gunump45Schematic,items,Book,New,UMP-45 Schematic
+gunump45SchematicDesc,items,Book,New,Reading this will teach you how to craft a UMP-45.
+gunpp19Schematic,items,Book,New,PP-19 Schematic
+gunpp19SchematicDesc,items,Book,New,Reading this will teach you how to craft a PP-19.
+gunscarlSchematic,items,Book,New,PP-19 Schematic
+gunscarlSchematicDesc,items,Book,New,Reading this will teach you how to craft a SCAR-L.
+gunsg553Schematic,items,Book,New,PP-19 Schematic
+gunsg553SchematicDesc,items,Book,New,Reading this will teach you how to craft a SG-553.
+ammo45BulletBall,items,Ammo,New,.45 Ammo
+ammo45BulletAP,items,Ammo,New,AP .45 Ammo
+ammo45BulletHP,items,Ammo,New,HP .45 Ammo
+ammoBundle45BulletBall,items,Ammo,New,Box of .45 Ammo (75)
+ammoBundle45BulletAP,items,Ammo,New,Box of .45 AP Ammo (75)
+ammoBundle45BulletHP,items,Ammo,New,Box of .45 HP Ammo (75)
+ammo556mmBulletBall,items,Ammo,New,5.56mm Ammo
+ammo556mmBulletAP,items,Ammo,New,5.56mm AP Ammo
+ammo556mmBulletHP,items,Ammo,New,5.56mm HP Ammo
+ammoBundle556mmBulletBall,items,Ammo,New,Box of 5.56mm Ammo (120)
+ammoBundle556mmBulletAP,items,Ammo,New,Box of 5.56mm AP Ammo (120)
+ammoBundle556mmBulletHP,items,Ammo,New,Box of 5.56mm HP Ammo (120)
